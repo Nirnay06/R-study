@@ -25,6 +25,11 @@ Always tell the user which source was used: repo notes, web, or training knowled
 - **Owner:** Nirnay Mittal
 - **Key topics covered so far:** Tribal India — concept of tribe, Scheduled Tribes, features, classification, bio-genetic variability.
 
+## Git Workflow
+
+- Always commit directly to the `main` branch. Do NOT create feature branches or pull requests.
+- Push with: `git push origin main`
+
 ## Instructions
 
 - When answering from repo notes, quote or closely reference the note content.
