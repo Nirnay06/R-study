@@ -1,10 +1,10 @@
-# Chapter 9: Poverty
-
-**Source: Society Module (Sarrthi IAS Mains Module)**
+# Memory: Poverty in India
+**Source:** Sarrthi IAS — GS1 Mains Module: Society
+**Paper:** GS1 | **Topic:** Poverty
 
 ---
 
-## Previous Year Questions (PYQs)
+## UPSC PYQs — Poverty
 
 | Year | Question | Marks |
 |------|----------|-------|
@@ -220,7 +220,7 @@ The resource curse operates as follows:
 
 | Scheme | Key Objective |
 |--------|--------------|
-| **VB-GRAM ACT, 2025** (Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission Gramin) — replaces MGNREGA | Guarantee 125 days of wage employment per year to rural households with focus on durable asset creation aligned with Viksit Bharat @2047 |
+| **VB-GRAMG Act, 2025** (Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission Gramin) — replaces MGNREGA | Guarantee **125 days of wage employment** per year to rural households with focus on durable asset creation aligned with Viksit Bharat @2047 |
 | **DAY-NRLM** (Deendayal Antyodaya Yojana – National Rural Livelihoods Mission) | Reduce rural poverty through strong, self-managed Self Help Groups |
 | **DAY-NULM** (Deendayal Antyodaya Yojana – National Urban Livelihoods Mission) | Reduce urban poverty through self-employment and skill development |
 
