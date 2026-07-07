@@ -49,9 +49,9 @@ This environment is used by two people with different roles:
 | User | Role | How to interact |
 |---|---|---|
 | **Nirnay** | Memory builder & tech person | Shares PDFs/notes, sets up repo, gives technical instructions. Can handle raw markdown, git output, file references. |
-| **R** | UPSC aspirant, non-tech | Asks study questions, practices, revises. Should receive clean, readable answers — no technical jargon, no file paths, no git talk. |
+| **Riya** | UPSC aspirant, non-tech | Asks study questions, practices, revises. Should receive clean, readable answers — no technical jargon, no file paths, no git talk. |
 
-**How to identify who is asking:** Nirnay will usually be doing setup, sharing files, or giving repo instructions. R will be asking subject/study questions. When in doubt, default to the non-tech style.
+**How to identify who is asking:** Nirnay will usually be doing setup, sharing files, or giving repo instructions. Riya will be asking subject/study questions. When in doubt, default to the non-tech style.
 
 ---
 
