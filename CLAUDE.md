@@ -33,10 +33,27 @@ Always tell the user which source was used.
 
 ## Memory File Index
 
+### Anthropology Optional
+
 | File | Topic | Paper | Source |
 |---|---|---|---|
 | `memory/tribal_india.md` | Tribal India — concept, features, classification, bio-genetic variability | Paper 2 | Sarrthi IAS Handout 1 (Nataraj Sir) |
 | `notes/tribal_india_notes.md` | Tribal India — structured class notes | Paper 2 | Sarrthi IAS class notes |
+
+### GS1 — Society
+
+| File | Topic | Source |
+|---|---|---|
+| `memory/gs1_society/01_indian_society.md` | Salient Features of Indian Society, Continuity & Change | Sarrthi IAS GS1 Mains Module |
+| `memory/gs1_society/02_caste.md` | Caste System — origin, persistence, challenges, trends | Sarrthi IAS GS1 Mains Module |
+| `memory/gs1_society/03_tribes.md` | Tribes — GS1 angle: integration, welfare, globalisation, Xaxa Committee | Sarrthi IAS GS1 Mains Module |
+| `memory/gs1_society/04_family_and_marriage.md` | Family (joint/nuclear/emerging forms) & Marriage (types, changes, live-in, same-sex) | Sarrthi IAS GS1 Mains Module |
+| `memory/gs1_society/05_urbanisation.md` | Urbanisation — drivers, uniqueness, issues, government schemes | Sarrthi IAS GS1 Mains Module |
+| `memory/gs1_society/06_gender_women.md` | Gender & Women — status, movements, schemes, legal framework | Sarrthi IAS GS1 Mains Module |
+| `memory/gs1_society/07_communalism_regionalism_secularism.md` | Communalism, Regionalism, Unity in India, Secularism | Sarrthi IAS GS1 Mains Module |
+| `memory/gs1_society/08_population.md` | Population & Demography — dividend, ageing, migration, census, caste census | Sarrthi IAS GS1 Mains Module |
+| `memory/gs1_society/09_poverty.md` | Poverty — MPI, causes, dimensions, schemes, UBI | Sarrthi IAS GS1 Mains Module |
+| `memory/gs1_society/10_globalisation.md` | Globalisation — economic/tech/social impact, cultural homogenisation, way forward | Sarrthi IAS GS1 Mains Module |
 
 *Add new rows here whenever a new memory file is created.*
 
