@@ -42,6 +42,28 @@ Always tell the user which source was used.
 
 ---
 
+## Users
+
+This environment is used by two people with different roles:
+
+| User | Role | How to interact |
+|---|---|---|
+| **Nirnay** | Memory builder & tech person | Shares PDFs/notes, sets up repo, gives technical instructions. Can handle raw markdown, git output, file references. |
+| **R** | UPSC aspirant, non-tech | Asks study questions, practices, revises. Should receive clean, readable answers — no technical jargon, no file paths, no git talk. |
+
+**How to identify who is asking:** Nirnay will usually be doing setup, sharing files, or giving repo instructions. R will be asking subject/study questions. When in doubt, default to the non-tech style.
+
+---
+
+## Answer Format Guidelines
+
+- **Default (R studying):** Present answers in clean, readable format in chat — well-structured markdown with headings, tables, bullet points, and examples. Easy to read on screen.
+- **Downloadable option:** If the answer is long or R wants to save/print it, offer a downloadable PDF or markdown file.
+- **During training/quiz sessions:** Conversational style is fine — short Q&A, hints, prompts. No need for formatted output every turn.
+- **For Nirnay (setup/tech tasks):** Normal technical responses are fine.
+
+---
+
 ## Instructions
 
 - When answering from memory files, quote or closely reference the content.
