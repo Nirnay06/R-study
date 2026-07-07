@@ -422,6 +422,29 @@ The most productive collaboration model is **community-centred, state-enabled, a
 
 ---
 
+---
+
+## Key Reports and Evidence Base
+
+| Report / Source | Key Finding / Relevance |
+|----------------|------------------------|
+| **World Bank (Spring 2025)** | India poverty rate ($3.65/day): 28.1% down from 61.8%; Extreme rural poverty: 2.8% down from 18.4% |
+| **NITI Aayog National MPI Report (2023)** | MPI poverty fell from 29.17% (2013-14) to 11.28% (2022-23); 24.8 crore escaped MPI poverty in 9 years |
+| **Human Development Report (2023)** | India HDI rank: 134/191 — highlights economic growth vs. human development paradox |
+| **Global Hunger Index (2023)** | India ranked 105th — despite being one of world's largest food producers ("hunger amidst plenty") |
+| **Oxfam Report (2024)** | India's richest 1% own 40.5% of national wealth |
+| **World Inequality Report (2022)** | Top 10% hold 57% of national income; bottom 50% hold only 13% |
+| **NFHS-5** | Women's anaemia: 57%; Child stunting: ~35% of under-5 children |
+| **PLFS** | Women's labour force participation: 41.7%; women's GDP contribution: ~17% |
+| **CMIE (2024)** | Youth unemployment (urban): ~23% |
+| **NITI Aayog** | Gig workforce projected at 23.5 million by 2029-30; ~90% of gig workers have no emergency savings |
+| **SEWA Pilot Project (MP, 2011-13)** | Evidence base for UBI: improvements in nutrition, school attendance, health outcomes, local economic activity |
+| **Finland UBI Experiment** | Limited impact on employment behaviour; improved mental health — evidence against "work disincentive" argument |
+| **Economic Survey 2016-17** | Formally introduced UBI into India's policy conversation; suggested quasi-UBI approach |
+| **Global MPI 2025 (UNDP/OPHI)** | 887 million multidimensionally poor people live in climate-hazard-exposed areas |
+
+---
+
 ## Quick-Recall Box: The Five Why-Poverty-Persists Arguments
 
 1. **Implementation gaps** — scheme design vs. ground reality
@@ -437,3 +460,34 @@ The most productive collaboration model is **community-centred, state-enabled, a
 - *"Pronounced deprivation in well-being."* — World Bank's definition of poverty
 - India has a **"hunger amidst plenty" paradox** — food producer yet 105th on GHI
 - **K-shaped economy**: booming stock market + 105th on Global Hunger Index — growth is concentrated, not distributed
+
+---
+
+## One-Line Recall: Key Schemes
+
+| Acronym | Full Name | Core Purpose |
+|---------|-----------|-------------|
+| VB-GRAMG | Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission Gramin | 125 days rural employment (replaces MGNREGA) |
+| DAY-NRLM | Deendayal Antyodaya Yojana – National Rural Livelihoods Mission | Rural poverty via SHGs |
+| DAY-NULM | Deendayal Antyodaya Yojana – National Urban Livelihoods Mission | Urban poverty via self-employment |
+| NFSA/PDS | National Food Security Act / Public Distribution System | Subsidised foodgrains as legal entitlement |
+| PMGKAY | Pradhan Mantri Garib Kalyan Anna Yojana | Free 5 kg/person/month (merged with NFSA, Jan 2024) |
+| PM-JAY | Pradhan Mantri Jan Arogya Yojana (Ayushman Bharat) | ₹5 lakh cashless health cover/family/year |
+| PMKVY | Pradhan Mantri Kaushal Vikas Yojana | Industry-relevant skilling incl. Industry 4.0 |
+| PMJDY | Pradhan Mantri Jan Dhan Yojana | Universal banking/insurance for unbanked |
+| MUDRA | Micro Units Development & Refinance Agency | Credit to micro/small enterprises |
+| PMSBY | Pradhan Mantri Suraksha Bima Yojana | Accident insurance ₹2L at ₹20/yr |
+| PMJJBY | Pradhan Mantri Jeevan Jyoti Bima Yojana | Life insurance ₹2L at ₹436/yr |
+| APY | Atal Pension Yojana | Pension ₹1,000-5,000/month for unorganised workers |
+| NSAP | National Social Assistance Programme | Social pension for elderly/widows/disabled BPL |
+| PMAY-G | Pradhan Mantri Awas Yojana – Gramin | Pucca houses for rural poor |
+| PMAY-U 2.0 | Pradhan Mantri Awas Yojana – Urban Phase 2 | 1 crore urban houses; ₹2.5L subsidy |
+| AMRUT 2.0 | Atal Mission for Rejuvenation and Urban Transformation | 100% water/sewerage in 500 cities |
+| ADP | Aspirational Districts Programme | 112 most backward districts; 49 KPIs |
+| ABP | Aspirational Blocks Programme (2023) | 500 most backward blocks |
+| ONORC | One Nation One Ration Card | Portable PDS entitlement for migrants |
+| PM SVANidhi | PM Street Vendor's AtmaNirbhar Nidhi | Working capital loans for street vendors |
+| POSHAN | PM's Overarching Scheme for Holistic Nutrition | Reduce stunting/anaemia/undernutrition |
+| NHM | National Health Mission | Rural/urban health via ASHAs, JSY, JSSK, RBSK |
+
+*Last updated: July 2026 | Source: Sarrthi IAS GS1 Mains Module — Society (pp. 136–145)*
