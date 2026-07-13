@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF 01 — Development, Forest Policies &amp; FRA 2006</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 12mm 15mm;
+      font-size: 11pt;
+      line-height: 1.65;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+    h1 { color: #1e3a5f; border-bottom: 3px solid #1e3a5f; padding-bottom: 8px; margin-top: 0; }
+    h2 {
+      color: #1e40af;
+      border-left: 5px solid #1e40af;
+      background: #eff6ff;
+      padding: 8px 12px;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      border-radius: 0 4px 4px 0;
+    }
+    h3 { color: #1d4ed8; margin-top: 18px; margin-bottom: 8px; }
+    h4 { color: #374151; margin-top: 14px; margin-bottom: 6px; font-size: 10.5pt; }
+
+    .header-box {
+      background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%);
+      color: white;
+      padding: 22px 24px;
+      margin-bottom: 22px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(30,58,95,0.3);
+    }
+    .header-box h1 { color: white; border: none; margin: 0 0 6px 0; font-size: 18pt; }
+    .header-box p { margin: 4px 0 0 0; font-size: 10pt; opacity: 0.9; }
+    .header-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; }
+    .header-tag {
+      background: rgba(255,255,255,0.2);
+      border-radius: 4px;
+      padding: 3px 10px;
+      font-size: 9pt;
+      font-weight: 600;
+    }
+
+    /* Mind Map Sections */
+    .mindmap {
+      background: #f0fdf4;
+      border: 1.5px solid #86efac;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 14px 0 18px 0;
+    }
+    .mindmap-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #166534;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .mindmap-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 6px;
+    }
+    .mindmap-node {
+      background: #dcfce7;
+      border: 1px solid #4ade80;
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 9.5pt;
+      color: #14532d;
+      font-weight: 500;
+    }
+    .mindmap-node.blue { background: #dbeafe; border-color: #60a5fa; color: #1e3a8a; }
+    .mindmap-node.yellow { background: #fef9c3; border-color: #facc15; color: #713f12; }
+    .mindmap-node.red { background: #fee2e2; border-color: #f87171; color: #7f1d1d; }
+    .mindmap-node.purple { background: #f3e8ff; border-color: #c084fc; color: #581c87; }
+
+    /* Scholar Box */
+    .scholar {
+      background: #dbeafe;
+      border-left: 4px solid #2563eb;
+      padding: 10px 14px;
+      margin: 10px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .scholar .scholar-name { color: #1e3a8a; font-weight: 700; font-size: 10.5pt; }
+    .scholar .scholar-year { color: #3b82f6; font-size: 9.5pt; font-weight: 600; }
+
+    /* Case Study Box */
+    .casestudy {
+      background: #fef9c3;
+      border-left: 4px solid #ca8a04;
+      padding: 10px 14px;
+      margin: 10px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .casestudy .cs-title { color: #78350f; font-weight: 700; font-size: 10.5pt; }
+    .casestudy .cs-tag {
+      display: inline-block;
+      background: #fde68a;
+      border-radius: 3px;
+      padding: 1px 8px;
+      font-size: 8.5pt;
+      color: #92400e;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    /* UPSC Question Box */
+    .upsc-q {
+      background: #fee2e2;
+      border-left: 4px solid #dc2626;
+      padding: 10px 14px;
+      margin: 10px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .upsc-q .q-num { color: #7f1d1d; font-weight: 700; font-size: 9pt; margin-bottom: 3px; }
+    .upsc-q .q-text { color: #450a0a; font-style: italic; }
+
+    /* Concept Box */
+    .concept {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+      padding: 10px 14px;
+      margin: 10px 0;
+      border-radius: 6px;
+    }
+
+    /* Info Box (grey) */
+    .infobox {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      padding: 10px 14px;
+      margin: 10px 0;
+      border-radius: 6px;
+    }
+
+    /* Warning Box */
+    .warnbox {
+      background: #fff7ed;
+      border-left: 4px solid #f97316;
+      padding: 10px 14px;
+      margin: 10px 0;
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* Tables */
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 10pt; }
+    th {
+      background: #166534;
+      color: white;
+      padding: 9px 10px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    td { padding: 7px 10px; border: 1px solid #d1d5db; vertical-align: top; }
+    tr:nth-child(even) td { background: #f9fafb; }
+    tr:nth-child(odd) td { background: #ffffff; }
+    .table-blue th { background: #1e40af; }
+    .table-purple th { background: #6d28d9; }
+    .table-red th { background: #b91c1c; }
+    .table-teal th { background: #0f766e; }
+
+    /* Stats */
+    .stat { color: #7c3aed; font-weight: 700; }
+    .highlight { color: #b45309; font-weight: 600; }
+
+    /* Numbered list styling */
+    ol.styled { padding-left: 20px; }
+    ol.styled li { margin-bottom: 7px; }
+    ul.styled { padding-left: 20px; }
+    ul.styled li { margin-bottom: 5px; }
+
+    /* Issue list */
+    .issue-item {
+      background: #fafafa;
+      border: 1px solid #e5e7eb;
+      border-left: 3px solid #6b7280;
+      padding: 8px 12px;
+      margin: 7px 0;
+      border-radius: 0 4px 4px 0;
+    }
+    .issue-num { color: #6b7280; font-weight: 700; font-size: 9pt; }
+    .issue-title { color: #111827; font-weight: 700; }
+
+    /* TEK table */
+    .tek-table th { background: #0f766e; }
+
+    /* Two-col grid */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 12px 0; }
+    .col-card {
+      padding: 12px;
+      border-radius: 6px;
+    }
+    .col-neg { background: #fff1f2; border: 1px solid #fecdd3; }
+    .col-pos { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .col-neg h4 { color: #be123c; margin-top: 0; }
+    .col-pos h4 { color: #15803d; margin-top: 0; }
+
+    /* Dividers */
+    .section-divider {
+      height: 3px;
+      background: linear-gradient(to right, #1e40af, #06b6d4, transparent);
+      margin: 30px 0;
+      border-radius: 2px;
+    }
+
+    /* One-liner grid */
+    .oneliner-grid { columns: 2; column-gap: 16px; }
+    .oneliner-item {
+      display: inline-block;
+      width: 100%;
+      background: #f5f3ff;
+      border-left: 3px solid #7c3aed;
+      padding: 5px 9px;
+      margin-bottom: 6px;
+      font-size: 9.5pt;
+      border-radius: 0 3px 3px 0;
+      break-inside: avoid;
+    }
+
+    /* Print */
+    @media print {
+      body { padding: 0; }
+      .section-divider { margin: 20px 0; }
+      h2 { page-break-before: auto; }
+      .casestudy, .scholar, .upsc-q, .concept { page-break-inside: avoid; }
+      table { page-break-inside: auto; }
+      tr { page-break-inside: avoid; }
+    }
+
+    /* Transition table */
+    .transition-table td:first-child { font-weight: 600; color: #1e40af; }
+
+    /* Achievement items */
+    .achievement-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .ach-num {
+      background: #166534;
+      color: white;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9pt;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Forward items */
+    .fwd-item {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin: 6px 0;
+    }
+    .fwd-num { color: #1e40af; font-weight: 700; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- HEADER -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="header-box">
+  <h1>Tribal India — Development, Forest Policies &amp; FRA 2006</h1>
+  <p>Complete Study Guide | UPSC Anthropology Optional</p>
+  <div class="header-meta">
+    <span class="header-tag">Paper 2 — Unit 6.3</span>
+    <span class="header-tag">Source: Sarrthi IAS L-62 (Nataraj Sir)</span>
+    <span class="header-tag">Handout 3</span>
+  </div>
+</div>
+
+<!-- Quick Overview -->
+<div class="mindmap">
+  <div class="mindmap-title">&#9660; CHAPTER OVERVIEW — Key Themes</div>
+  <div class="mindmap-grid">
+    <span class="mindmap-node blue">Developmental Projects</span>
+    <span class="mindmap-node red">Tribal Displacement</span>
+    <span class="mindmap-node yellow">R&amp;R Policy 2007</span>
+    <span class="mindmap-node">Forest Acts 1865–1988</span>
+    <span class="mindmap-node">Forest Rights Act 2006</span>
+    <span class="mindmap-node blue">CFR &amp; Gram Sabha</span>
+    <span class="mindmap-node purple">Climate Change &amp; TEK</span>
+    <span class="mindmap-node red">Industrialization</span>
+    <span class="mindmap-node yellow">Urbanization</span>
+    <span class="mindmap-node">Das &amp; Banerji 4 Impacts</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 1: DEVELOPMENTAL PROJECTS -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-divider"></div>
+<h2>&#9312; Developmental Projects &amp; Tribal Displacement</h2>
+
+<div class="mindmap">
+  <div class="mindmap-title">&#9660; MIND MAP — Developmental Projects</div>
+  <div class="mindmap-grid">
+    <span class="mindmap-node blue">Michel Cernea — People-centric R&amp;R</span>
+    <span class="mindmap-node red">50 million displaced</span>
+    <span class="mindmap-node yellow">Dam Projects (Narmada, Polavaram)</span>
+    <span class="mindmap-node">Mining Projects (Jharkhand, Chhattisgarh)</span>
+    <span class="mindmap-node purple">8.6% population → 40-50% displaced</span>
+    <span class="mindmap-node">R&amp;R Policy 2007</span>
+  </div>
+</div>
+
+<h3>Introduction</h3>
+<p>Development of infrastructure is necessary for national growth. However, projects on <strong>forest lands</strong> result in <strong>displacement of tribals</strong> living at construction sites, with a huge impact on their lives. Development and displacement have become uncomfortable companions in post-independence India.</p>
+
+<!-- Scholar: Michel Cernea -->
+<div class="scholar">
+  <div class="scholar-name">Michel Cernea</div>
+  <ul class="styled">
+    <li>Involuntary displacement should be <strong>minimised</strong> and, if possible, <strong>avoided</strong>.</li>
+    <li>If unavoidable, displacement must be carried out in a way that <strong>protects the livelihood of tribes</strong>.</li>
+    <li>Rehabilitation and resettlement should be <strong>"people-centric"</strong> in approach.</li>
+  </ul>
+</div>
+
+<!-- Scholar: Nalin Negi & Sujata Ganguly -->
+<div class="scholar">
+  <div class="scholar-name">Nalin Negi &amp; Sujata Ganguly <span class="scholar-year">(2011, University of Bielefeld, Germany)</span></div>
+  <ul class="styled">
+    <li>Around <span class="stat">50 million people</span> displaced due to development projects in India.</li>
+    <li><span class="stat">40–50% of the displaced are tribals</span> — a severe disproportionate impact.</li>
+    <li>Tribal population = only <span class="stat">8.6%</span> of total India — yet bear the majority of displacement burden.</li>
+  </ul>
+</div>
+
+<h3>Examples of Dam-Induced Displacement</h3>
+
+<div class="casestudy">
+  <span class="cs-tag">DAM PROJECT | Andhra Pradesh</span>
+  <div class="cs-title">Case Study 1 — Polavaram Dam</div>
+  <p>Resulted in estimated displacement of <span class="stat">3 lakh people</span>, the majority of whom were tribals. A stark illustration of how dam projects disproportionately affect tribal communities.</p>
+</div>
+
+<div class="casestudy">
+  <span class="cs-tag">DAM PROJECT | Narmada River</span>
+  <div class="cs-title">Case Study 2 — Sardar Sarovar Dam (Narmada Eviction)</div>
+  <ul class="styled">
+    <li>On <strong>12 December 1979</strong>, despite widespread protests, the Indian government decided to raise the height of the Sardar Sarovar Dam.</li>
+    <li>Plan: <strong>30 major, 135 medium, and 3,000 small dams</strong> on the Narmada and its tributaries.</li>
+    <li>Purpose: Provide water to 40 million people + irrigation + electricity generation.</li>
+    <li>Impact: <span class="stat">200,000 people displaced</span>, majority Adivasis — one of India's largest displacement events.</li>
+  </ul>
+</div>
+
+<h3>Examples of Mining-Induced Displacement</h3>
+
+<div class="casestudy">
+  <span class="cs-tag">MINING PROJECT | Jharkhand</span>
+  <div class="cs-title">Case Study 3 — Pakri Barwadih Coal Mining Project (Hazaribagh District)</div>
+  <ul class="styled">
+    <li>Operated by <strong>NTPC (National Thermal Power Corporation)</strong> under the <strong>North Karanpura Coalfield</strong>.</li>
+    <li>Land acquisition began <strong>2016</strong>; involves <span class="stat">3,319.42 hectares</span> (8,202 acres) — including 1,950.5 ha farmland, 643.9 ha forest land, 101.22 ha settlements.</li>
+    <li><strong>19 villages</strong> affected — Barkagaon, Sonbarsa, Pakri Barwadih, Deoria Khurd.</li>
+    <li>Compensation: Rs 9.85–10.85 lakh per adult; re-employed only as <strong>contract guards or labourers</strong> on land they once owned.</li>
+    <li>Promised jobs for women ended when factories shut down.</li>
+    <li>In Jharkhand overall, mining companies acquired <span class="stat">over 87,000 hectares</span> — larger than the city of Bengaluru.</li>
+    <li>Skilled jobs went to migrants from other states; locals left unemployed.</li>
+    <li>Jharkhand's <strong>2008 Rehabilitation and Resettlement Policy</strong> promised locals would benefit first — in reality, <strong>tribals lost both land and livelihood</strong>.</li>
+  </ul>
+</div>
+
+<div class="casestudy">
+  <span class="cs-tag">MINING PROJECT | Chhattisgarh</span>
+  <div class="cs-title">Case Study 4 — Chaal Coal Mine, Raigarh District (Kawar Tribe)</div>
+  <ul class="styled">
+    <li><strong>Chaal open-cast coal mine</strong>, Raigarh district, operated by <strong>South Eastern Coalfields Limited (SECL)</strong> since <strong>2003</strong>.</li>
+    <li>Displaced ~<span class="stat">400 Adivasi (Kawar tribe)</span> families from <strong>Lath village</strong>, leaving only 56 families behind.</li>
+    <li>Farmlands and rice fields destroyed by blasting and excavation → loss of livelihood + forced migration.</li>
+    <li>Mine waste discharged into nearby rivers → <strong>severe water contamination</strong> (cut off clean water and fish supply).</li>
+    <li>Promised jobs and compensation remained <strong>only on paper</strong>.</li>
+    <li><strong>Hindalco Industries</strong> nearby demolished Adivasi homes for mine expansion <strong>without consent or compensation</strong>.</li>
+    <li>Together, these cases demonstrate <strong>land alienation, livelihood loss, and erosion of tribal dignity and culture</strong>.</li>
+  </ul>
+</div>
+
+<h3>Impacts of Displacement</h3>
+
+<div class="two-col">
+  <div>
+    <h4>Livelihood Impacts</h4>
+    <ul class="styled">
+      <li>Loss of access to forest lands and forest produce.</li>
+      <li>Loss of <strong>natural habitat</strong> lived in for generations.</li>
+      <li>Forced to move to fringes with no access to forest or forest produce.</li>
+    </ul>
+    <h4>Economic Impacts</h4>
+    <ul class="styled">
+      <li>Loss of access to <strong>Minor Forest Produce</strong> (MFP).</li>
+      <li>Transformation into <strong>landless peasants</strong>.</li>
+      <li>Severe poverty among tribals.</li>
+      <li>Shift to industrial labour from traditional occupations.</li>
+      <li>Inadequate and delayed monetary compensation.</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Socio-Cultural Impacts</h4>
+    <ul class="styled">
+      <li><strong>Reduction of collectiveness</strong> to individualistic attitude — loss of community values.</li>
+      <li>Agriculturalists forced into <strong>industrial labour</strong> — loss of traditional livelihoods.</li>
+      <li><strong>Religious transformation</strong> — ritualistic cultures fade.</li>
+      <li>Changing marriage rules — shift from <strong>endogamy to exogamy</strong> due to displacement.</li>
+    </ul>
+  </div>
+</div>
+
+<h3>National Rehabilitation and Resettlement Policy, 2007</h3>
+<div class="concept">
+  <strong>Key Objectives:</strong>
+  <ol class="styled">
+    <li>To <strong>minimise displacement</strong> and promote non-displacing or least-displacing alternatives.</li>
+    <li>To ensure <strong>adequate rehabilitation package</strong> with active participation of affected families.</li>
+    <li>To ensure special care for <strong>protecting rights of weaker sections</strong> — SCs and STs — with sensitivity.</li>
+    <li>To provide a <strong>better standard of living</strong> and sustainable income to affected families.</li>
+    <li>To <strong>integrate rehabilitation</strong> concerns into development planning and implementation process.</li>
+    <li>To facilitate harmonious relationships through <strong>mutual cooperation</strong>.</li>
+  </ol>
+  <p><strong>Key Conclusion:</strong> Displacement has always been a companion of development. The process should be as <strong>humane and voluntary</strong> as possible. Cost of rehabilitation should be included in project cost.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 2: FOREST POLICIES -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-divider"></div>
+<h2>&#9313; Forest Policies — Colonial Era to Post-Independence</h2>
+
+<div class="mindmap">
+  <div class="mindmap-title">&#9660; MIND MAP — Forest Policy Evolution</div>
+  <div class="mindmap-grid">
+    <span class="mindmap-node red">1865 — Formal state control</span>
+    <span class="mindmap-node red">1878 — Reserved/Protected/Village forests</span>
+    <span class="mindmap-node red">1894 — Eminent Domain</span>
+    <span class="mindmap-node red">1927 — IFA, Section 64</span>
+    <span class="mindmap-node yellow">1952 — Concessions not rights</span>
+    <span class="mindmap-node yellow">1980 — Protect tribal rights</span>
+    <span class="mindmap-node yellow">1982 — Roy Burman Committee</span>
+    <span class="mindmap-node blue">1988 — PARADIGM SHIFT; JFM</span>
+    <span class="mindmap-node">2006 — FRA: Historical Justice</span>
+  </div>
+</div>
+
+<h3>Tribal-Forest Relationship</h3>
+<div class="scholar">
+  <div class="scholar-name">Tripathi <span class="scholar-year">(2016)</span></div>
+  <ul class="styled">
+    <li>Tribes live in a <em>harmonious and interdependent relationship</em> with their forest environment.</li>
+    <li>Their <strong>economic life, social organisation, and magico-religious beliefs</strong> all revolve around the forest ecosystem.</li>
+    <li>Existence of tribal communities is <strong>deeply linked with forests</strong> — a true <strong>symbiotic relationship</strong>.</li>
+  </ul>
+</div>
+
+<h3>Forest Policy Timeline</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Act / Policy</th>
+      <th>Key Provision / Significance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1865</strong></td>
+      <td>Forest Act</td>
+      <td>First formal <strong>state control</strong> over forests. Traditional practices restricted by law. Forests treated as state property.</td>
+    </tr>
+    <tr>
+      <td><strong>1878</strong></td>
+      <td>Forest Act</td>
+      <td>Divided forests into <strong>Reserved, Protected, and Village Forests</strong>. Trespassing, grazing, collecting produce — prohibited or declared offences. Consolidated Forest Department power.</td>
+    </tr>
+    <tr>
+      <td><strong>1894</strong></td>
+      <td>First Forest Policy</td>
+      <td>Introduced concept of <strong>"Eminent Domain"</strong> — state ultimate control over forest land. Stated: "Rights and privileges of individuals must be limited." Focused on <strong>revenue generation</strong> and timber supply for British needs.</td>
+    </tr>
+    <tr>
+      <td><strong>1927</strong></td>
+      <td>Indian Forest Act</td>
+      <td>Codified previous forest laws. Strengthened powers of forest officers. <strong>Section 64</strong> — authorised arrest without warrant. Created to serve British timber needs; overrode customary rights; declaring forests as <strong>state property</strong>. Led to clearing of millions of hectares for <strong>monoculture</strong> plantations. Forces people to choose between abandoning forest or living as "criminals."</td>
+    </tr>
+    <tr>
+      <td><strong>1952</strong></td>
+      <td>National Forest Policy</td>
+      <td>Continued colonial approach. Tribals given <em>concessions</em> not <em>rights</em>. Emphasised forests as <strong>national asset</strong> — ignored livelihood dependence.</td>
+    </tr>
+    <tr>
+      <td><strong>1980</strong></td>
+      <td>National Committee on Development of Backward Areas</td>
+      <td>Recommended that <strong>tribal rights and concessions be fully protected</strong>, and domestic needs be met through forest produce. Recognised importance of forest-based livelihoods.</td>
+    </tr>
+    <tr>
+      <td><strong>1982</strong></td>
+      <td>B.K. Roy Burman Committee on Forests and Tribals</td>
+      <td>Headed by eminent anthropologist <strong>B.K. Roy Burman</strong>. Highlighted tribes earn nearly <span class="stat">one-third of income from minor forest produce</span>. Emphasised <strong>positive role</strong> of forest dwellers in forest preservation and regeneration. Suggested tribal participation for sustainable forest management.</td>
+    </tr>
+    <tr>
+      <td><strong>1988</strong></td>
+      <td>National Forest Policy — <em>PARADIGM SHIFT</em></td>
+      <td>Shift from <strong>revenue-oriented to people-oriented</strong> forest management. Main objective: Environmental stability and ecological balance. Recognised <strong>symbiotic relationship</strong> between tribal people and forests. Introduced <strong>Joint Forest Management (JFM)</strong>. Recognised <strong>Minor Forest Produce (MFP) as a RIGHT</strong>, not a concession. Led to establishment of <strong>TRIFED</strong>. (Hiremath, 1994 — tribal communities should be actively involved.)</td>
+    </tr>
+    <tr>
+      <td><strong>2006</strong></td>
+      <td>Forest Rights Act (FRA)</td>
+      <td>Corrects historical injustice. Three types of rights: Land Rights, Use Rights, Community Forest Rights. <strong>Gram Sabha</strong> as central authority. Special provisions for PVTGs.</td>
+    </tr>
+    <tr>
+      <td><strong>2007</strong></td>
+      <td>National R&amp;R Policy</td>
+      <td>Minimise displacement; adequate rehabilitation; protect rights of SCs/STs.</td>
+    </tr>
+    <tr>
+      <td><strong>2019</strong></td>
+      <td>Supreme Court Eviction Order</td>
+      <td>Ordered eviction of <span class="stat">1.8 million</span> forest dwellers; later <strong>stayed</strong> due to activism and protests.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 3: FOREST RIGHTS ACT 2006 -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-divider"></div>
+<h2>&#9314; Forest Rights Act, 2006 (FRA) — In Full Detail</h2>
+
+<div class="infobox">
+  <strong>Exam Note:</strong> This is a standalone question topic. FRA 2006 can appear as a 10-mark or 20-mark question. Master every section below — objectives, provisions, issues, achievements, and way forward.
+</div>
+
+<div class="mindmap">
+  <div class="mindmap-title">&#9660; MIND MAP — FRA 2006</div>
+  <div class="mindmap-grid">
+    <span class="mindmap-node">Historical Justice</span>
+    <span class="mindmap-node blue">Land Rights (≤4 ha)</span>
+    <span class="mindmap-node blue">Use Rights (MFP, grazing)</span>
+    <span class="mindmap-node blue">CFR — Section 3(1)(i)</span>
+    <span class="mindmap-node purple">PVTG Habitat — Section 3(1)(e)</span>
+    <span class="mindmap-node yellow">Cut-off date: 13 Dec 2005</span>
+    <span class="mindmap-node red">14 Implementation Issues</span>
+    <span class="mindmap-node">Gram Sabha as authority</span>
+    <span class="mindmap-node">Mendha Lekha success</span>
+    <span class="mindmap-node red">Hasdeo Arand violation</span>
+  </div>
+</div>
+
+<h3>I. Objectives of FRA 2006</h3>
+<ol class="styled">
+  <li>To undo the <strong>historical injustice</strong> suffered by forest-dwelling communities under colonial forest laws.</li>
+  <li>To ensure <strong>land tenure, livelihood, and food security</strong> of forest-dwelling Scheduled Tribes (FDSTs) and Other Traditional Forest Dwellers (OTFDs).</li>
+  <li>To <strong>strengthen conservation</strong> — including responsibilities and authority for sustainable use, conservation of biodiversity, and maintenance of ecological balance.</li>
+</ol>
+
+<h3>II. Background — Why Was FRA Needed?</h3>
+<div class="warnbox">
+  <strong>Conditions in Forest Areas (Pre-FRA):</strong>
+  <ul class="styled">
+    <li>Millions of forest dwellers subject to <strong>harassment and evictions</strong> in their own land.</li>
+    <li><strong>Torture, bonded labour, extortion, and sexual assault</strong> quite common in forest areas.</li>
+    <li>The <strong>Indian Forest Act, 1927</strong> declared forests as state property, overriding customary rights.</li>
+    <li>Single officials settled disputes — mostly recording rights of <strong>powerful communities</strong>.</li>
+    <li>Resulted in clearing of forests for monoculture; forced people to either abandon forests or live as <strong>"criminals."</strong></li>
+  </ul>
+</div>
+
+<h3>III. Who is a Forest Dweller Under FRA?</h3>
+<div class="concept">
+  <strong>Two-Stage Eligibility:</strong><br><br>
+  <strong>Stage 1 — Everyone must satisfy BOTH conditions:</strong>
+  <ol class="styled">
+    <li>Primarily residing in forests or forest lands.</li>
+    <li>Depends on forests and forest land for livelihood ("Bonafide livelihood needs").</li>
+  </ol>
+  <strong>Stage 2 — Must prove ONE of the following:</strong>
+  <ul class="styled">
+    <li>Conditions have been true for <span class="stat">75 years</span> → classified as <strong>"Other Traditional Forest Dweller" (OTFD)</strong></li>
+    <li>OR — Member of Scheduled Tribe AND residing in a Scheduled Area → classified as <strong>"Forest Dwelling Scheduled Tribe" (FDST)</strong></li>
+  </ul>
+</div>
+
+<h3>IV. Key Provisions Under FRA 2006 — Three Types of Rights</h3>
+
+<table class="table-blue">
+  <thead>
+    <tr><th>Type of Right</th><th>Provision</th><th>Key Details</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>A. Land Rights</strong></td>
+      <td>Individual Forest Rights</td>
+      <td>
+        <ul style="margin:0;padding-left:16px;">
+          <li>No rights to land <strong>not being cultivated prior to 13 December 2005</strong>.</li>
+          <li>Those cultivating without documents can claim <span class="stat">up to 4 hectares</span>, provided they cultivate it themselves for livelihood.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>B. Use Rights</strong></td>
+      <td>Collection &amp; Grazing Rights</td>
+      <td>
+        <ul style="margin:0;padding-left:16px;">
+          <li>Rights over collection of <strong>Minor Forest Produce (MFP)</strong> — tendu, herbs, medicinal plants (No timber).</li>
+          <li>Rights over <strong>grazing grounds and water bodies</strong>.</li>
+          <li>Traditional areas of use by <strong>nomadic or pastoralist communities</strong>.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>C. Community Forest Rights (CFR)</strong></td>
+      <td>Section 3(1)(i)</td>
+      <td>
+        <ul style="margin:0;padding-left:16px;">
+          <li><strong>First time</strong> in Indian law: community has right to protect and manage the forest.</li>
+          <li>CFRs grant legal right to <strong>protect, regenerate, conserve, and manage</strong> forest resources.</li>
+          <li>In several states, Forest Department's control-oriented approach has <strong>slowed or obstructed</strong> CFR recognition.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>D. PVTG Habitat Rights</strong></td>
+      <td>Section 3(1)(e)</td>
+      <td>
+        <ul style="margin:0;padding-left:16px;">
+          <li>Special provision for Particularly Vulnerable Tribal Groups (PVTGs).</li>
+          <li>"Rights including community tenures of <strong>habitat and habitation</strong>."</li>
+          <li>Includes common habitat and habitats in reserved forests and protected forests.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>V. Case Studies</h3>
+
+<div class="casestudy">
+  <span class="cs-tag">POSITIVE CASE STUDY | Chhattisgarh &amp; Odisha</span>
+  <div class="cs-title">Recognising CFR Rights — Kanger Ghati &amp; Simlipal</div>
+  <ul class="styled">
+    <li>Chhattisgarh has recognised nearly <span class="stat">4,000 Community Forest Rights (CFRs)</span> — one of the most proactive states in India.</li>
+    <li><strong>Kanger Ghati National Park</strong> (Chhattisgarh) is the <strong>second national park in India</strong> (after Simlipal in Odisha) where CFR rights have been successfully recognised.</li>
+    <li>In both parks, indigenous communities (e.g., <strong>Gudiyapadar</strong>) are allowed to reside within the park and create <strong>community-led regulations</strong> for sustainable forest use.</li>
+    <li>This model illustrates a <strong>balance between conservation and livelihood rights</strong>.</li>
+  </ul>
+</div>
+
+<div class="casestudy">
+  <span class="cs-tag">NEGATIVE CASE STUDY | Chhattisgarh</span>
+  <div class="cs-title">Hasdeo Arand — Revocation of CFR Titles (Adani Mining)</div>
+  <ul class="styled">
+    <li><strong>Hasdeo Aranya region</strong> — ongoing conflict between development projects and community rights.</li>
+    <li><strong>Ghatbarra village</strong> — one of the first villages to receive CFR titles (810 hectares in 2013).</li>
+    <li><span class="stat">District Level Committee revoked CFR rights in 2016</span> to facilitate mining in the <strong>Parsa East Kete Basen (PEKB) coal block</strong> (joint venture involving <strong>Adani Enterprises</strong>).</li>
+    <li><strong>Hasdeo Aranya Bachao Sangharsh Samiti (HABSS)</strong> challenged this in court — argued it violated Gram Sabha consent provisions and FRA's core principle.</li>
+    <li><strong>Chhattisgarh High Court (October 2025)</strong> upheld the revocation on technical grounds — disregarding evidence of Gram Sabha resolutions and community affidavits.</li>
+    <li>Activists termed the judgment a <strong>"mockery of the Forest Rights Act"</strong> — warns of dangerous precedent allowing corporate interests to override legally recognised community rights.</li>
+    <li>Underscores the <strong>gap between law and implementation</strong>.</li>
+  </ul>
+</div>
+
+<h3>VI. Implementation Issues of FRA 2006</h3>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 1</div>
+  <div class="issue-title">High Rejection Rates</div>
+  <p>Large number of claims rejected due to incomplete documentation, lack of proof of cultivation before 13 December 2005, or disputes between Forest and Revenue Departments. In <strong>Odisha</strong>, over <span class="stat">1.4 lakh claims were rejected</span>. Most states have not completed the review ordered by the <strong>Supreme Court (2019)</strong>. Genuine forest dwellers branded as <em>encroachers</em>.</p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 2</div>
+  <div class="issue-title">Non-Communication of Rejections</div>
+  <p>Rejected applicants rarely informed in writing, violating <strong>Section 6(2)</strong> of the Act — denying the <strong>right to appeal within 60 days</strong>. Irregular meetings of State Level Monitoring Committees add to procedural opacity.</p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 3</div>
+  <div class="issue-title">Weak District Support</div>
+  <p>Many district administrations fail to provide <strong>revenue or forest maps</strong> to Gram Sabhas, making verification difficult and creating a <strong>gap between land claimed and land granted</strong>.</p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 4</div>
+  <div class="issue-title">Faulty Evictions</div>
+  <p>Thousands of families evicted from forest lands on incomplete or manipulated records. In <strong>Hasdeo Arand (Chhattisgarh)</strong>, the Ghatbarra village CFR title was cancelled to allow coal mining, violating due process.</p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 5</div>
+  <div class="issue-title">Resistance by Forest Departments</div>
+  <p>Forest officials impede CFR recognition and retain control over forest management. <strong>Section 3(1)(i)</strong> of FRA — mandating community rights — is ignored in practice. <em>E.g.: In Tamil Nadu, Kattunayakans (honey collectors) face harassment from forest guards.</em></p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 6</div>
+  <div class="issue-title">Conflicting Laws and Policies</div>
+  <p>FRA's intent conflicts with <strong>Forest Conservation Act (1980)</strong>, <strong>Wildlife Protection Act (1972)</strong>, and <strong>CAMPA (2016)</strong>. The <strong>2023 amendment</strong> to FCA allows activities like <strong>ecotourism and safaris</strong> on forest land <strong>without explicit Gram Sabha consent</strong>.</p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 7</div>
+  <div class="issue-title">Institutional Turf Wars</div>
+  <p>Poor coordination between <strong>Ministry of Tribal Affairs (MoTA)</strong> and <strong>Ministry of Environment, Forest and Climate Change (MoEFCC)</strong> — delays implementation and causes contradictory directions at state level.</p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 8</div>
+  <div class="issue-title">Procedural Violations</div>
+  <p>Claims often rejected by <strong>Forest Guards or Patwaris</strong> who have <strong>no legal authority</strong> to do so. In places like <strong>Chittorgarh</strong>, rejections were made orally without notice, preventing any appeal.</p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 9</div>
+  <div class="issue-title">Data Manipulation and Errors</div>
+  <p>In Chhattisgarh, reports by <strong>ATREE</strong> found duplicate entries and inflated data — only <span class="stat">243 Gram Sabhas</span> actually received community rights though records claimed 1,378.</p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 10</div>
+  <div class="issue-title">Lack of Awareness</div>
+  <p>Many Gram Sabha members and OTFDs lack awareness about FRA provisions. Despite portals like <strong>Adi Prashikshan</strong>, awareness remains low in remote areas.</p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 11</div>
+  <div class="issue-title">Judicial Uncertainty</div>
+  <p>The <strong>2019 Supreme Court eviction order</strong> created panic among <span class="stat">1.8 million forest dwellers</span>. Although stayed, most states are yet to review rejected claims properly.</p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 12</div>
+  <div class="issue-title">Protected Area Displacement</div>
+  <p>Over <span class="stat">1 lakh forest dwellers</span> displaced from tiger reserves due to <strong>NTCA relocations</strong> without settling their FRA claims — a <strong>conservation-vs-rights conflict</strong>.</p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 13</div>
+  <div class="issue-title">Mining and Clearance Violations</div>
+  <p>Forest clearances granted before FRA compliance. The <strong>Hasdeo Arand case</strong> (Adani-operated mine) showed cancellation of CFR titles without Gram Sabha consent — termed a <strong>"mockery of FRA."</strong></p>
+</div>
+
+<div class="issue-item">
+  <div class="issue-num">ISSUE 14</div>
+  <div class="issue-title">Uneven State Progress</div>
+  <p>Only <strong>Maharashtra (<span class="stat">36%</span>)</strong>, <strong>Chhattisgarh (<span class="stat">24%</span>)</strong>, and <strong>Odisha (<span class="stat">10%</span>)</strong> have recognised substantial CFR rights. Other major states remain at near <span class="stat">zero recognition</span>.</p>
+</div>
+
+<h3>VII. Significance and Achievements of FRA 2006</h3>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>Achievement</th><th>Details</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><strong>Historical Justice</strong></td>
+      <td>Corrects "historical injustice" under colonial laws. Recognises both IFR and CFR/CFRR.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><strong>Comprehensive Rights</strong></td>
+      <td>Sections 3(1)(b), 3(1)(c), and 3(1)(i) legally empower communities to access, occupy, and manage forest lands, water bodies, grazing areas, and biodiversity resources.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><strong>Empowered Gram Sabhas</strong></td>
+      <td>FRA makes Gram Sabhas the central authority for claim verification and forest governance — promoting participatory democracy.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><strong>Community Stewardship Successes</strong></td>
+      <td><strong>Mendha Lekha (Maharashtra)</strong> and <strong>Betakata (Odisha)</strong> — formed CFR Management Committees (CFRMCs) that sustainably regulate forest use, prevent illegal felling, and conserve biodiversity.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><strong>Economic Empowerment</strong></td>
+      <td>In <strong>Pajilibandha and Kalakani (Odisha)</strong>, women now earn <span class="stat">₹5,000–6,000 per month</span> through <strong>Van Dhan Kendras</strong> — linking livelihoods with conservation.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><strong>Ecological Benefits</strong></td>
+      <td><strong>Soura Kurlanda</strong> — CFR village that restored degraded forests and increased biodiversity, showing community control enhances conservation.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><strong>Gender and PVTG Inclusion</strong></td>
+      <td>Women and PVTGs participate in <strong>Van Suraksha Samitis</strong>, ensuring equitable access and decision-making power.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><strong>Link with PESA</strong></td>
+      <td>States like <strong>Odisha and Maharashtra</strong> merged FRA implementation with PESA, giving legal corporate status to Gram Sabhas under <strong>Article 243G</strong>.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><strong>Technological Innovation</strong></td>
+      <td>In <strong>Gujarat's Narmada district</strong>, NGOs used <strong>GPS and satellite imagery</strong> for digital maps in claim verification — now replicated in other states.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><strong>Administrative Achievement</strong></td>
+      <td>As per <strong>MoTA (2024)</strong>, about <span class="stat">60% of total claims</span> recognised, covering <span class="stat">13 million acres</span> of land.</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><strong>Global Model</strong></td>
+      <td>When properly implemented, FRA balances <strong>livelihood security with biodiversity conservation</strong> — a global model of justice-based environmental management.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>VIII. Way Forward and Suggestions</h3>
+
+<div style="columns: 2; column-gap: 14px;">
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">1.</span> <strong>Review Rejected Claims</strong> — States must review all rejected claims transparently, issue written reasons, ensure appeal rights under Section 6.
+  </div>
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">2.</span> <strong>Strengthen Gram Sabhas</strong> — Recognise as body corporates (as in Maharashtra and Odisha) for fund management and legal representation.
+  </div>
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">3.</span> <strong>Joint Institutional Coordination</strong> — Establish joint MoTA-MoEFCC mechanisms for consistent policy interpretation.
+  </div>
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">4.</span> <strong>Digital Mapping Tools</strong> — Adopt GPS and GIS mapping with BISAG and NRSC assistance to eliminate data duplication and manipulation.
+  </div>
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">5.</span> <strong>Awareness and Training</strong> — Expand Tribal Research Institutes and Adi Prashikshan-like platforms for grassroots legal training.
+  </div>
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">6.</span> <strong>Livelihood Integration</strong> — Link CFR areas with <strong>TRIFED, Van Dhan Yojana, and PM-JANMAN</strong> for forest-based income.
+  </div>
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">7.</span> <strong>Legal Safeguards</strong> — Mandate <strong>Gram Sabha consent</strong> before approving mining or diversion projects (prevent Hasdeo Arand-type violations).
+  </div>
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">8.</span> <strong>Inclusive Participation</strong> — Encourage women, PVTGs, and marginal groups in decision-making and forest management.
+  </div>
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">9.</span> <strong>Monitoring and Transparency</strong> — Create state-level dashboards with real-time data on claims filed, approved, and pending.
+  </div>
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">10.</span> <strong>Model Replication</strong> — Scale up successful models from <strong>Mendha Lekha and Betakata</strong>; promote peer learning across states.
+  </div>
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">11.</span> <strong>Policy Convergence</strong> — Integrate FRA with <strong>Green India Mission, CAMPA, and National Biodiversity Strategy</strong>.
+  </div>
+  <div class="fwd-item" style="break-inside: avoid; margin-bottom: 7px;">
+    <span class="fwd-num">12.</span> <strong>National FRA Mission</strong> — Launch a dedicated National FRA Mission with a separate budget and time-bound targets for claim settlement.
+  </div>
+</div>
+
+<h3>IX. Supreme Court 2019 Order — Current Issue</h3>
+
+<div class="warnbox">
+  <strong>SC Order (13 February 2019):</strong>
+  <ul class="styled">
+    <li>Court ordered <strong>eviction</strong> of lakhs of STs and OTFDs across <strong>16 states</strong> whose claims had been rejected under FRA.</li>
+    <li>Chief secretaries directed to carry out evictions by <strong>July 24, 2019</strong>.</li>
+    <li>On <strong>February 28, 2019</strong>, court <strong>stayed its order</strong> — though it said "the mighty and the undeserving" who encroached would be shown no mercy.</li>
+    <li>Stay was due to the <strong>role of anthropologists and activists</strong> raising awareness about real reasons for high rejection rates, and due to <strong>tribal protests</strong>.</li>
+    <li>Court decided to examine whether <strong>due processes were followed</strong> by Gram Sabhas and states before rejecting claims.</li>
+    <li>Most states are yet to complete the review properly.</li>
+  </ul>
+</div>
+
+<h3>X. Transition: Colonial Forest Control to Community-Based Governance</h3>
+
+<table class="transition-table">
+  <thead class="table-teal">
+    <tr><th>Dimension</th><th>Colonial / Early Post-Independence Era</th><th>Post-1988 / FRA 2006 Era</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control vs. Custodianship</td>
+      <td>Forest laws (1865–1927) aimed at state power and revenue extraction</td>
+      <td>Post-1988 and 2006 frameworks recognise <strong>tribal custodianship</strong> of forests</td>
+    </tr>
+    <tr>
+      <td>Bureaucratic vs. Community Governance</td>
+      <td>Top-down bureaucracy; forest department in complete control</td>
+      <td>FRA (2006) empowers <strong>Gram Sabhas</strong> as democratic forest managers</td>
+    </tr>
+    <tr>
+      <td>Exploitation vs. Ecological Justice</td>
+      <td>Extractive forestry — forests as commercial asset</td>
+      <td><strong>Rights-based environmental justice</strong>; conservation needs community participation</td>
+    </tr>
+    <tr>
+      <td>Economic Utility vs. Ecological Balance</td>
+      <td>Forests as economic resources for timber and revenue</td>
+      <td>1988 policy reframed forests as <strong>ecological assets</strong> — JFM and CFR</td>
+    </tr>
+    <tr>
+      <td>Persisting Contradictions</td>
+      <td colspan="2">Old administrative mindsets persist. Conflicts between MoTA and MoEFCC continue to challenge implementation.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="concept">
+  <strong>Conclusion on Forest Policy:</strong> Forest policies in India reflect a journey from <strong>colonial domination to democratic participation</strong>. FRA (2006) embodies this transformation by recognising forest dwellers as <strong>partners in conservation</strong> rather than intruders. For its promise to be fulfilled, India must ensure effective implementation, community awareness, and strong Gram Sabha empowerment, so that <strong>justice, sustainability, and livelihood security</strong> truly reach those who live by the forest.
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 4: CLIMATE CHANGE AND TEK -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-divider"></div>
+<h2>&#9315; Climate Pressures on Forest-Dwelling Communities &amp; Traditional Ecological Knowledge (TEK)</h2>
+
+<div class="mindmap">
+  <div class="mindmap-title">&#9660; MIND MAP — Climate Change &amp; TEK</div>
+  <div class="mindmap-grid">
+    <span class="mindmap-node red">Erratic monsoons / droughts — Bhil</span>
+    <span class="mindmap-node red">Shrinking forests &amp; biodiversity loss</span>
+    <span class="mindmap-node blue">Jarawa — cyclone prediction</span>
+    <span class="mindmap-node blue">Khasi — sacred groves</span>
+    <span class="mindmap-node blue">Apatani — rice-fish farming (Ziro)</span>
+    <span class="mindmap-node blue">Dongria Kondh — organic farming</span>
+    <span class="mindmap-node blue">Zabo System — Nagaland</span>
+    <span class="mindmap-node yellow">Green displacement by CAMPA</span>
+    <span class="mindmap-node purple">FRA + PESA = climate adaptation</span>
+  </div>
+</div>
+
+<p>India's tribal and indigenous communities are among the <strong>strongest protectors of forests and biodiversity</strong>, yet they face the <strong>severest impacts of climate change</strong>. Their livelihoods, food systems, and cultural traditions are being reshaped by ecological disruption.</p>
+
+<h3>1. Risks and Problems Due to Climate Change</h3>
+<p>Tribal livelihoods are highly <strong>climate-sensitive</strong> because they depend on forests, rainfall, and soil fertility.</p>
+<ul class="styled">
+  <li><strong>Erratic monsoons and droughts</strong> — threaten cultivation and forest produce. The <strong>Bhil community in Gujarat</strong>, once praying for rain, now faces destructive floods followed by prolonged dry spells.</li>
+  <li><strong>Shrinking forests and biodiversity loss</strong> — reduce access to MFP such as tendu, mahua, and bamboo — undermining income and food security.</li>
+  <li><strong>Soil erosion and deforestation</strong> — worsen migration, especially in Central India, while extreme heat and forest fires endanger crops and health.</li>
+</ul>
+
+<h3>2. Coping Through Tribal Ecological Knowledge (TEK)</h3>
+
+<table class="tek-table">
+  <thead>
+    <tr><th>Tribal Group</th><th>Location</th><th>TEK Practice</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Jarawa</strong></td>
+      <td>Andaman Islands</td>
+      <td>Predict <strong>cyclones</strong> by observing fish movement and sea behaviour — enabling timely evacuation</td>
+    </tr>
+    <tr>
+      <td><strong>Khasi</strong></td>
+      <td>Meghalaya</td>
+      <td>Community <strong>agroforestry</strong> and maintenance of <em>sacred groves</em> — preserving soil moisture and biodiversity in high-rainfall zones</td>
+    </tr>
+    <tr>
+      <td><strong>Apatani</strong></td>
+      <td>Arunachal Pradesh (Ziro Valley)</td>
+      <td><strong>Rice-fish integrated farming</strong> — conserving water and enhancing soil fertility without chemicals. A UNESCO recognised system.</td>
+    </tr>
+    <tr>
+      <td><strong>Dongria Kondh</strong></td>
+      <td>Odisha</td>
+      <td>Organic multi-crop farming with traditional <strong>pest control and seed-saving</strong> — ensuring food and ecological security</td>
+    </tr>
+    <tr>
+      <td><strong>Irular</strong></td>
+      <td>Tamil Nadu</td>
+      <td>Organic multi-crop farming with traditional pest control and seed-saving practices</td>
+    </tr>
+    <tr>
+      <td><strong>Zabo System</strong></td>
+      <td>Nagaland</td>
+      <td>Combines <strong>rainwater harvesting, forestry, animal husbandry, and agriculture</strong> — maintaining fertility and reducing drought stress</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>3. Continuing Struggles and Policy Disconnect</h3>
+<ul class="styled">
+  <li>National programmes like <strong>CAMPA</strong> and the <strong>Green India Mission</strong> are largely top-down and have led to <strong>"green displacement"</strong> through afforestation without community consent.</li>
+  <li><strong>Gender inequalities</strong> are widening — tribal women bear the burden of resource collection and loss of autonomy.</li>
+  <li>Traditional rain forecasting and shifting cultivation cycles are failing as climate shifts become unpredictable — eroding both livelihoods and ancestral knowledge.</li>
+  <li><strong>Institutional fragmentation</strong> between MoTA and MoEFCC and the neglect of Gram Sabha consent under FRA weaken adaptation from below.</li>
+</ul>
+
+<h3>4. Path Ahead: Integrating Rights and Resilience</h3>
+<ul class="styled">
+  <li>Integrate <strong>FRA (2006) and PESA (1996)</strong> into climate-adaptation frameworks and link them with schemes like <strong>PM JANMAN</strong>.</li>
+  <li>Empower <strong>Gram Sabhas</strong> to manage eco-restoration and climate funds locally.</li>
+  <li>Document and scale up models such as <strong>Zabo and Apatani systems</strong> across eco-regions.</li>
+  <li>Strengthen the role of <strong>tribal women and PVTGs</strong> in decision-making and climate planning.</li>
+  <li>Blend <strong>community forecasting techniques</strong> with modern satellite-based early-warning systems for better preparedness.</li>
+</ul>
+
+<div class="concept">
+  <strong>Key Insight:</strong> The people who nurture and protect India's natural ecosystems are the ones most endangered by climate change. Their survival depends not only on external support but on recognising them as <strong>equal partners in climate adaptation and forest governance</strong>.
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 5: INDUSTRIALIZATION AND URBANIZATION -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-divider"></div>
+<h2>&#9316; Industrialization and Urbanization — Impacts on Tribal Communities</h2>
+
+<div class="mindmap">
+  <div class="mindmap-title">&#9660; MIND MAP — Industrialization &amp; Urbanization</div>
+  <div class="mindmap-grid">
+    <span class="mindmap-node">Das &amp; Banerji (1964) — 4 Impacts</span>
+    <span class="mindmap-node red">Social: Family breakdown, land loss</span>
+    <span class="mindmap-node red">Economic: Unemployment, wage labour</span>
+    <span class="mindmap-node red">Religious: Ritual decline</span>
+    <span class="mindmap-node red">Psychological: Powerlessness</span>
+    <span class="mindmap-node blue">POSITIVE: Education, art, reform</span>
+    <span class="mindmap-node yellow">Keonjhar — resource rich but poor</span>
+    <span class="mindmap-node yellow">MP — India's largest tribal population</span>
+    <span class="mindmap-node">Gond paintings, Warli art</span>
+  </div>
+</div>
+
+<h3>Introduction</h3>
+<ul class="styled">
+  <li>Tribal lands are not only rich in forest resources but also contain <strong>rich mineral deposits</strong>.</li>
+  <li>Post-independence government exploited minerals for raw materials and constructed many projects in tribal lands.</li>
+  <li>This development was supposed to uplift tribals — but instead <strong>uprooted tribals from their dwellings</strong>.</li>
+  <li>They were deprived of land and paid meager cash which they used up eventually — leaving them <strong>landless and moneyless</strong>.</li>
+  <li>Rules provide for <strong>90% reservation for locals in employment</strong> — but reality has been exactly the opposite.</li>
+</ul>
+
+<h3>Case Study: Madhya Pradesh — Encroachment and Forest Loss</h3>
+<div class="casestudy">
+  <span class="cs-tag">CASE STUDY | Madhya Pradesh</span>
+  <div class="cs-title">India's Largest Tribal Population — and India's Highest Forest Encroachment</div>
+  <ul class="styled">
+    <li>MP has <span class="stat">India's largest tribal population — about 15%</span> of its total.</li>
+    <li>Two belts: <strong>Western — Bhil tribes (49%)</strong>; <strong>Eastern — Gonds (36%)</strong>.</li>
+    <li>MP leads the country in <strong>forest land encroachment</strong> — over <span class="stat">5,347 square kilometres</span> lost, the highest in India.</li>
+    <li>MoEFCC data: <strong>MP alone lost 219.7 hectares of forest land</strong> to infrastructure — about <span class="stat">24% of India's total forest diversion</span> over the last decade.</li>
+    <li><strong>Dhyan Singh Case (2022, Shahdol district):</strong> Tribal man committed suicide after forest department demolished his hut built on <span class="stat">0.010 hectares</span> — barely a few meters of forest land. He had already received money under <strong>Pradhan Mantri Awas Yojana (PMAY)</strong> to build the house. Department justified action under <strong>Section 36(1) of Indian Forest Act, 1927</strong>.</li>
+  </ul>
+</div>
+
+<div class="casestudy">
+  <span class="cs-tag">CASE STUDY | Odisha</span>
+  <div class="cs-title">Keonjhar — Resource Rich but People Poor</div>
+  <ul class="styled">
+    <li>Keonjhar district of Odisha — one of India's richest in iron ore and manganese, yet:</li>
+    <li>Over <span class="stat">13 lakh children are stunted or underweight</span>.</li>
+    <li><span class="stat">74.7% of pregnant women are anaemic</span> (NFHS-5).</li>
+    <li><span class="stat">25.9% of women have a low BMI</span> (NFHS-5).</li>
+    <li>Economic development primarily benefits corporations and outsiders, while tribal inhabitants remain impoverished.</li>
+  </ul>
+</div>
+
+<h3>Impacts of Industrialization and Urbanization</h3>
+<p><em>According to <strong>Das and Banerji (1964)</strong>, the impact can be studied under four major dimensions:</em></p>
+
+<h3>1. Social Impacts</h3>
+<div class="two-col">
+  <div>
+    <h4>a) Loss of Home and Forests</h4>
+    <ul class="styled">
+      <li>Forests represent both <strong>livelihood and identity</strong> for tribal communities — food, fuel, medicinal plants, shelter, cultural and spiritual significance.</li>
+      <li>Expansion of mining, dam, and industrial projects → forests rapidly depleted.</li>
+      <li>Disappearance of forests deprives tribals of <strong>economic base and sacred landscapes</strong>.</li>
+      <li>Destruction of sacred groves and ecological systems <strong>weakens traditional beliefs and community bonds</strong>.</li>
+      <li>Result: large-scale displacement, land alienation, and loss of cultural stability.</li>
+    </ul>
+  </div>
+  <div>
+    <h4>b) Breakdown of Family and Kinship</h4>
+    <ul class="styled">
+      <li><strong>Das and Banerji (1964)</strong> — industrialization and migration have weakened interpersonal ties within tribal families.</li>
+      <li>Earlier, <strong>joint family system</strong> was the norm — ensuring collective ownership and strong kinship.</li>
+      <li>Migration → fragmentation into <strong>nuclear units</strong> → weakened traditional authority structures.</li>
+      <li>Elders no longer hold decision-making power; younger generation adopts <strong>individualistic values</strong>.</li>
+      <li>Rise in <strong>divorces, inter-community marriages</strong>, and decline in community-level festivals and rituals.</li>
+      <li>Result: <strong>erosion of kinship solidarity</strong> and weakening of community cohesion.</li>
+    </ul>
+  </div>
+</div>
+
+<h3>2. Economic Impacts</h3>
+<div class="two-col">
+  <div>
+    <h4>a) Shift in Occupation</h4>
+    <ul class="styled">
+      <li>Before industrialization: <strong>subsistence agriculture, hunting, fishing, and forest collection</strong> — family as basic unit of production.</li>
+      <li>Industrialization introduced <strong>individual wage labour</strong> in factories, mines, and construction sites.</li>
+      <li>Factory employment: <strong>rigid hours, repetitive tasks, and impersonal relations</strong> — contrasting with flexible communal nature of traditional tribal work.</li>
+      <li><strong>Das and Banerji:</strong> labour has shifted from a <em>collective social activity</em> to an <em>individual economic necessity</em>.</li>
+    </ul>
+  </div>
+  <div>
+    <h4>b) Unemployment and Casual Labour</h4>
+    <ul class="styled">
+      <li>Majority of skilled/semi-skilled positions occupied by <strong>non-tribal workers</strong>; tribals employed temporarily as <strong>unskilled labourers</strong>.</li>
+      <li>After project completion, jobs vanish → families left without income or land.</li>
+      <li>Migration to urban centres → tribals end up as <strong>construction workers, street vendors, or domestic helpers</strong>, living in poor settlements without sanitation or healthcare.</li>
+      <li>Shift from self-sufficient agrarian lifestyle to <strong>economic dependency and urban poverty</strong>.</li>
+    </ul>
+  </div>
+</div>
+
+<h3>3. Religious Impacts</h3>
+<ul class="styled">
+  <li>Industrialization and urbanization have led to gradual <strong>decline in tribal religious and ritual life</strong>.</li>
+  <li>Rituals connected to agriculture, harvest, and forest worship are now <strong>shortened or discontinued</strong>.</li>
+  <li>According to <strong>Das and Banerji (1964)</strong>, simplification of traditional ceremonies occurred largely due to <strong>financial hardship</strong> and <strong>lack of leisure</strong> in urban/industrial settings.</li>
+  <li>Community shrines and sacred groves are often <strong>inaccessible after displacement</strong>.</li>
+  <li>Absence of ritual spaces and collective participation → <strong>breakdown of communal and spiritual identity</strong> among displaced tribals.</li>
+</ul>
+
+<h3>4. Psychological Impacts</h3>
+<ul class="styled">
+  <li>Psychological consequences are <strong>severe and long-lasting</strong>.</li>
+  <li>Displacement, loss of land, and cultural alienation create a deep sense of <strong>insecurity and helplessness</strong>.</li>
+  <li>Individuals once living as independent cultivators or forest gatherers are now <strong>dependent on employers or contractors</strong>.</li>
+  <li>Loss of control over their own lives often leads to <strong>low self-esteem, frustration, and anxiety</strong>.</li>
+  <li><strong>Das and Banerji:</strong> described this as the emergence of a sense of <span class="stat">"powerlessness"</span> among tribal populations.</li>
+  <li>Younger generation — disconnected from traditional culture — faces <strong>identity crises</strong> and higher vulnerability to <strong>substance abuse</strong>.</li>
+</ul>
+
+<h3>5. Positive Impacts</h3>
+<div class="concept">
+  Despite numerous adverse effects, some positive outcomes have emerged:
+  <ul class="styled">
+    <li>Industrialization indirectly facilitated the spread of <strong>education, healthcare, and infrastructure</strong> in several tribal regions.</li>
+    <li>Exposure to new ideas led to gradual <strong>social reform</strong> — declining acceptance of practices like <strong>witch-hunting, child marriage, and gender-based taboos</strong>.</li>
+    <li>Traditional art and craft forms gained national and international recognition:
+      <ul>
+        <li><strong>Gond paintings</strong> from Madhya Pradesh</li>
+        <li><strong>Warli art</strong> from Maharashtra</li>
+        <li>Both promoted through cultural organisations and cooperatives.</li>
+      </ul>
+    </li>
+    <li>Several <strong>NGOs and self-help groups</strong> assist tribal communities in marketing <strong>handicrafts, forest produce, and traditional goods</strong> — enabling economic empowerment and cultural preservation.</li>
+  </ul>
+</div>
+
+<div class="concept">
+  <strong>Conclusion on Industrialization and Urbanization:</strong><br>
+  Industrialization and urbanization have brought <strong>both development and destruction</strong> to India's tribal societies. These processes expanded infrastructure and created new economic opportunities, but also displaced millions, dismantled traditional social systems, and eroded cultural values. The need of the hour is <strong>inclusive and participatory development</strong> — where tribal communities are treated as <strong>partners rather than victims</strong>. Sustainable development must integrate <strong>economic growth with cultural preservation</strong> and guarantee that the rights and welfare of tribal populations are not compromised in the pursuit of modernisation.
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 6: QUICK REFERENCE — SCHOLARS -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-divider"></div>
+<h2>&#9317; Key Scholars — Quick Reference</h2>
+
+<table class="table-blue">
+  <thead>
+    <tr><th>Scholar</th><th>Year / Context</th><th>Key Argument / Contribution</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Michel Cernea</strong></td>
+      <td>General theory on displacement</td>
+      <td>Involuntary displacement should be minimised, avoided if possible; if unavoidable — rehabilitation should be <strong>"people-centric."</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Nalin Negi &amp; Sujata Ganguly</strong></td>
+      <td>2011, University of Bielefeld, Germany</td>
+      <td>~<span class="stat">50 million people</span> displaced by development projects in India; <span class="stat">40–50% are tribals</span>.</td>
+    </tr>
+    <tr>
+      <td><strong>Tripathi</strong></td>
+      <td>2016</td>
+      <td>Tribes live in a <em>harmonious and interdependent relationship</em> with their forest environment; their economic, social, and magico-religious life revolves around forests.</td>
+    </tr>
+    <tr>
+      <td><strong>B.K. Roy Burman</strong></td>
+      <td>1982 Committee on Forests and Tribals</td>
+      <td>Tribes earn nearly <span class="stat">one-third of their income from minor forest produce</span>; emphasised <strong>positive role</strong> of forest dwellers in preservation and regeneration.</td>
+    </tr>
+    <tr>
+      <td><strong>Hiremath</strong></td>
+      <td>1994</td>
+      <td>Tribal communities should be <strong>actively involved</strong> in forest protection, regeneration, and development.</td>
+    </tr>
+    <tr>
+      <td><strong>Das and Banerji</strong></td>
+      <td>1964</td>
+      <td>Impact of industrialization and urbanization on tribals studied under <strong>four dimensions: social, economic, religious, and psychological</strong>. Described emergence of <strong>"powerlessness"</strong> among tribal populations.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 7: GOVERNMENT POLICIES & ACTS -->
+<!-- ═══════════════════════════════════════════════════ -->
+<h2>&#9318; Key Government Policies, Acts, and Bodies</h2>
+
+<table>
+  <thead>
+    <tr><th>Policy / Act / Body</th><th>Year</th><th>Key Feature</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Forest Act</strong></td><td>1865</td><td>First formal state control over forests</td></tr>
+    <tr><td><strong>Forest Act</strong></td><td>1878</td><td>Reserved / Protected / Village Forest classification</td></tr>
+    <tr><td><strong>First Forest Policy</strong></td><td>1894</td><td>"Eminent Domain" — state ultimate control; timber for British needs</td></tr>
+    <tr><td><strong>Indian Forest Act</strong></td><td>1927</td><td>Codified forest laws; <strong>Section 64</strong> — arrest without warrant; monoculture; people as "criminals"</td></tr>
+    <tr><td><strong>National Forest Policy</strong></td><td>1952</td><td>Concessions not rights; forests as national asset</td></tr>
+    <tr><td><strong>National Committee on Backward Areas</strong></td><td>1980</td><td>Recommended full protection of tribal rights and concessions</td></tr>
+    <tr><td><strong>B.K. Roy Burman Committee</strong></td><td>1982</td><td>Forest-tribal integration; one-third income from MFP</td></tr>
+    <tr><td><strong>TRIFED</strong></td><td>1987</td><td>Tribal Cooperative Marketing Development Federation — markets MFP, eliminates middlemen</td></tr>
+    <tr><td><strong>National Forest Policy</strong></td><td>1988</td><td><strong>Paradigm shift</strong> — people-oriented; JFM; MFP as right (not concession)</td></tr>
+    <tr><td><strong>PESA</strong></td><td>1996</td><td>Panchayats Extension to Scheduled Areas — tribal self-governance</td></tr>
+    <tr><td><strong>Forest Rights Act (FRA)</strong></td><td>2006</td><td>Three types of rights (land, use, CFR); Gram Sabha central authority; corrects historical injustice; cut-off date 13 Dec 2005; up to 4 hectares</td></tr>
+    <tr><td><strong>National R&amp;R Policy</strong></td><td>2007</td><td>Minimise displacement; adequate rehabilitation; rights of SCs/STs protected</td></tr>
+    <tr><td><strong>SC Eviction Order</strong></td><td>2019</td><td>Ordered eviction of 1.8 million forest dwellers; stayed due to activism and tribal protests</td></tr>
+  </tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 8: SCHEMES -->
+<!-- ═══════════════════════════════════════════════════ -->
+<h2>&#9319; Schemes Related to Tribal Welfare</h2>
+
+<table>
+  <thead>
+    <tr><th>Scheme</th><th>Purpose / Key Point</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>TRIFED</strong></td><td>Market forest produce, eliminate middlemen; established 1987 under NFP 1988</td></tr>
+    <tr><td><strong>Van Dhan Yojana / Van Dhan Kendras</strong></td><td>Income generation through processing of forest produce. Women in Odisha (Pajilibandha, Kalakani) earning <span class="stat">₹5,000–6,000/month</span></td></tr>
+    <tr><td><strong>PM-JANMAN</strong></td><td>Holistic development programme for PVTGs (Particularly Vulnerable Tribal Groups)</td></tr>
+    <tr><td><strong>Adi Prashikshan</strong></td><td>Awareness portal for FRA provisions; legal and procedural training for FRCs and community leaders</td></tr>
+    <tr><td><strong>CAMPA</strong></td><td>Compensatory Afforestation — but criticised for causing <strong>"green displacement"</strong> through afforestation without community consent</td></tr>
+    <tr><td><strong>Green India Mission</strong></td><td>Afforestation programme — largely top-down, sometimes without community consent</td></tr>
+    <tr><td><strong>Pradhan Mantri Awas Yojana (PMAY)</strong></td><td>Housing for tribals — but ironically used against tribal Dhyan Singh in MP (Shahdol case, 2022)</td></tr>
+    <tr><td><strong>Joint Forest Management (JFM)</strong></td><td>Partnership between Forest Department and local communities; introduced under NFP 1988</td></tr>
+  </tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 9: UPSC PROBABLE QUESTIONS -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-divider"></div>
+<h2>&#9320; UPSC Probable Questions</h2>
+
+<div class="upsc-q">
+  <div class="q-num">Q1 | 20 Marks — Standard Question</div>
+  <div class="q-text">"Discuss the impact of developmental projects on tribal displacement in India. What measures have been taken for rehabilitation of displaced tribals?"</div>
+  <p style="font-size:9pt;color:#666;margin:5px 0 0 0;">Key: Michel Cernea, Nalin Negi &amp; Ganguly (50 million, 40-50% tribals), Polavaram, Sardar Sarovar, Pakri Barwadih, Chaal Mine, R&amp;R Policy 2007</p>
+</div>
+
+<div class="upsc-q">
+  <div class="q-num">Q2 | 20 Marks</div>
+  <div class="q-text">"Examine the evolution of forest policies in India from colonial times to the present. How has the relationship between the state, forests, and tribal communities changed?"</div>
+  <p style="font-size:9pt;color:#666;margin:5px 0 0 0;">Key: 1865 → 1878 → 1894 → 1927 → 1952 → 1980 → 1982 → 1988 (paradigm shift) → FRA 2006. Transition table.</p>
+</div>
+
+<div class="upsc-q">
+  <div class="q-num">Q3 | 10 or 20 Marks — Very Frequently Asked</div>
+  <div class="q-text">"Critically evaluate the Forest Rights Act, 2006 — its objectives, achievements, and implementation challenges."</div>
+  <p style="font-size:9pt;color:#666;margin:5px 0 0 0;">Key: Three types of rights, Gram Sabha, 14 implementation issues, achievements (Mendha Lekha, Betakata, 60% claims recognised), Way Forward</p>
+</div>
+
+<div class="upsc-q">
+  <div class="q-num">Q4 | 10 Marks</div>
+  <div class="q-text">"Write a note on the role of Community Forest Rights (CFR) under FRA 2006 with case studies."</div>
+  <p style="font-size:9pt;color:#666;margin:5px 0 0 0;">Key: Section 3(1)(i), Kanger Ghati, Simlipal, Mendha Lekha, Hasdeo Arand, Gram Sabha as forest manager</p>
+</div>
+
+<div class="upsc-q">
+  <div class="q-num">Q5 | 20 Marks</div>
+  <div class="q-text">"Examine the impact of industrialization and urbanization on tribal communities in India with reference to Das and Banerji (1964)."</div>
+  <p style="font-size:9pt;color:#666;margin:5px 0 0 0;">Key: 4 dimensions (social, economic, religious, psychological), Keonjhar, MP statistics, "powerlessness," positive impacts (Gond, Warli art)</p>
+</div>
+
+<div class="upsc-q">
+  <div class="q-num">Q6 | 10 or 20 Marks</div>
+  <div class="q-text">"Discuss the significance of Traditional Ecological Knowledge (TEK) of tribal communities in the context of climate change adaptation."</div>
+  <p style="font-size:9pt;color:#666;margin:5px 0 0 0;">Key: Jarawa (cyclone prediction), Khasi (sacred groves), Apatani (Ziro rice-fish), Dongria Kondh, Zabo system, Bhil (erratic monsoons)</p>
+</div>
+
+<div class="upsc-q">
+  <div class="q-num">Q7 | 10 Marks</div>
+  <div class="q-text">"How has the 1988 National Forest Policy marked a paradigm shift in forest governance in India?"</div>
+  <p style="font-size:9pt;color:#666;margin:5px 0 0 0;">Key: Revenue-oriented → People-oriented; JFM; MFP as right; Hiremath (1994); TRIFED; ecological balance as main objective</p>
+</div>
+
+<div class="upsc-q">
+  <div class="q-num">Q8 | 10 Marks</div>
+  <div class="q-text">"Critically examine the 2019 Supreme Court eviction order and its implications for forest-dwelling communities."</div>
+  <p style="font-size:9pt;color:#666;margin:5px 0 0 0;">Key: 13 Feb 2019, 16 states, 1.8 million forest dwellers, stay on 28 Feb, role of anthropologists/activists, due process issue</p>
+</div>
+
+<div class="upsc-q">
+  <div class="q-num">Q9 | 10 or 20 Marks</div>
+  <div class="q-text">"Discuss the conflict between conservation and tribal livelihood rights with reference to the Hasdeo Arand case."</div>
+  <p style="font-size:9pt;color:#666;margin:5px 0 0 0;">Key: Ghatbarra village, CFR titles 2013, revocation 2016, PEKB coal block, Adani, HABSS, HC 2025, "mockery of FRA"</p>
+</div>
+
+<div class="upsc-q">
+  <div class="q-num">Q10 | 10 Marks</div>
+  <div class="q-text">"What is Joint Forest Management (JFM)? Discuss its significance for tribal communities."</div>
+  <p style="font-size:9pt;color:#666;margin:5px 0 0 0;">Key: NFP 1988, partnership between Forest Department and local communities, led to TRIFED, recognition of MFP as right, empowerment through participation</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 10: KEY ONE-LINERS -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-divider"></div>
+<h2>&#9321; Key One-Liners &amp; Facts for Exam</h2>
+
+<div class="oneliner-grid">
+  <div class="oneliner-item">Michel Cernea: displacement should be minimised, avoided, and rehabilitation should be <strong>"people-centric."</strong></div>
+  <div class="oneliner-item">Tribal population = <strong>8.6%</strong> of India but constitute <strong>40–50%</strong> of all displaced persons.</div>
+  <div class="oneliner-item">Nalin Negi &amp; Ganguly (2011): <strong>50 million</strong> displaced by development projects in India.</div>
+  <div class="oneliner-item">Tripathi (2016): tribes live in a <em>harmonious and interdependent relationship</em> with forests.</div>
+  <div class="oneliner-item">FRA 2006 recognises <strong>three types of rights</strong>: land rights, use rights, and community forest rights.</div>
+  <div class="oneliner-item">Cut-off date under FRA for land rights: <strong>13 December 2005</strong>.</div>
+  <div class="oneliner-item">Land ceiling under FRA: <strong>up to 4 hectares</strong> for those cultivating without documents.</div>
+  <div class="oneliner-item">PVTG special provision: <strong>Section 3(1)(e)</strong> of FRA — habitat rights.</div>
+  <div class="oneliner-item">CFR falls under <strong>Section 3(1)(i)</strong> of FRA.</div>
+  <div class="oneliner-item">B.K. Roy Burman (1982): tribes earn <strong>one-third income</strong> from minor forest produce.</div>
+  <div class="oneliner-item">1988 Forest Policy = <strong>paradigm shift</strong>; introduced JFM; MFP as right not concession.</div>
+  <div class="oneliner-item">TRIFED markets Minor Forest Produce; <strong>Van Dhan Kendras</strong> empower tribal women.</div>
+  <div class="oneliner-item">Das and Banerji (1964): four dimensions of impact — <strong>social, economic, religious, psychological</strong>.</div>
+  <div class="oneliner-item">Keonjhar (Odisha) — rich in iron ore/manganese but <strong>74.7% of pregnant women are anaemic</strong>.</div>
+  <div class="oneliner-item">Mendha Lekha (Maharashtra) and Betakata (Odisha) — <strong>successful CFR community management models</strong>.</div>
+  <div class="oneliner-item">Hasdeo Arand: CFR title cancelled for coal mining (Adani) — <strong>"mockery of FRA."</strong></div>
+  <div class="oneliner-item">2019 SC order: eviction of <strong>1.8 million forest dwellers</strong>; stayed due to anthropologist/activist intervention.</div>
+  <div class="oneliner-item">MoTA (2024): <strong>60% of total FRA claims recognised</strong>, covering <strong>13 million acres</strong>.</div>
+  <div class="oneliner-item">MP has <strong>India's largest tribal population (15%)</strong>; leads in forest land encroachment (<strong>5,347 sq km</strong> lost).</div>
+  <div class="oneliner-item">Gond paintings (MP) and <strong>Warli art (Maharashtra)</strong> — tribal art gaining global recognition.</div>
+  <div class="oneliner-item">Indian Forest Act 1927, <strong>Section 64</strong>: authorised arrest without warrant for forest violations.</div>
+  <div class="oneliner-item">Pakri Barwadih: NTPC acquired <strong>87,000+ hectares</strong> in Jharkhand — larger than Bengaluru city.</div>
+  <div class="oneliner-item">Chaal Coal Mine, Chhattisgarh: displaced <strong>400 Kawar tribe</strong> families from Lath village.</div>
+  <div class="oneliner-item">Sardar Sarovar Dam: <strong>200,000 people displaced</strong>, majority Adivasis.</div>
+  <div class="oneliner-item">Chhattisgarh: recognised nearly <strong>4,000 CFRs</strong> — most proactive state in India.</div>
+  <div class="oneliner-item">Apatani (Arunachal Pradesh): <strong>rice-fish integrated farming</strong> in Ziro Valley — conserves water, enhances soil fertility.</div>
+  <div class="oneliner-item">Jarawa (Andaman Islands): predict <strong>cyclones</strong> by observing fish movement and sea behaviour.</div>
+  <div class="oneliner-item"><strong>Zabo System</strong> (Nagaland): combines rainwater harvesting, forestry, animal husbandry, and agriculture.</div>
+  <div class="oneliner-item">CAMPA and Green India Mission criticised for <strong>"green displacement"</strong> — afforestation without community consent.</div>
+  <div class="oneliner-item">Das and Banerji: emergence of sense of <strong>"powerlessness"</strong> among tribal populations due to industrialization.</div>
+</div>
+
+<!-- Footer -->
+<div class="section-divider"></div>
+<div style="text-align:center;color:#6b7280;font-size:9pt;margin-top:20px;padding-top:10px;border-top:1px solid #e5e7eb;">
+  UPSC Anthropology Optional | Paper 2 — Unit 6.3 | Source: Sarrthi IAS L-62, Nataraj Sir (Handout 3)<br>
+  For study purposes only. All content derived from class notes.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF 02 — R&amp;R, Constitutional Provisions &amp; Social Change</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 15mm;
+      font-size: 11pt;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+    h1 { color: #1e3a5f; border-bottom: 3px solid #1e3a5f; padding-bottom: 8px; margin: 18px 0 10px; font-size: 18pt; }
+    h2 { color: #1e40af; border-left: 5px solid #1e40af; padding: 8px 10px; background: #eff6ff; margin: 20px 0 12px; font-size: 14pt; }
+    h3 { color: #1d4ed8; margin: 14px 0 8px; font-size: 12pt; border-bottom: 1px dashed #93c5fd; padding-bottom: 4px; }
+    h4 { color: #374151; margin: 10px 0 6px; font-size: 11pt; font-weight: 700; }
+    p { margin: 6px 0; }
+    ul, ol { margin: 6px 0 6px 22px; }
+    ul li, ol li { margin-bottom: 4px; }
+    strong { font-weight: 700; }
+
+    /* Scholar boxes */
+    .scholar {
+      background: #dbeafe;
+      border-left: 4px solid #2563eb;
+      padding: 10px 14px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .scholar strong { color: #1e3a8a; }
+
+    /* Case study boxes */
+    .casestudy {
+      background: #fef9c3;
+      border-left: 4px solid #ca8a04;
+      padding: 10px 14px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .casestudy strong { color: #78350f; }
+    .casestudy .cs-label {
+      font-size: 9pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #92400e;
+      margin-bottom: 4px;
+    }
+
+    /* UPSC Q boxes */
+    .upsc-q {
+      background: #fee2e2;
+      border-left: 4px solid #dc2626;
+      padding: 10px 14px;
+      margin: 8px 0;
+      border-radius: 4px;
+    }
+    .upsc-q .q-label {
+      font-size: 9pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #991b1b;
+      margin-bottom: 2px;
+    }
+
+    /* Constitutional article boxes */
+    .constitutional {
+      background: #fdf4ff;
+      border-left: 4px solid #9333ea;
+      padding: 10px 14px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .constitutional strong { color: #6b21a8; }
+
+    /* Concept boxes */
+    .concept {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+      padding: 10px 14px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+
+    /* Stat highlight */
+    .stat { color: #7c3aed; font-weight: 700; }
+
+    /* Warning / important */
+    .important {
+      background: #fff7ed;
+      border-left: 4px solid #f97316;
+      padding: 10px 14px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 10pt;
+    }
+    th {
+      background: #166534;
+      color: white;
+      padding: 8px;
+      text-align: left;
+      font-weight: 600;
+    }
+    td {
+      padding: 7px 8px;
+      border: 1px solid #d1d5db;
+      vertical-align: top;
+    }
+    tr:nth-child(even) { background: #f9fafb; }
+    .table-blue th { background: #1e40af; }
+    .table-purple th { background: #6b21a8; }
+    .table-red th { background: #991b1b; }
+
+    /* Header box */
+    .header-box {
+      background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%);
+      color: white;
+      padding: 22px 24px;
+      margin-bottom: 24px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(30,58,95,0.3);
+    }
+    .header-box h1 {
+      color: white;
+      border: none;
+      margin: 0 0 6px 0;
+      font-size: 20pt;
+      padding: 0;
+    }
+    .header-box p { margin: 3px 0; font-size: 10pt; opacity: 0.9; }
+    .header-box .meta-row { display: flex; gap: 20px; margin-top: 10px; flex-wrap: wrap; }
+    .header-box .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 9pt;
+      font-weight: 600;
+    }
+
+    /* Mind map summary */
+    .mind-map {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 12px 0;
+    }
+    .mind-map .mm-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .mind-map .mm-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .mind-map .mm-chip {
+      background: #1e40af;
+      color: white;
+      border-radius: 15px;
+      padding: 3px 10px;
+      font-size: 9pt;
+      font-weight: 600;
+    }
+    .mind-map .mm-chip.green { background: #166534; }
+    .mind-map .mm-chip.purple { background: #6b21a8; }
+    .mind-map .mm-chip.red { background: #991b1b; }
+    .mind-map .mm-chip.orange { background: #c2410c; }
+    .mind-map .mm-chip.teal { background: #0f766e; }
+
+    /* Section divider */
+    .section-divider {
+      border: none;
+      border-top: 3px solid #e2e8f0;
+      margin: 24px 0;
+    }
+
+    /* Core principle quote */
+    .quote-box {
+      background: #f0f9ff;
+      border: 1px solid #7dd3fc;
+      border-left: 5px solid #0284c7;
+      padding: 12px 16px;
+      margin: 12px 0;
+      border-radius: 4px;
+      font-style: italic;
+      color: #0c4a6e;
+    }
+
+    /* Phase tag */
+    .phase { display: inline-block; background: #374151; color: white; font-size: 8.5pt; padding: 1px 8px; border-radius: 10px; margin-right: 4px; }
+    .phase.colonial { background: #92400e; }
+    .phase.post-colonial { background: #065f46; }
+
+    /* Numbered list with visual numbers */
+    .num-list { counter-reset: numlist; list-style: none; padding-left: 0; }
+    .num-list li {
+      counter-increment: numlist;
+      padding-left: 30px;
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .num-list li::before {
+      content: counter(numlist);
+      position: absolute;
+      left: 0;
+      top: 1px;
+      background: #1e40af;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 8.5pt;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    /* Print styles */
+    @media print {
+      body { margin: 0; max-width: 100%; padding: 0; }
+      .header-box { box-shadow: none; }
+      h2, h3 { page-break-after: avoid; }
+      .casestudy, .scholar, .upsc-q, .constitutional { page-break-inside: avoid; }
+      table { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ======================== HEADER ======================== -->
+<div class="header-box">
+  <h1>Tribal India — R&amp;R, Constitutional Provisions &amp; Social Change</h1>
+  <p>UPSC Anthropology Optional | Paper 2 — Units 6.3, 7.1, 7.2, 9.1</p>
+  <p>Source: Sarrthi IAS L-63 (Team Avengers) | Nataraj Sir</p>
+  <div class="meta-row">
+    <span class="badge">6.3 Rehabilitation &amp; Resettlement</span>
+    <span class="badge">7.1 Constitutional Provisions</span>
+    <span class="badge">7.2 Social Change</span>
+    <span class="badge">9.1 Welfare Schemes</span>
+  </div>
+</div>
+
+<!-- ======================== SECTION 1: R&R ======================== -->
+<h1>Unit 6.3 — Problems of Rehabilitation &amp; Resettlement (R&amp;R)</h1>
+
+<div class="mind-map">
+  <div class="mm-title">Section Overview</div>
+  <div class="mm-items">
+    <span class="mm-chip">Background &amp; Scale</span>
+    <span class="mm-chip orange">Resettlement vs Rehabilitation</span>
+    <span class="mm-chip red">7 Key Issues</span>
+    <span class="mm-chip green">4 Case Studies</span>
+    <span class="mm-chip teal">3 Solutions</span>
+  </div>
+</div>
+
+<h2>Background</h2>
+<ul>
+  <li>R&amp;R has been a <strong>burning issue in India even before independence</strong>.</li>
+  <li>After 1947, India pursued development through large multipurpose river valley projects, thermal power projects, mining, roads, and industrial hubs — requiring large land tracts with consequences of <strong>involuntary land acquisition and displacement</strong>.</li>
+  <li><span class="stat">No reliable data</span> on the number of Project Affected Persons (PAPs); estimates vary from <span class="stat">50 to 100 million persons</span>.</li>
+  <li>No reliable data on how many have been resettled or rehabilitated.</li>
+</ul>
+
+<h2>Resettlement vs Rehabilitation — The Critical Distinction</h2>
+
+<table class="table-blue">
+  <thead>
+    <tr>
+      <th>Dimension</th>
+      <th>Resettlement</th>
+      <th>Rehabilitation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Meaning</strong></td>
+      <td>Moving people from original homes to another place (for dam, mine, factory, sanctuary)</td>
+      <td>Restoring the <strong>economic, social, and cultural well-being</strong> of displaced people</td>
+    </tr>
+    <tr>
+      <td><strong>Core Idea</strong></td>
+      <td>Spatial adjustment — shifting people from one area to another; focus on <em>where</em> to move</td>
+      <td>Holistic restoration — helping them regain livelihood, dignity, and standard of living</td>
+    </tr>
+    <tr>
+      <td><strong>Reality</strong></td>
+      <td>Only physical relocation happens despite promises of land-for-land or house-for-house</td>
+      <td>Requires livelihood training, education, healthcare, and participation in planning</td>
+    </tr>
+    <tr>
+      <td><strong>What's Lost</strong></td>
+      <td>Livelihoods, culture, and belonging — rarely restored</td>
+      <td>Addresses these losses through the <strong>National Rehabilitation and Resettlement Policy, 2007</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Example</strong></td>
+      <td>Tribals moved from forests to plains lose farming skills and spiritual ties to nature</td>
+      <td>Hirakud Dam Project (1950s, Odisha) — 22,000 families displaced with little rehab; shaped better policies</td>
+    </tr>
+    <tr>
+      <td><strong>How it works</strong></td>
+      <td>Logistical exercise — count families, allot plots, move them</td>
+      <td>Goal: displaced persons live <strong>better than before</strong> after relocation (NRRP 2007)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Seven Key Issues in R&amp;R</h2>
+
+<ol class="num-list">
+  <li>
+    <strong>Identification of Land to be Acquired</strong>
+    <p>Development projects require forest land as well as agriculture land. Government under the <strong>law of 'eminent domain'</strong> has the absolute right to acquire any private land for public purpose. Mining and hydro-electric projects cannot be shifted due to geological requirements, but a compromise on mining boundary or submergence level could <strong>substantially reduce the number of PAPs</strong>.</p>
+  </li>
+  <li>
+    <strong>Land Records and Payment of Compensation</strong>
+    <p>Land is a <strong>state subject</strong>; records kept by the <strong>Patwari</strong> of the village, rarely updated (supposed to be updated every 30 years). Difficult to assess real value of land (based on last traded value). Leads to legal claims continuing in courts for decades. <strong>Forest dwellers displaced have no land records</strong> — making them ineligible for compensation; whatever compensation is paid remains meagre.</p>
+  </li>
+  <li>
+    <strong>Identification of Project Affected Persons (PAPs)</strong>
+    <p>Major hurdle when: (i) Land owners are not traceable or not residing in the impacted area; (ii) People do not own land but cultivate it on sharing basis or as daily wage earners; (iii) Some have been cultivating forest land for generations but do not have land in their name; (iv) Outsiders buy small pieces of land to claim R&amp;R benefits and enroll as PAPs.</p>
+  </li>
+  <li>
+    <strong>Loss of Livelihoods</strong>
+    <p>Loss of land = loss of livelihood. Not merely monetary — the <strong>style of earning</strong> that livelihood is equally important. Land provides economic security even for taking loans; harvested crop used for bartering; cultivation provides food security; traditional wisdom and agricultural skills passed on through generations (no formal training required). Loss of land renders skills and knowledge harnessed over decades <strong>redundant in one go</strong>.</p>
+  </li>
+  <li>
+    <strong>Loss of Home</strong>
+    <p><strong>Ecological incompatibility</strong> — resettled area in stark contrast to environment they were accustomed to. Non-availability of opportunities for traditional livelihood forces alien occupations (agricultural and industrial labourers). Resettlement in non-familiar environment alienates them from host community — leads to <strong>hostility</strong>. In many cases, resettled population was <strong>not entitled to legal rights</strong> over land in the resettled area.</p>
+  </li>
+  <li>
+    <strong>Lack of Stakeholder Engagement, Loss of Dignity and Self-Respect</strong>
+    <p>PAPs are often illiterate but have traditional wisdom, self-respect, and dignity. Since they do not speak corporate language, they are assumed not wise enough to take decisions about their own lives — opportunity for stakeholder engagement is denied. All decisions made by <strong>project authorities and local government imposed</strong> on PAPs, assuming it is for their welfare.</p>
+  </li>
+  <li>
+    <strong>Grievance Redressal Mechanism</strong>
+    <p>In the absence of genuine grievance redressal, PAPs get lost as to whom to approach. Ultimately, PAPs lose <strong>trust in the process of land acquisition and R&amp;R</strong>.</p>
+  </li>
+</ol>
+
+<h2>Case Studies in Rehabilitation</h2>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study 1 — Forest Displacement</div>
+  <strong>Baiga and Gond Tribes, Madhya Pradesh (January 2015)</strong>
+  <p>Around <span class="stat">450 Baiga and Gond settlements</span> were relocated from the <strong>Kanha Tiger Reserve</strong> under a forest conservation and rehabilitation program. Criticized as <strong>forced eviction</strong>, though the government claimed it was voluntary relocation aimed at providing better facilities and livelihoods outside the reserve.</p>
+</div>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study 2 — Land Rights Denial</div>
+  <strong>Adivasi Groups, Mysuru District, Karnataka (2020)</strong>
+  <p>Adivasi groups protested delays in rehabilitation and land title deeds after displacement from forest areas. Concerns raised: non-declaration of tribal hamlets as revenue villages, lack of land allotment under Mastigudi rehabilitation, and diversion of funds by dominant groups. Around <span class="stat">210 families</span>, mainly <strong>Jenu Kuruba and Soliga</strong> tribes, were affected. Appeals made to the <strong>National Commission for Scheduled Tribes</strong> for justice.</p>
+</div>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study 3 — Bonded Labour Rehabilitation</div>
+  <strong>Chenchu Tribals (PVTG), Karimnagar, Telangana (2018–2020)</strong>
+  <p>In 2018, <span class="stat">45 Chenchu tribals</span> (a PVTG) were rescued from <strong>bonded labour</strong> at a canal irrigation site. Two years later, <span class="stat">12 survivors</span> received <span class="stat">₹1.5 lakh each</span> under the <strong>Centrally Sponsored Rehabilitation Scheme for Bonded Labour (1978, revised 2016)</strong>. Highlights how <strong>Article 23</strong> and the <strong>Bonded Labour System (Abolition) Act, 1976</strong> protect tribal workers, though <strong>delayed compensation</strong> and <strong>weak enforcement</strong> remain persistent issues.</p>
+</div>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study 4 — Child Labour Exploitation</div>
+  <strong>Paniya, Kattunayakan, and Adiya Tribes, Nilambur, Kerala (2023)</strong>
+  <p>Reports revealed tribal children aged <span class="stat">8–15</span>, mainly from <strong>Paniya, Kattunayakan, and Adiya tribes</strong>, were employed in areca nut and banana plantations near Kakkadampoyil. Earned ₹300–₹500/day while poverty, alcoholism, and lack of educational follow-up led to school dropouts — violating <strong>Articles 23 and 24</strong>. The banned CPI (Maoist) expressed solidarity with workers of the Plantation Corporation of Kerala (PCK), alleging forced overtime and wage neglect.</p>
+</div>
+
+<h2>Solutions to R&amp;R Problems</h2>
+
+<h3>Solutions for Rehabilitation</h3>
+
+<div class="concept">
+  <strong>Core principle:</strong> "Restoration of livelihood is not merely in monetary terms alone. People aspire to restore the <em>process</em> of earning that livelihood. They need much <strong>empathy</strong> rather than <strong>sympathy</strong>."
+</div>
+
+<table class="table-blue">
+  <thead>
+    <tr>
+      <th>Solution</th>
+      <th>Description</th>
+      <th>Example / Evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. Land for Land</strong></td>
+      <td>Best and obvious first choice — assures restoration of income in original lifestyle</td>
+      <td><strong>Rourkela Steel Plant Project (1956)</strong> — 30 villages (Oraon, Kharia, Bhumij tribes) displaced; resettled within 5 km of original villages with land and houses; helped maintain community networks</td>
+    </tr>
+    <tr>
+      <td><strong>2. Self-Employment Schemes</strong></td>
+      <td>Most viable option; common schemes: carpet weaving, masala grinding, bamboo crafting, dairy, poultry, carpentry, goat rearing, apiculture, sericulture, pisciculture, handicraft</td>
+      <td>Viable due to demand from project-dependent population influx; however, lack of education and skills may affect viability</td>
+    </tr>
+    <tr>
+      <td><strong>3. Employment in the Project</strong></td>
+      <td>Addresses restoration of previous standard of living + provides significant improvement</td>
+      <td><strong>Ho community</strong> in Singhbhum, Jharkhand — employed in the Zinc Factory; brought different clans together, created social unity, improved economic condition; however, some traditions changed (restrictions on Maghe festival)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Solutions for Resettlement</h3>
+<p>PAPs have often <strong>rejected fully developed resettlement colonies</strong>, sometimes even with built-up houses. Key factors impacting acceptance of resettlement colony:</p>
+<ul>
+  <li>Access to livelihood opportunities &amp; market</li>
+  <li>Access to health and education facilities</li>
+  <li>Availability of space for storing fodder, grains, shelter for domestic animals</li>
+  <li>Space for expanding the house as family expands</li>
+  <li>Availability of community land for pasture, fodder, village pond, wells, trees, celebrating festivals</li>
+</ul>
+<div class="important">
+  <strong>Key Recommendation:</strong> PAPs should be given opportunities to settle at the <strong>place of their choice</strong> other than the resettlement colony.
+</div>
+
+<hr class="section-divider">
+
+<!-- ======================== SECTION 2: CONSTITUTIONAL PROVISIONS ======================== -->
+<h1>Unit 7.1 — Constitutional Provisions for Scheduled Tribes</h1>
+
+<div class="mind-map">
+  <div class="mm-title">Section Overview</div>
+  <div class="mm-items">
+    <span class="mm-chip purple">Social &amp; Economic Indicators</span>
+    <span class="mm-chip purple">Constitutional Articles Table</span>
+    <span class="mm-chip purple">5th &amp; 6th Schedules</span>
+    <span class="mm-chip purple">Lokur Committee (1965)</span>
+    <span class="mm-chip purple">Panda Committee (2014)</span>
+    <span class="mm-chip purple">Inclusion Procedure</span>
+  </div>
+</div>
+
+<h2>Status of Scheduled Tribes — Key Indicators</h2>
+
+<table class="table-blue">
+  <thead>
+    <tr>
+      <th>Indicator</th>
+      <th>2005–06</th>
+      <th>2019–21</th>
+      <th>Trend</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Infant Mortality Rate (IMR)</td>
+      <td>62.1</td>
+      <td><strong>41.6</strong></td>
+      <td>Declining</td>
+    </tr>
+    <tr>
+      <td>Under Five Mortality Rate</td>
+      <td>95.7</td>
+      <td><strong>50.3</strong></td>
+      <td>Declining</td>
+    </tr>
+    <tr>
+      <td>Institutional Delivery (%)</td>
+      <td>17.7%</td>
+      <td><strong>82.3%</strong></td>
+      <td>Rapidly Improving</td>
+    </tr>
+    <tr>
+      <td>Immunization (12–23 months)</td>
+      <td>31.3%</td>
+      <td><strong>76.8%</strong></td>
+      <td>Improving</td>
+    </tr>
+    <tr>
+      <td>Literacy Rate (Census 2011)</td>
+      <td colspan="2"><strong>59%</strong> (vs all-India 73%)</td>
+      <td>Gap persists</td>
+    </tr>
+    <tr>
+      <td>Below Poverty Line (BPL)</td>
+      <td colspan="2">Majority still below poverty line</td>
+      <td>Concern</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Constitutional Articles for Scheduled Tribes — Complete Table</h2>
+
+<table class="table-purple">
+  <thead>
+    <tr>
+      <th>Article</th>
+      <th>Provision</th>
+      <th>Significance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Preamble</strong></td>
+      <td>Justice — Social, Economic, Political; Equality of status and opportunity; Fraternity assuring dignity of individual</td>
+      <td>Foundational commitment to equality for all including STs</td>
+    </tr>
+    <tr>
+      <td><strong>342</strong></td>
+      <td>President may declare a group as Scheduled Tribes with a <strong>notification</strong></td>
+      <td>Mechanism for official ST recognition</td>
+    </tr>
+    <tr>
+      <td><strong>366(25)</strong></td>
+      <td>Definition of Scheduled Tribes</td>
+      <td>Constitutional definition</td>
+    </tr>
+    <tr>
+      <td><strong>15</strong></td>
+      <td>Prohibition of discrimination on grounds of religion, race, caste, sex, or place of birth</td>
+      <td>Anti-discrimination protection</td>
+    </tr>
+    <tr>
+      <td><strong>16</strong></td>
+      <td>Equality of opportunity in matters of public employment</td>
+      <td>Employment equality</td>
+    </tr>
+    <tr>
+      <td><strong>19</strong></td>
+      <td>Protection of certain rights regarding freedom of speech</td>
+      <td>Fundamental freedoms</td>
+    </tr>
+    <tr>
+      <td><strong>46</strong></td>
+      <td>Promotion of educational and economic interest of SCs, STs and other weaker sections</td>
+      <td>DPSP — Directive Principle for welfare</td>
+    </tr>
+    <tr>
+      <td><strong>335</strong></td>
+      <td>Claims of SCs and STs to services and posts</td>
+      <td>Reservation in government services</td>
+    </tr>
+    <tr>
+      <td><strong>330</strong></td>
+      <td>Reservation of seats for SCs and STs in the House of People (Lok Sabha)</td>
+      <td>Political representation in Parliament</td>
+    </tr>
+    <tr>
+      <td><strong>332</strong></td>
+      <td>Reservation of seats for SCs and STs in legislative assemblies of states</td>
+      <td>Political representation in State Legislatures</td>
+    </tr>
+    <tr>
+      <td><strong>334</strong></td>
+      <td>Reservation of seats and special representation to cease after 10 years (extended multiple times)</td>
+      <td>Temporary measure extended due to persistent inequality</td>
+    </tr>
+    <tr>
+      <td><strong>243D</strong></td>
+      <td>Reservation of seats in Panchayats</td>
+      <td>Grassroots political representation</td>
+    </tr>
+    <tr>
+      <td><strong>243T</strong></td>
+      <td>Reservation of seats in Municipalities</td>
+      <td>Urban local body representation</td>
+    </tr>
+    <tr>
+      <td><strong>338A</strong></td>
+      <td>National Commission for Scheduled Tribes (Agency for monitoring safeguards)</td>
+      <td>Institutional watchdog for ST rights</td>
+    </tr>
+    <tr>
+      <td><strong>164(1)</strong></td>
+      <td>In Chhattisgarh, Jharkhand, MP, Odisha — there shall be a minister in charge of tribal welfare</td>
+      <td>Dedicated ministerial responsibility in tribal-heavy states</td>
+    </tr>
+    <tr>
+      <td><strong>371(A)</strong></td>
+      <td>Specific provisions for Nagaland</td>
+      <td>Special status for Northeast tribal states</td>
+    </tr>
+    <tr>
+      <td><strong>371(B)</strong></td>
+      <td>Special provisions for Assam</td>
+      <td>Northeast tribal protection</td>
+    </tr>
+    <tr>
+      <td><strong>371(C)</strong></td>
+      <td>Special provisions for Manipur</td>
+      <td>Northeast tribal protection</td>
+    </tr>
+    <tr>
+      <td><strong>371(F)</strong></td>
+      <td>Special provisions for Sikkim</td>
+      <td>Special status for Sikkim</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="constitutional">
+  <strong>Fifth Schedule — Article 244(1):</strong> "Scheduled areas" = areas which the President declares as scheduled areas. Provides for establishment of <strong>Tribal Advisory Council (TAC)</strong> in any state having scheduled areas. The Union Government has executive powers to give directions to states regarding administration of Scheduled Areas.
+</div>
+
+<div class="constitutional">
+  <strong>Sixth Schedule — Article 244(2):</strong> Constitution makes special provisions for the administration of tribal-dominated areas in <strong>four states</strong>. These areas are called "Tribal Areas" under Article 244(2) and the 6th Schedule.
+</div>
+
+<div class="constitutional">
+  <strong>Legislative Measures for STs:</strong>
+  <ol>
+    <li>The Scheduled Castes and Tribes (Prevention of Atrocities) Act, 1989</li>
+    <li>The Scheduled Tribes and Other Forest Dwellers (Recognition of Forest Rights) Act, 2006</li>
+  </ol>
+</div>
+
+<h2>Identification of Scheduled Tribes — Lokur Committee (1965)</h2>
+
+<p>The Constitution did not define criteria for recognition of STs; hence the <strong>Lokur Committee</strong> was set up.</p>
+
+<table class="table-green">
+  <thead>
+    <tr>
+      <th colspan="2">Five Lokur Criteria for Scheduled Tribe Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td>Primitive traits</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td>Distinctive culture</td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td>Geographical isolation</td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td>Shyness of contact with the larger community</td>
+    </tr>
+    <tr>
+      <td><strong>5</strong></td>
+      <td>General backwardness</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="scholar">
+  <strong>Hrusikesh Panda Task Force (2014) — Criticisms of Lokur Criteria:</strong>
+  <ul>
+    <li>Criteria found <strong>obsolete, rigid, and condescending</strong></li>
+    <li>Terms like "primitive" and "shy" fail to reflect present realities</li>
+    <li>Lack of anthropological and sociological expertise in decision-making bodies</li>
+    <li>Inconsistent historical records (from "tribal animists" in 1901 to "primitive tribes" in 1931)</li>
+    <li>Administrative inconsistencies: differing tribal names across states, exclusions due to state bifurcation or forced migration, delays in updating lists</li>
+  </ul>
+</div>
+
+<h3>Proposed New Criteria — Panda Committee (2014 Task Force)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Criterion</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td>Socio-economic and educational backwardness relative to the state's population</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td>Historical geographical isolation, whether continuing or not</td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td>Distinct language or dialect</td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td>Core cultural identity (life-cycle rituals, art, folklore, marriage customs)</td>
+    </tr>
+    <tr>
+      <td><strong>5</strong></td>
+      <td>Endogamy, or marriage largely within the community</td>
+    </tr>
+  </tbody>
+</table>
+<p><em>(These are to be assessed <strong>holistically</strong>, not individually.)</em></p>
+
+<h3>Procedure for Inclusion in ST List</h3>
+<ol>
+  <li>Proposal from <strong>State Government/UT</strong></li>
+  <li>Review by <strong>Ministry of Tribal Affairs (MoTA)</strong></li>
+  <li>Evaluation by <strong>Registrar General of India (RGI)</strong></li>
+  <li>Recommendation by <strong>National Commission for Scheduled Tribes (NCST)</strong></li>
+  <li><strong>Cabinet approval</strong></li>
+  <li><strong>Presidential assent</strong> to amend the Constitution (ST Order, 1950)</li>
+</ol>
+
+<hr class="section-divider">
+
+<!-- ======================== SECTION 3: SC EXPLOITATION ======================== -->
+<h1>Unit 7.1 — Problems of Exploitation &amp; Discrimination of Scheduled Castes</h1>
+
+<div class="mind-map">
+  <div class="mm-title">Section Overview</div>
+  <div class="mm-items">
+    <span class="mm-chip red">NHRC 2010 Statistics</span>
+    <span class="mm-chip red">K.B. Saxena Data</span>
+    <span class="mm-chip red">6 Traditional Disabilities</span>
+    <span class="mm-chip red">4 Case Studies</span>
+    <span class="mm-chip red">Factors of Exploitation</span>
+    <span class="mm-chip red">Dalit Politics</span>
+    <span class="mm-chip red">6 Big Solutions</span>
+  </div>
+</div>
+
+<h2>Key Statistics — NHRC 2010 Report</h2>
+
+<div class="casestudy">
+  <div class="cs-label">NHRC 2010 — Dalit Atrocity Statistics</div>
+  <ul>
+    <li>A crime is committed against a Dalit <span class="stat">every 18 minutes</span></li>
+    <li>Every day on average: <span class="stat">three Dalit women are raped, two Dalits murdered, and two Dalit houses burnt</span></li>
+  </ul>
+  <br>
+  <strong>K.B. Saxena Statistics:</strong>
+  <ul>
+    <li><span class="stat">37%</span> Dalits live below the poverty line</li>
+    <li><span class="stat">54%</span> are undernourished</li>
+    <li><span class="stat">83 per 1,000</span> children born in a Dalit household die before their first birthday</li>
+    <li><span class="stat">12%</span> die before their fifth birthday</li>
+    <li><span class="stat">45%</span> remain illiterate</li>
+  </ul>
+  <br>
+  <strong>Village-Level Discrimination:</strong>
+  <ul>
+    <li>Dalits prevented from entering the police station in <span class="stat">28% of Indian villages</span></li>
+    <li>Dalit children made to sit separately while eating in <span class="stat">39% of government schools</span></li>
+    <li>Dalits do not get mail delivered to their homes in <span class="stat">24% of villages</span></li>
+    <li>Denied access to water sources in <span class="stat">48% of villages</span> — untouchability remains stark though abolished in 1955</li>
+  </ul>
+</div>
+
+<h2>Six Traditional Disabilities of Scheduled Castes</h2>
+
+<table class="table-red">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Disability</th>
+      <th>Description &amp; Case Study</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td>No Physical Contact</td>
+      <td>Did not participate in village meetings and worship. Lived in a <strong>separate hamlet</strong>. Children did not attend school or play with higher-caste children. Had to play drums to pass through village streets.</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td>Ban on Use of Common Wells and Tanks</td>
+      <td>Not allowed to use common village wells and tanks. Had separate wells/ponds or depended on courtesy of others.
+      <br><br><em>Case Study (UP, 2016):</em> A 13-year-old Dalit girl and her father were beaten by a temple priest in Gunnaur village, UP after she tried to drink water from a temple hand pump. Case registered under SC/ST (Prevention of Atrocities) Act.</td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td>Prohibited from Entering the Temple</td>
+      <td>Not allowed to enter temple for offering worship. Not supposed to hear religious discourses, offer prayer, or study religious texts.</td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td>Did Not Receive Service from Other Castes</td>
+      <td>Priests, artisan castes, <strong>dhobi</strong> (washermen), and <strong>dom</strong> (death ritual performers) did not render their services to untouchable castes.</td>
+    </tr>
+    <tr>
+      <td><strong>5</strong></td>
+      <td>Non-acceptance of Cooked Food</td>
+      <td>Food cooked by SCs not accepted by higher castes. Water from the hands of SCs also not acceptable.
+      <br><br><em>Case Study (Uttarakhand, 2022):</em> In May 2022, students from a government school in Sukhidhang village, Champawat district boycotted midday meals cooked by <strong>Sunita</strong>, a Dalit bhojan mata. Despite reinstatement after filing case under SC/ST Act, some students continued the boycott.</td>
+    </tr>
+    <tr>
+      <td><strong>6</strong></td>
+      <td>Status Incongruence and Dependence Proneness</td>
+      <td>Persistence of stigma of untouchability and the Constitutional status of SCs were not congruent. Dependent upon others for livelihood and survival.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Political Discrimination — Case Studies</h2>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study — Political Discrimination</div>
+  <strong>Caste Discrimination Against Dalit Panchayat Chief, Tamil Nadu (October 2020)</strong>
+  <p>Rajeshwari Saravana Kumar, Dalit panchayat president of Therku Thittai Panchayat, Cuddalore district, was forced to <strong>sit on the floor</strong> during panchayat meetings while caste Hindu members sat on chairs. She was also barred from hoisting the national flag. Case filed under Section 3(1)(r) of the SC/ST (Prevention of Atrocities) Act.</p>
+</div>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study — Denial of Rights</div>
+  <strong>Denial of Flag Hoisting Rights, Tamil Nadu (August 2023)</strong>
+  <p>The Dalit woman panchayat president of Aathupakkam Panchayat, Thiruvallur district, was prevented from hoisting the national flag during Independence Day celebrations. The <strong>District Collector intervened</strong> and organized a special flag-hoisting ceremony.</p>
+</div>
+
+<h2>Factors of Exploitation of Scheduled Castes</h2>
+
+<table class="table-red">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Factor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Social</strong></td>
+      <td>Deep-rooted caste system; 4 Varnas by birth in Hinduism; discrimination justified through the religious concept of <strong>"ritual purity"</strong>; rigid and biased religious literature (Dalits and women not permitted to read Vedas)</td>
+    </tr>
+    <tr>
+      <td><strong>Psychological</strong></td>
+      <td>Dalits consider themselves inferior and tolerate exploitation psychologically in the name of religion</td>
+    </tr>
+    <tr>
+      <td><strong>Lack of Awareness</strong></td>
+      <td>Illiteracy: SC literacy only <span class="stat">66.1%</span> vs all-India <span class="stat">73%</span>; female literacy: <span class="stat">56.5%</span> vs all-India <span class="stat">64.6%</span> (Census 2011). Unclean occupations: in UP, 41,000 of 46,000 leather workers are Chamars/Dhusia/Jatava; in Rajasthan, 52,000 of 76,000 sweepers are Bhangi/Mehtar/Chura</td>
+    </tr>
+    <tr>
+      <td><strong>Economic</strong></td>
+      <td>Lack of land; dependence on dominant castes; lived in huts on master's land; worked as agricultural labour and as good as bonded labour</td>
+    </tr>
+    <tr>
+      <td><strong>Political</strong></td>
+      <td><strong>Ajit Donner and Saxena (2012):</strong> Out of 1000 firms, <span class="stat">93% of board members from upper castes</span>, 3.8% from backward castes, 3.5% from SCs/STs. Political reservation leading to backlash.</td>
+    </tr>
+    <tr>
+      <td><strong>Other</strong></td>
+      <td>Demolition/forcible occupation of SC houses; charges of theft/looting; discrimination in educational institutions (e.g., Rohit Vemula Case)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Dalit Politics — Two Forms</h2>
+<ol>
+  <li><strong>Militant movements:</strong> Bhim Sena — caused more reactionary measures from caste Hindus.</li>
+  <li><strong>Electoral coalitions:</strong> BSP in UP — Dalits always in minority by themselves; can only benefit if they form alliance with dominant caste groups or mainstream parties. Successful Dalit parties: <strong>Lok Janshakti Party (Bihar, 2000 — Ram Vilas Paswan)</strong> and <strong>Viduthalai Puratchi Party (Tamil Nadu, 1989 — Thol. Thirumavalavan)</strong>.</li>
+</ol>
+
+<h2>Constitutional Safeguards for Scheduled Castes</h2>
+
+<div class="constitutional">
+  <strong>Key SC-specific Articles (different from STs):</strong>
+  <ul>
+    <li><strong>Article 341</strong> (vs 342 for STs): President may notify "castes, races or tribes or parts of or groups within castes, races or tribes" as SCs. For states, President must also <strong>consult with the Governor</strong>.</li>
+    <li><strong>Article 366(24)</strong> (vs 366(25) for STs): Definition of Scheduled Castes.</li>
+    <li><strong>Article 17:</strong> Abolition of untouchability and prohibition of any such practices.</li>
+  </ul>
+</div>
+
+<h3>Procedure for Inclusion in SC List</h3>
+<ol>
+  <li>State Government/UT Proposal</li>
+  <li>Review by <strong>Ministry of Social Justice &amp; Empowerment (MoSJE)</strong></li>
+  <li>Examination by <strong>Registrar General of India (RGI)</strong></li>
+  <li>Recommendation by <strong>National Commission for Scheduled Castes (NCSC)</strong></li>
+  <li><strong>Union Cabinet Approval</strong></li>
+  <li><strong>Presidential Notification</strong></li>
+</ol>
+
+<h2>Current Initiatives for Scheduled Castes</h2>
+
+<table class="table-blue">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Initiative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Legislative</strong></td>
+      <td>SC/ST (Prevention of Atrocities) Act 1989 + Amendments 2016 &amp; 2018; Supreme Court (Oct 2021): "Atrocities against SCs and STs are not a thing of the past" — Justices Dhananjaya Y Chandrachud and BV Nagarathna</td>
+    </tr>
+    <tr>
+      <td><strong>Economic</strong></td>
+      <td>Startup India/MUDRA; Dalit Entrepreneur Hub</td>
+    </tr>
+    <tr>
+      <td><strong>Political</strong></td>
+      <td>Sukhdeo Thorat Committee (addressing institutional discrimination); Bhopal Declaration 2001/2; Better implementation of SC/ST Act</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>The Six "Big Solutions" to End Untouchability</h3>
+<ol class="num-list">
+  <li>Banish untouchability in educational institutions (discrimination-free atmosphere)</li>
+  <li>Land for rural Dalit families (implementing pledge of land reforms, pattas to all landless Dalits, prevent grabbing of Dalit-owned land)</li>
+  <li>Provide viable assets in cities (make Dalits owners of viable assets they work on, like rickshaws)</li>
+  <li>Ensure food security (include all Dalit families in Antyodaya Anna Yojana/Priority households under NFSA 2013)</li>
+  <li>Implement the <strong>Sukhdeo Thorat Committee Report</strong> (constitutionally guaranteed safeguards to prevent hostility against students of reserved category)</li>
+  <li>Rehabilitate manual scavengers (Prohibition of Employment as Manual Scavengers and their Rehabilitation Act, 2013 has not been enough)</li>
+</ol>
+
+<h2>How Safeguards Are Working — Assessment</h2>
+
+<table class="table-blue">
+  <thead>
+    <tr>
+      <th>Dimension</th>
+      <th>Successes</th>
+      <th>Challenges</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Social</strong></td>
+      <td>Reservation policies led to greater representation; legal prohibitions on untouchability promote inclusive society</td>
+      <td>Persistent social discrimination; social exclusion and atrocities continue; low awareness and weak enforcement of anti-discrimination laws</td>
+    </tr>
+    <tr>
+      <td><strong>Economic</strong></td>
+      <td>Reservations in economic activities aim to improve economic status</td>
+      <td>Economic disparities persist; access to resources and credit remains limited; inconsistent execution of welfare programs</td>
+    </tr>
+    <tr>
+      <td><strong>Political</strong></td>
+      <td>Reserved seats in Parliament, State Assemblies, and Panchayats have ensured greater political representation</td>
+      <td>Representation remains symbolic (tokenism); SCs and STs rarely in top leadership positions (underrepresentation in leadership roles)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="section-divider">
+
+<!-- ======================== SECTION 4: OBCs ======================== -->
+<h1>Unit 7.1 — Other Backward Classes (OBCs)</h1>
+
+<div class="mind-map">
+  <div class="mm-title">Section Overview</div>
+  <div class="mm-items">
+    <span class="mm-chip orange">Definition &amp; Population</span>
+    <span class="mm-chip orange">3 Commissions</span>
+    <span class="mm-chip orange">Creamy Layer</span>
+    <span class="mm-chip orange">Non-Hindu OBCs</span>
+    <span class="mm-chip orange">Muslim Stratification</span>
+    <span class="mm-chip orange">Christian Caste</span>
+    <span class="mm-chip orange">SC Reservation Debate</span>
+  </div>
+</div>
+
+<h2>Definition and Scope</h2>
+<ul>
+  <li>OBCs are the middle band of castes and communities situated <strong>above the SCs and STs</strong>, excluding prominently well-advantaged groups at the top.</li>
+  <li>Described as <strong>"socially and educationally backward classes"</strong> under the Constitution.</li>
+  <li>Entitled to <span class="stat">27% reservations</span> in public sector employment and higher education.</li>
+  <li>OBC list maintained by the <strong>Indian Ministry of Social Justice and Empowerment</strong> — dynamic list.</li>
+  <li>OBCs found to comprise <span class="stat">52% of the country's population</span> (Mandal Commission, 1980); shrunk to <span class="stat">41% by 2006</span> (National Sample Survey).</li>
+</ul>
+
+<h2>Backward Classes Commissions — Three Key Bodies</h2>
+
+<table class="table-purple">
+  <thead>
+    <tr>
+      <th>Commission</th>
+      <th>Year</th>
+      <th>Key Recommendation</th>
+      <th>Outcome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Kalekar Commission</strong> (First Backward Classes Commission)</td>
+      <td>1955</td>
+      <td>Recommended <strong>"caste as the criteria"</strong> to determine backwardness</td>
+      <td>Report was <strong>not accepted</strong> by the government</td>
+    </tr>
+    <tr>
+      <td><strong>Mandal Commission</strong> (Second Backward Classes Commission)</td>
+      <td>Report 1980 / Implemented 1990</td>
+      <td>Recommended <strong>27% reservation</strong> (due to legal constraint that total reservation should not exceed 50%)</td>
+      <td>Implemented in 1990; OBCs comprise <span class="stat">52%</span> of population; massive political impact</td>
+    </tr>
+    <tr>
+      <td><strong>Rohini Commission</strong> (Sub-Categorisation)</td>
+      <td>2017 (constituted by President Ram Nath Kovind)</td>
+      <td>Sub-categorization of OBCs under <strong>Article 340</strong>; headed by Delhi HC's former CJ <strong>G. Rohini</strong>; fixed quota of 8–10% of 27% for ~1900 castes</td>
+      <td>Findings: Out of 2,633 OBCs, <span class="stat">1900 castes received no/minimal benefits</span>; only <span class="stat">10 sub-castes received 25%</span> of OBC advantages</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Rohini Commission — Detailed Findings</h3>
+<ul>
+  <li>Out of <span class="stat">2,633 OBCs</span> on the central list, <span class="stat">nearly 1,900 castes</span> have not benefited proportionately.</li>
+  <li>Half of these 1,900 castes have received <strong>no benefit at all</strong>; the other half received <strong>less than 3%</strong> of OBC quota.</li>
+  <li>Only <span class="stat">10 sub-castes</span> have received <span class="stat">25% of the advantages</span> from OBC reservations.</li>
+  <li>Profession-based castes like <strong>Kalaigars</strong> (polish tins) and <strong>Sikligars and Saranias</strong> (sharpen knives) received almost <strong>no benefits</strong>.</li>
+  <li>Panel suggestion: Fixed quota of <span class="stat">8 to 10%</span> of total OBC quota (27%) for around 1,900 castes.</li>
+</ul>
+
+<h2>The Creamy Layer</h2>
+
+<div class="concept">
+  <strong>What is the Creamy Layer?</strong> The generally small section of people that occupies the top of a marginalized community's socioeconomic hierarchy. The creamy layer test specifies that a candidate must be <strong>below a certain income ceiling</strong> in order to avail reservation in government jobs and educational institutions.
+</div>
+
+<table class="table-blue">
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Origin</strong></td>
+      <td>Supreme Court introduced the concept in <strong>1993</strong> through the <strong>Indira Sawhney case</strong>: "Exclusion of such socially advanced members will make the 'class' a truly backward class."</td>
+    </tr>
+    <tr>
+      <td><strong>Applies to</strong></td>
+      <td><strong>OBCs only</strong> — NOT Dalits and Adivasis (acknowledged as the country's most backward communities)</td>
+    </tr>
+    <tr>
+      <td><strong>Original basis</strong></td>
+      <td>Reservation for Dalits, Adivasis, and OBCs originally had no income criteria — sole basis was <strong>caste</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Counter-argument</strong></td>
+      <td>Delhi University (July 2018) did not manage to fill its reserved category seats — placing further curbs will serve no purpose other than more valuable seats going unfilled</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>OBCs Among Non-Hindu Communities</h2>
+
+<p>Since the caste system has been replicated by Muslims, Sikhs, Christians, and Buddhists, their backward sections have also been included in the OBC list under the Mandal Commission. Eg: <strong>Mappilas of Kerala</strong> (Muslims).</p>
+
+<h3>Muslim Stratification — Three Classes</h3>
+
+<table class="table-purple">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Name</th>
+      <th>Origin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Nobles</strong></td>
+      <td><strong>Ashraf</strong></td>
+      <td>Trace ancestry to inhabitants of the Arab peninsula or Central Asia, or are converts from Hindu upper castes. <span class="stat">~15% of Muslim population</span> (savarna Muslims)</td>
+    </tr>
+    <tr>
+      <td><strong>Commoners</strong></td>
+      <td><strong>Ajlaf</strong></td>
+      <td>"Commoners"; said to be converted from Hindu low castes</td>
+    </tr>
+    <tr>
+      <td><strong>Despicable</strong></td>
+      <td><strong>Arzal</strong></td>
+      <td>"Despicable"; said to be Dalit converts; <span class="stat">~85%</span> of Muslims are backward, Dalit, or tribal Muslims</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="important">
+  <strong>Hindu-Muslim OBC Anomaly:</strong> Communities like <strong>Darzis (tailors), Dhunias (cotton carders)</strong>, and <strong>Julahas (weavers)</strong> — Muslims from these groups get reservation in central OBC list, but Hindus from the same groups have been left out. Rohini Commission has compiled data on these religiously restricted entries and is likely to recommend removal of the anomaly.
+</div>
+
+<div class="scholar">
+  <strong>Social Movements to Abolish Casteism in Muslim Society (1990s):</strong>
+  <ul>
+    <li><strong>All India Backward Muslim Morcha</strong> — Dr. Ejaz Ali</li>
+    <li><strong>All India Pasmanda Muslims Mahaj</strong> — Ali Anwar from Bihar</li>
+    <li><strong>All India Muslim OBC Organisation</strong> — Shabbir Ansari from Maharashtra</li>
+  </ul>
+</div>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study — Caste Among Christians</div>
+  <strong>Persistence of Caste System among Indian Christians</strong>
+  <ul>
+    <li><strong>Kerala:</strong> Syrian Christians practiced caste-like purity rules, including ritual baths after contact with Dalits. Intermarriage between Knanaya, Nasrani, and Dalit Christians remains rare.</li>
+    <li><strong>Goa:</strong> Portuguese assigned surnames to suppress caste, but divisions persisted. Converts from Brahmin/merchant castes became <strong>Bamonns and Chardos</strong>; lower castes labelled <strong>Sudirs</strong>.</li>
+    <li><strong>Tamil Nadu:</strong> Communities like <strong>Paravar, Nadar, and Adi Dravida Christians</strong> retain strong caste identities. Christian Nadars prefer marrying Hindu Nadars over Christians of lower caste status.</li>
+    <li><strong>North India:</strong> Dalit Christians descended from <strong>Chuhra and Chamar converts</strong> face occupational segregation; referred to as <strong>"New Christians"</strong> (derogatorily). Report: separate seating, restricted church entry, exclusion from priesthood.</li>
+  </ul>
+</div>
+
+<h3>Debate on Non-Hindu Scheduled Castes</h3>
+<ul>
+  <li><strong>January 2020:</strong> Supreme Court agreed to examine a petition seeking "religion-neutral" SC reservations.</li>
+  <li>The plea challenges <strong>Paragraph 3 of the Constitution (Scheduled Castes) Order, 1950</strong>, which limits SC status to Dalits belonging to Hindu, Sikh, or Buddhist faiths — thereby excluding <strong>Dalit Christians and Dalit Muslims</strong>.</li>
+  <li>Petition argues this violates <strong>Articles 14, 15, and 25</strong>.</li>
+  <li><strong>Justice Ranganath Misra Commission (2007)</strong> and <strong>National Commission for Minorities Report by Satish Deshpande and Geetika Bapna (2008)</strong> — both recommended extension of SC benefits irrespective of religion.</li>
+  <li><strong>2022:</strong> Union Government constituted a three-member Commission headed by former CJ <strong>K.G. Balakrishnan</strong> to re-examine the issue of SC status for Dalit Christians and Dalit Muslims.</li>
+</ul>
+
+<h2>Procedure for Inclusion in OBC Lists</h2>
+
+<table class="table-blue">
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Central OBC List</th>
+      <th>State OBC List</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td>State/UT Proposal to Ministry of Social Justice &amp; Empowerment (MoSJE)</td>
+      <td>Community/Government Request</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td>Examination by National Commission for Backward Classes (NCBC) with anthropologist &amp; economist inputs</td>
+      <td>Evaluation by State Backward Classes Commission (SBCC)</td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td>Union Cabinet Approval</td>
+      <td>State Cabinet &amp; Legislature Approval (where required under state law)</td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td>Presidential Notification under <strong>Article 342A(1)</strong></td>
+      <td>Governor's Notification</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="section-divider">
+
+<!-- ======================== SECTION 5: SOCIAL CHANGE PRE-INDEPENDENCE ======================== -->
+<h1>Unit 7.2 — Social Change During Pre-Independence Period</h1>
+
+<div class="mind-map">
+  <div class="mm-title">Section Overview</div>
+  <div class="mm-items">
+    <span class="mm-chip colonial">Definitions of Social Change</span>
+    <span class="mm-chip colonial">BK Roy Burman Classification</span>
+    <span class="mm-chip colonial">Historical Pace</span>
+    <span class="mm-chip colonial">5 Causes</span>
+    <span class="mm-chip colonial">Surajit Sinha's 5 Movements</span>
+    <span class="mm-chip colonial">Economy / Polity / Society</span>
+    <span class="mm-chip colonial">Peasantization</span>
+    <span class="mm-chip colonial">KS Singh's 2 Phases</span>
+  </div>
+</div>
+
+<h2>Definitions of Social Change</h2>
+
+<div class="scholar">
+  <strong>Anderson and Parker:</strong> "Social change involves <strong>alteration</strong> in the <strong>structure and functioning</strong> of societal forms or processes themselves."
+</div>
+
+<div class="scholar">
+  <strong>Surinder Jodhka:</strong> Social Change refers to the <strong>change in values, institutions, and practices</strong>.
+</div>
+
+<p>Tribal societies, like other societies, have undergone change. <strong>Colonial transformation</strong> of tribal society is an important area of study in Anthropology. The main theme: <strong>disturbance of the traditional tribal socio-economic system</strong>.</p>
+
+<h2>B.K. Roy Burman's Classification (1970)</h2>
+
+<div class="scholar">
+  <strong>B.K. Roy Burman (1970)</strong> classified tribes based on their orientation towards Hindu society:
+  <table style="margin-top:8px;">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Orientation</th>
+        <th>Examples</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Type 1</strong></td>
+        <td>Tribes <strong>incorporated</strong> in the Hindu society</td>
+        <td>Bhil, Bhumij</td>
+      </tr>
+      <tr>
+        <td><strong>Type 2</strong></td>
+        <td>Tribes <strong>positively oriented</strong> towards the Hindu society</td>
+        <td>Santhal, Oraon</td>
+      </tr>
+      <tr>
+        <td><strong>Type 3</strong></td>
+        <td>Tribes <strong>negatively oriented</strong> towards the Hindu society</td>
+        <td>Mizo, Naga</td>
+      </tr>
+      <tr>
+        <td><strong>Type 4</strong></td>
+        <td>Tribes <strong>indifferent</strong> towards the Hindu society</td>
+        <td>Tribal communities from Arunachal</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="margin-top:8px;"><em>Note: Roy Burman himself later disassociated from this approach. Useful for pre-colonial/colonial context but <strong>not for understanding social change</strong>.</em></p>
+</div>
+
+<div class="scholar">
+  <strong>L.P. Vidyarthi and S.C. Dube:</strong> To understand the colonial and post-colonial situation, classified tribes based on different levels and stages of <strong>acculturation</strong> (assimilation towards the dominant culture, typically Hindu peasantry in different regions).
+</div>
+
+<h2>Historical Pace of Social Change</h2>
+
+<table class="table-blue">
+  <thead>
+    <tr>
+      <th>Period</th>
+      <th>Pace of Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ancient Times</td>
+      <td>No social change</td>
+    </tr>
+    <tr>
+      <td>Medieval India</td>
+      <td>Less social change</td>
+    </tr>
+    <tr>
+      <td>Colonial Rule</td>
+      <td>More social change</td>
+    </tr>
+    <tr>
+      <td>Post-Independence</td>
+      <td><strong>Rapid</strong> social change</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Five Causes of Social Change</h2>
+<ol>
+  <li>Introduction of outsiders in tribal areas</li>
+  <li>Extension of state authority in tribal areas</li>
+  <li>Commercialisation of agriculture</li>
+  <li>Hinduisation and Christianity (Evangelisation)</li>
+  <li><strong>Ethnic revolts and tribal movements</strong></li>
+</ol>
+
+<h2>Surajit Sinha (1972) — Five Types of Tribal Movements</h2>
+
+<div class="scholar">
+  <strong>Surajit Sinha (1972)</strong> identified five types of tribal movements as causes of social change:
+  <table style="margin-top:8px;">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Type</th>
+        <th>Period / Examples</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1</strong></td>
+        <td><strong>Ethnic Rebellious Movements</strong> during British rule</td>
+        <td>18th–19th centuries: Birsa movement (Mundas), Kol rebellion (1832), Santhal Rebellion (1855–56, Bihar — led by <strong>Sido and Kanhu</strong> against zamindars and moneylenders; later turned anti-British), Naga rebellion (1880s)</td>
+      </tr>
+      <tr>
+        <td><strong>2</strong></td>
+        <td><strong>Reform Movements</strong> — emulating Hindu caste patterns</td>
+        <td>Bhagat movement (Oraon), Vaishnavite movement (Bhumij), Kehr movement (Santhals)</td>
+      </tr>
+      <tr>
+        <td><strong>3</strong></td>
+        <td><strong>Political Movements</strong> for tribal states within Indian Union (post-Independence)</td>
+        <td>Jharkhand movement in Chotanagpur and Orissa, Hill states movement in Assam and MP</td>
+      </tr>
+      <tr>
+        <td><strong>4</strong></td>
+        <td><strong>Secessionist Movements</strong></td>
+        <td>Naga and Mizo movements</td>
+      </tr>
+      <tr>
+        <td><strong>5</strong></td>
+        <td><strong>Agrarian Unrest Movements</strong></td>
+        <td>Naxalbari movement (1967), Birsadal movement (1968–69)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Social Changes in Economy (Pre-Independence)</h2>
+
+<h3>Non-Monetised to Monetised Economy</h3>
+<ul>
+  <li>Tribal markets declined; traditional barter exchange died away.</li>
+  <li>Reciprocity, redistribution, and socio-cultural exchange were the bases of the traditional tribal economy.</li>
+  <li>Some evidence that sections of tribes took to <strong>commodity production on a limited scale</strong> (K.S. Singh).</li>
+</ul>
+
+<h3>Peasantization and Depeasantization (K.S. Singh)</h3>
+
+<div class="scholar">
+  <strong>K.S. Singh — Two Simultaneous Processes (operated simultaneously):</strong>
+  <ul>
+    <li><strong>Peasantization:</strong> Several tribal communities who were not peasants were coming into the fold of peasantry.</li>
+    <li><strong>Depeasantization:</strong> A number of tribal people after <strong>losing their land</strong> were entering a different economic system. Small and marginal farmers pushed out of the agricultural sector — this process is increasing.</li>
+    <li>Substantial sections from Middle India — <strong>Santhals, Oraon, and Munda</strong> — had to migrate to the <strong>tea plantations of Assam</strong> and adjoining areas; others became industrial labor, share-croppers, etc.</li>
+  </ul>
+</div>
+
+<h2>Social Changes in Polity (Pre-Independence)</h2>
+<p>Customary law of tribal communities was replaced by the <strong>new law of the centralized state power</strong> during British rule. The new law operated through its administrative and judicial organs and helped the process of Hinduisation to some extent.</p>
+
+<h2>Social Changes — Social Dimension (Pre-Independence)</h2>
+
+<h3>Ethnic Conflicts</h3>
+<p>Due to prolonged relative isolation, tribal communities developed their own social structure and mechanism of social control. They reacted to colonial changes more <strong>strongly and often violently</strong> than other populations. Most tribal movements could be covered under the headings: <strong>'Anti-Colonial', 'Anti-Diku', and 'Pro-Ethnic'</strong>.</p>
+
+<div class="scholar">
+  <strong>K.S. Singh — Two Phases of Ethnic Conflicts:</strong>
+  <br><br>
+  <span class="phase colonial">Phase 1 (1795–1860)</span> — Rise, expansion, and establishment of British empire:
+  <ul>
+    <li>Chuar rebellion (1795–1800)</li>
+    <li>Kol and Bhumij insurrections</li>
+    <li>Resistance by Gond zamindars in 1819 and 1842</li>
+    <li>Khond resistance of the mid-1830s</li>
+    <li>Santhal insurrection (1855–59)</li>
+  </ul>
+  <span class="phase colonial">Phase 2 (1860–1920)</span> — Intensive phase of colonialism (deeper penetration by merchant capital, higher incidence of rent):
+  <ul>
+    <li>Munda-Oraon Sardar Movement (1869–1895) — led by <strong>Birsa Munda</strong></li>
+    <li>Tana Bhagat Movement (1895–1901)</li>
+    <li>Bhil's movement — led by <strong>Govind Giri</strong></li>
+  </ul>
+</div>
+
+<h3>Sanskritization</h3>
+<p>Tribal society moving closer to the peasant/caste stratified system strengthened the role of Sanskritization. Some tribes of central India unitedly moved towards the Varna system and laid claim over <strong>Kshatriya status</strong> (Kshatriazation — the easiest and most popular process). Example: <strong>Santhals and the Gonds</strong> followed Sanskritization model.</p>
+
+<h3>Kinship Breakdown</h3>
+<p>Breakdown of kinship relations due to alienation from land and migration. Adivasi communities depend on kin relationships for access to information, assistance during health problems, child care, economic assistance, and social support. Hardships of displacement exacerbate the <strong>gendered burden of morbidities and mortality on Adivasi women</strong>.</p>
+
+<h3>Religion</h3>
+<ul>
+  <li>Indigenous religious beliefs such as Animism, sacredness of sacred groves underwent dilution.</li>
+  <li>Sanskritization and conversions into Christianity were common.</li>
+  <li>Christianity was perhaps the <strong>earliest agency of welfare</strong> in tribal areas.</li>
+  <li>The <strong>modernizing role of Christian missions</strong> is an important feature of social change in tribal areas where it had deep impact.</li>
+  <li>Close link between Christianity and Colonialism — values and institutions of affected tribal communities wilted under Christian impact.</li>
+  <li>The fate of <strong>'Youth Dormitories'</strong> — very popular tribal institution — declined (missionaries wanted churches to be the only places of congregation).</li>
+  <li>At the same time, Christianity gave a <strong>new sense of self-respect</strong> to the tribal peasants and sought to create a <strong>separate identity</strong> for them.</li>
+</ul>
+
+<div class="quote-box">
+  <strong>Colonial Transformation Summary:</strong> What began as limited contact turned into widespread economic dependence, displacement, and acculturation. The shift from <em>self-sufficient tribal systems to monetized, stratified, and state-controlled societies</em> marked one of the most significant phases of social change in India's tribal history.
+</div>
+
+<hr class="section-divider">
+
+<!-- ======================== SECTION 6: POST-COLONIAL SOCIAL CHANGE ======================== -->
+<h1>Social Changes in the Post-Colonial Period</h1>
+
+<div class="mind-map">
+  <div class="mm-title">Section Overview</div>
+  <div class="mm-items">
+    <span class="mm-chip post-colonial">Chaudhary 1990 — Key Observations</span>
+    <span class="mm-chip post-colonial">People of India Project</span>
+    <span class="mm-chip post-colonial">Hunter-Gatherers</span>
+    <span class="mm-chip post-colonial">Artisans</span>
+    <span class="mm-chip post-colonial">Shifting Cultivators</span>
+    <span class="mm-chip post-colonial">Settled Agriculturists</span>
+    <span class="mm-chip post-colonial">Panchayats (Gond)</span>
+  </div>
+</div>
+
+<h2>Chaudhary (1990) — Key Observations</h2>
+
+<div class="scholar">
+  <strong>Chaudhary (1990)</strong> in the introduction to <em>'Tribal Transformation in India' (5 Vols.)</em> highlighted the following:
+  <ol>
+    <li>Transformation from peripheral existence to the <strong>awareness of civic rights</strong></li>
+    <li>The <strong>development has not been up to expectations</strong>:
+      <ul>
+        <li>Census 2011: Literacy rate of STs was <span class="stat">59%</span> whereas overall literacy rate was <span class="stat">73%</span></li>
+        <li>NFHS-4 (2015–16): Under-5 mortality among tribal population was <span class="stat">57.2 per 1000 live births</span> vs <span class="stat">38.5 among others</span>; IMR <span class="stat">44.4 per 1000</span> vs others at <span class="stat">32.1</span></li>
+      </ul>
+    </li>
+    <li><strong>Elite class</strong> has emerged through present democratic institutions and has <strong>cornered the developmental benefits</strong>:
+      <ul>
+        <li>Eg: According to <strong>Mr. Prabhu</strong>, dominant groups like <strong>Valmiki and the Naika communities</strong> cornered all the developmental schemes. Primitive tribes like <strong>Jenu Kuruba and Soligas</strong> are left in the lurch.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+
+<h2>People of India Project (Anthropological Survey of India) — Findings</h2>
+
+<div class="concept">
+  <ul>
+    <li>Many tribes participated in the country in various ways — became <strong>entrepreneurs, businessmen, teachers, political leaders</strong>.</li>
+    <li>Educational levels <strong>doubled</strong> from 8.53% to 16.35% (1961 to 1981).</li>
+    <li>Literacy rate for STs improved from <span class="stat">47.1% in 2001</span> to <span class="stat">59% in 2011</span> (Census).</li>
+    <li>Tribes avail health and medical facilities; decline in death rate and rise in birth rate.</li>
+    <li>Coverage of <strong>mass media</strong> (radio and television) in tribal areas has increased.</li>
+  </ul>
+</div>
+
+<h2>Case Studies — Post-Colonial Change by Community Type</h2>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study — Hunter-Gatherers</div>
+  <strong>Jenu Kuruba, Bhil, Bhilala, Chenchu</strong>
+  <p>Losing control over means of subsistence from early colonial rule; forced to other survival strategies.</p>
+  <ul>
+    <li><strong>Jenu Kuruba:</strong> With vast traditional forest knowledge, now helping the forest department in rearing elephants and collection of forest produce.</li>
+    <li><strong>Bhaviskar (1995):</strong> Traced criminality among the <strong>Bhil and the Bhilala</strong> of Jhabua district, MP, to the growing control of the State over forest resources and degradation of cultivable lands.</li>
+    <li><strong>Chenchu resettlement scheme</strong> failed — as a result, some have taken to crime in certain areas.</li>
+  </ul>
+</div>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study — Artisans</div>
+  <strong>Agarias, Asurs, Dhurva (Dhokda Crafts)</strong>
+  <ul>
+    <li><strong>Gadgil and Guha (1992):</strong> Pointed out how artisan activities like <strong>Blacksmithing are declining</strong> and the <strong>Agarias and Asurs</strong> took up agriculture.</li>
+    <li>Availability of raw materials for crafts like basketry; <strong>high price charged for bamboo by the forest department</strong> contributed to impoverishment of tribals.</li>
+    <li>Study on <strong>Dhokda crafts among the Dhurva of MP</strong>: Deficiencies in government schemes related to training, supply of tool-kits, and marketing.</li>
+  </ul>
+</div>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study — Shifting Cultivators</div>
+  <strong>Jhum Cultivators</strong>
+  <p>Hit hard due to <strong>government forest policies</strong>. Alternative activities like animal husbandry and plantation started gaining prominence. A class of <strong>landless agricultural workers</strong> has emerged as a result of the Jhum lands being taken over by the forest department. These people are now wage earners in the plantations.</p>
+</div>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study — Settled Agriculturists</div>
+  <strong>Santhals (Manapatra's study)</strong>
+  <p>Tribals started adopting new methods like <strong>line sowing and manure pits</strong>. Manapatra's study on the Santhals points out that out of eight Santhal sub-groups, the <strong>Murmu (priest), the Mardi, and the Tudu</strong> — who are most influential and landed — have <strong>gained the most</strong> through the planning process, depriving the other groups. Classic case of <strong>elite capture</strong>.</p>
+</div>
+
+<div class="casestudy">
+  <div class="cs-label">Case Study — Panchayats</div>
+  <strong>Gond — Modern Democratic Institutions (People of India study)</strong>
+  <p>Statutory panchayats are active in village politics and close to power structure. Traditional panchayats have restricted their activities to deciding civil disputes like <strong>marital disputes</strong>. So <strong>both coexist now</strong> — no clash observed between the traditional Panchayat and the statutory panchayats.</p>
+</div>
+
+<div class="quote-box">
+  <strong>Post-Independence Summary:</strong> Development efforts brought both progress and disparity. While education, health, and political participation improved, uneven implementation and elite capture meant that <em>many vulnerable groups remained marginalized</em> — social change has been uneven and incomplete.
+</div>
+
+<hr class="section-divider">
+
+<!-- ======================== SECTION 7: DEVELOPMENTAL PROGRAMMES ======================== -->
+<h1>Units 7.2 &amp; 9.1 — Developmental Programmes &amp; Welfare Measures for Tribals</h1>
+
+<div class="mind-map">
+  <div class="mm-title">Section Overview</div>
+  <div class="mm-items">
+    <span class="mm-chip green">TSP (1974)</span>
+    <span class="mm-chip green">Ekalavya Schools</span>
+    <span class="mm-chip green">Vanbandhu Kalyan Yojana</span>
+    <span class="mm-chip green">MFP-MSP Scheme</span>
+    <span class="mm-chip green">PM Van Dhan Yojana</span>
+    <span class="mm-chip green">ITDP + WADI</span>
+    <span class="mm-chip green">Friends of Tribes</span>
+    <span class="mm-chip green">TRIFED (1987)</span>
+    <span class="mm-chip red">7 Implementation Failures</span>
+  </div>
+</div>
+
+<h2>All Tribal Welfare Programmes — Master Table</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Programme</th>
+      <th>Year</th>
+      <th>Purpose</th>
+      <th>Key Features</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Tribal Sub-Plan (TSP)</strong></td>
+      <td>1974</td>
+      <td>Financial allocations in proportion to ST population (mandated 8.6% of central plan budget)</td>
+      <td>Non-divertible, non-lapsable funds; 30 Central Ministries + 23 States + 4 UTs; not applicable where tribals &gt;60% of population; BD Sharma: "Fifth Schedule and TSP are two co-equal pillars"</td>
+    </tr>
+    <tr>
+      <td><strong>Ekalavya Model Residential Schools</strong></td>
+      <td>Centrally Sponsored Scheme</td>
+      <td>Quality middle and high-level education to STs; at par with Navodaya Vidyalayas</td>
+      <td>Every block with &gt;50% and at least 20,000 tribal people; 100% grant-in-aid from MoTA; state-of-art infrastructure for skill development and sports training</td>
+    </tr>
+    <tr>
+      <td><strong>Vanbandhu Kalyan Yojana</strong></td>
+      <td>Central Scheme</td>
+      <td>Improving quality of life; better education; quality infrastructure; protecting tribal culture and heritage</td>
+      <td>Oversees other central and state schemes under respective Tribal Sub-Plans; umbrella scheme</td>
+    </tr>
+    <tr>
+      <td><strong>MFP-MSP Scheme</strong> (Minor Forest Produce — Minimum Support Price)</td>
+      <td>Ongoing</td>
+      <td>Ensure MFP gatherers receive fair price through MSP for identifiable MFP</td>
+      <td>Being implemented in 21 states; necessary infrastructure at local level; designed to improve livelihoods by providing fair price</td>
+    </tr>
+    <tr>
+      <td><strong>PM Van Dhan Yojana</strong></td>
+      <td>Part of MFP-MSP</td>
+      <td>Upgradation of skill; primary processing and value addition facility</td>
+      <td>Establishes tribal community-owned <strong>Van Dhan Vikas Kendras (VDVKs)</strong>; each Kendra = 15 tribal SHGs × 20 tribal NTFP gatherers; 100% Central Funded; training in value addition, enterprise management; branding &amp; marketing support</td>
+    </tr>
+    <tr>
+      <td><strong>ITDP (Integrated Tribal Development Projects)</strong></td>
+      <td>5th Five Year Plan onwards</td>
+      <td>Reduce poverty, improve educational status, eliminate exploitation of tribal families</td>
+      <td>Evaluated by PEO in 1996 (report July 1997); findings: decentralized planning not operational; delivery system not effective; inadequate primary education and health facilities</td>
+    </tr>
+    <tr>
+      <td><strong>WADI (NABARD-funded)</strong></td>
+      <td>Part of ITDP</td>
+      <td>Tribal development through horticulture and multi-cropping</td>
+      <td>5,394 acres promoted; 5,550+ tribal families benefitted; average yearly income increased to ₹20,000–₹30,000; achieved food and nutritional security through multi-cropping</td>
+    </tr>
+    <tr>
+      <td><strong>Friends of Tribes Initiative (TRIFED)</strong></td>
+      <td>Ongoing</td>
+      <td>Promote tribal livelihoods, arts, and crafts through CSR funds</td>
+      <td>Products available under <strong>Tribes India brand</strong>; procurable through Amazon, Flipkart, etc.; awareness campaigns for tribal arts and crafts</td>
+    </tr>
+    <tr>
+      <td><strong>TRIFED (Tribal Cooperative Marketing Development Federation)</strong></td>
+      <td>1987</td>
+      <td>National-level cooperative; promote socio-economic development of STs through marketing support, value addition, and capacity building</td>
+      <td>Nodal agency for MSP for MFP Scheme; manages "Tribes India" retail outlets, e-commerce; exhibitions like <strong>Aadi Mahotsav</strong>; works with state federations, NGOs, SHGs; promotes Van Dhan Vikas Yojana (VDVY)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Tribal Sub-Plan (TSP) — Detailed Analysis</h2>
+
+<h3>Background</h3>
+<div class="scholar">
+  <strong>UN Dhebar Commission (1961):</strong> TSP was first presented as the magic solution by the Dhebar Commission in response to massive tribal unrest in central-eastern India due to land alienation, poverty, indebtedness, and exploitation by non-tribal dominant groups.
+</div>
+
+<div class="scholar">
+  <strong>BD Sharma:</strong> Asserted that the <strong>Fifth Schedule</strong> and the <strong>Tribal Subplan</strong> are two <strong>co-equal pillars of tribal empowerment</strong>.
+</div>
+
+<div class="casestudy">
+  <div class="cs-label">TSP Budget Gap — Case Study</div>
+  <p>An allocation of <span class="stat">₹89,265.12 crore</span> in the Union Budget accounts for only <span class="stat">2.26% of the total expenditure</span> — far below the mandated <span class="stat">8.6%</span> allocation needed for tribal welfare.</p>
+</div>
+
+<h2>Planning Commission 2013 — Seven Implementation Failures of TSP</h2>
+
+<div class="important">
+  <strong>Planning Commission 2013 evaluation of TSP effectiveness — Prominent reasons for underperformance:</strong>
+</div>
+
+<ol class="num-list">
+  <li>
+    <strong>Lack of Unified Planning, Implementation, and Monitoring Mechanism</strong>
+    <p>Multiple ministries and departments execute tribal welfare schemes independently without a single nodal agency to coordinate or monitor progress. This leads to duplication of efforts, fragmented accountability, and delays in project execution.</p>
+  </li>
+  <li>
+    <strong>Weak Convergence between Central and State Plan TSP Funds</strong>
+    <p>Absence of a synchronized framework to integrate Central and State-level TSP allocations has resulted in overlapping projects and inefficient fund utilization. Many states have treated TSP as an <strong>accounting formality</strong>, diverting funds to general schemes without specific tribal focus.</p>
+  </li>
+  <li>
+    <strong>Scattered Financial Resources and Fragmented Utilization</strong>
+    <p>Tribal welfare funds are often <strong>thinly spread across numerous small projects</strong>, reducing their transformative potential. Short-term or symbolic initiatives dominate, failing to generate measurable improvements in income, literacy, or health outcomes.</p>
+  </li>
+  <li>
+    <strong>Absence of Location-Specific Perspective Planning</strong>
+    <p>The TSP lacks <strong>context-sensitive micro-planning</strong> that accounts for the ecological, cultural, and socio-economic diversity of tribal regions. Uniform program designs imposed on heterogeneous tribal areas, ignoring the specific needs of PVTGs, forest-dependent communities, or pastoral tribes.</p>
+  </li>
+  <li>
+    <strong>Lack of Systematic Gap Analysis</strong>
+    <p>No <strong>comprehensive baseline assessment</strong> is conducted to identify development deficits between tribal and non-tribal populations. TSP allocations are not evidence-based and priorities remain misaligned with ground realities.</p>
+  </li>
+  <li>
+    <strong>Weakening of Dedicated Tribal Institutions</strong>
+    <p>Weakening of institutions specifically meant for delivery of goods and services: Integrated Tribal Development Agency (ITDA)/Integrated Tribal Development Projects/Tribal Research Institutes (TRI) and other Micro Projects.</p>
+  </li>
+  <li>
+    <strong>Misuse of TSP Funds</strong>
+    <p>Several instances where TSP funds are actually used in <strong>forcing tribal displacement</strong> from government projects or sites for mineral extraction. A major share also allocated in building highways used by <strong>mining companies</strong> to transport minerals from tribal areas. Worst cases: purchasing choppers and repairing jail buildings in <strong>Jharkhand</strong>.</p>
+  </li>
+</ol>
+
+<div class="quote-box">
+  <strong>Planning Commission Evaluation Conclusion:</strong> Despite significant financial allocations, <em>ineffective coordination, poor convergence, and lack of localized planning</em> have limited the TSP's impact — calling for institutional reform, data-driven planning, and greater accountability in tribal welfare governance.
+</div>
+
+<h2>General Way Forward</h2>
+
+<div class="concept">
+  <ul>
+    <li>Involve all stakeholders — administrators, anthropologists, and most importantly <strong>the tribals themselves</strong> — to adopt a <strong>felt-needs approach</strong>.</li>
+    <li>As <strong>Verrier Elwin</strong> urged: Tribal development must let communities grow <strong>"according to their own genius."</strong></li>
+    <li>As <strong>L.P. Vidyarthi</strong> reminded: It should balance material progress with cultural happiness, ensuring empowerment through <strong>culturally sensitive, participatory, and rights-based approaches</strong>.</li>
+  </ul>
+</div>
+
+<hr class="section-divider">
+
+<!-- ======================== SECTION 8: SCHOLARS QUICK REFERENCE ======================== -->
+<h1>Key Scholars &amp; Contributions — Quick Reference</h1>
+
+<table class="table-blue">
+  <thead>
+    <tr>
+      <th>Scholar</th>
+      <th>Key Contribution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>B.K. Roy Burman (1970)</strong></td>
+      <td>Classification of tribes based on orientation towards Hindu society (incorporated / positively / negatively / indifferent)</td>
+    </tr>
+    <tr>
+      <td><strong>L.P. Vidyarthi and S.C. Dube</strong></td>
+      <td>Classification of tribes based on levels of acculturation toward Hindu peasantry</td>
+    </tr>
+    <tr>
+      <td><strong>Surajit Sinha (1972)</strong></td>
+      <td>Five types of tribal movements (ethnic rebellious, reform, political, secessionist, agrarian unrest)</td>
+    </tr>
+    <tr>
+      <td><strong>K.S. Singh</strong></td>
+      <td>Peasantization/Depeasantization; Two phases of ethnic conflicts (1795–1860 and 1860–1920)</td>
+    </tr>
+    <tr>
+      <td><strong>Chaudhary (1990)</strong></td>
+      <td>'Tribal Transformation in India' (5 Vols.) — post-Independence tribal change; elite capture of development</td>
+    </tr>
+    <tr>
+      <td><strong>Gadgil and Guha (1992)</strong></td>
+      <td>Study on decline of artisan activities among tribal communities (Agarias and Asurs took up agriculture)</td>
+    </tr>
+    <tr>
+      <td><strong>Bhaviskar (1995)</strong></td>
+      <td>Study on criminality among Bhil and Bhilala of Jhabua (MP) linked to state control over forest resources</td>
+    </tr>
+    <tr>
+      <td><strong>Manapatra</strong></td>
+      <td>Study on Santhals showing elite capture of planning benefits (Murmu, Mardi, Tudu sub-groups gained most)</td>
+    </tr>
+    <tr>
+      <td><strong>Anderson and Parker</strong></td>
+      <td>Definition of Social Change: "alteration in the structure and functioning of societal forms or processes"</td>
+    </tr>
+    <tr>
+      <td><strong>Surinder Jodhka</strong></td>
+      <td>Social Change = change in values, institutions, and practices</td>
+    </tr>
+    <tr>
+      <td><strong>K.B. Saxena</strong></td>
+      <td>NHRC statistics on Dalit exploitation (37% BPL, 54% undernourished, 45% illiterate)</td>
+    </tr>
+    <tr>
+      <td><strong>Ajit Donner and Saxena (2012)</strong></td>
+      <td>Study showing 93% of board members of 1000 firms were from upper castes</td>
+    </tr>
+    <tr>
+      <td><strong>Verrier Elwin</strong></td>
+      <td>Tribal development should let communities grow "according to their own genius"</td>
+    </tr>
+    <tr>
+      <td><strong>Lokur Committee (1965)</strong></td>
+      <td>Five criteria for identification of Scheduled Tribes</td>
+    </tr>
+    <tr>
+      <td><strong>Hrusikesh Panda (2014 Task Force)</strong></td>
+      <td>Found Lokur criteria obsolete, rigid, and condescending; proposed new holistic criteria</td>
+    </tr>
+    <tr>
+      <td><strong>BD Sharma</strong></td>
+      <td>Fifth Schedule and TSP are two co-equal pillars of tribal empowerment</td>
+    </tr>
+    <tr>
+      <td><strong>UN Dhebar Commission (1961)</strong></td>
+      <td>First proposed TSP as solution to tribal unrest in central-eastern India</td>
+    </tr>
+    <tr>
+      <td><strong>Justice G. Rohini (2017)</strong></td>
+      <td>Rohini Commission on sub-categorization of OBCs; found 10 sub-castes cornering 25% of OBC benefits</td>
+    </tr>
+    <tr>
+      <td><strong>Justice Ranganath Misra (2007)</strong></td>
+      <td>Recommended extension of SC benefits irrespective of religion</td>
+    </tr>
+    <tr>
+      <td><strong>K.G. Balakrishnan (2022)</strong></td>
+      <td>Three-member Commission constituted to re-examine SC status for Dalit Christians and Dalit Muslims</td>
+    </tr>
+    <tr>
+      <td><strong>Mr. Prabhu</strong></td>
+      <td>Observed that dominant groups (Valmiki, Naika) cornered developmental schemes, leaving PVTGs like Jenu Kuruba and Soligas behind</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="section-divider">
+
+<!-- ======================== SECTION 9: KEY DATA POINTS ======================== -->
+<h1>Key Data Points to Remember</h1>
+
+<table class="table-purple">
+  <thead>
+    <tr>
+      <th>Data Point</th>
+      <th>Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Estimated PAPs displaced by development projects</td>
+      <td><span class="stat">50 to 100 million persons</span></td>
+    </tr>
+    <tr>
+      <td>Hirakud Dam displaced families (1950s, Odisha)</td>
+      <td><span class="stat">22,000 families</span></td>
+    </tr>
+    <tr>
+      <td>ST Infant Mortality Rate (2019–21)</td>
+      <td><span class="stat">41.6</span> (down from 62.1 in 2005–06)</td>
+    </tr>
+    <tr>
+      <td>ST Literacy Rate (Census 2011)</td>
+      <td><span class="stat">59%</span> (vs all-India 73%)</td>
+    </tr>
+    <tr>
+      <td>OBC population (Mandal Commission, 1980)</td>
+      <td><span class="stat">52%</span> of country's population</td>
+    </tr>
+    <tr>
+      <td>OBCs on central list (Rohini Commission finding)</td>
+      <td><span class="stat">2,633 OBCs</span> — 1,900 castes received no/minimal benefits</td>
+    </tr>
+    <tr>
+      <td>Sub-castes receiving 25% of OBC benefits</td>
+      <td>Only <span class="stat">10 sub-castes</span></td>
+    </tr>
+    <tr>
+      <td>OBC reservation mandate</td>
+      <td><span class="stat">27%</span> in public employment and higher education</td>
+    </tr>
+    <tr>
+      <td>TSP budget mandate</td>
+      <td><span class="stat">8.6%</span> of total central plan budget</td>
+    </tr>
+    <tr>
+      <td>Actual TSP allocation (recent budget)</td>
+      <td>Only <span class="stat">2.26%</span> of total expenditure (₹89,265.12 crore)</td>
+    </tr>
+    <tr>
+      <td>SC literacy rate (Census 2011)</td>
+      <td><span class="stat">66.1%</span> (vs all-India 73%)</td>
+    </tr>
+    <tr>
+      <td>SC female literacy rate (Census 2011)</td>
+      <td><span class="stat">56.5%</span> (vs all-India female 64.6%)</td>
+    </tr>
+    <tr>
+      <td>Dalit crime statistics (NHRC 2010)</td>
+      <td>A crime against a Dalit <span class="stat">every 18 minutes</span></td>
+    </tr>
+    <tr>
+      <td>Dalits below poverty line (K.B. Saxena)</td>
+      <td><span class="stat">37%</span></td>
+    </tr>
+    <tr>
+      <td>Dalit infant mortality (per 1000 births)</td>
+      <td><span class="stat">83 per 1,000</span> die before first birthday</td>
+    </tr>
+    <tr>
+      <td>Savarna Muslims (Ashraf) — % of Muslim population</td>
+      <td><span class="stat">~15%</span></td>
+    </tr>
+    <tr>
+      <td>WADI program — land promoted</td>
+      <td><span class="stat">5,394 acres</span>, benefitting 5,550+ tribal families</td>
+    </tr>
+    <tr>
+      <td>Ekalavya school trigger</td>
+      <td>Block with &gt;50% tribal population and at least <span class="stat">20,000 tribal people</span></td>
+    </tr>
+    <tr>
+      <td>MFP-MSP Scheme coverage</td>
+      <td>Being implemented in <span class="stat">21 states</span></td>
+    </tr>
+    <tr>
+      <td>ST Institutional Delivery (NFHS 2019–21)</td>
+      <td><span class="stat">82.3%</span> (up from 17.7% in 2005–06)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="section-divider">
+
+<!-- ======================== SECTION 10: UPSC PROBABLE QUESTIONS ======================== -->
+<h1>UPSC Probable Questions — Paper 2</h1>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q1 — 10 Marks</div>Distinguish between Resettlement and Rehabilitation. What are the key issues in R&amp;R of displaced tribals in India? Suggest solutions.</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q2 — 10 Marks</div>Describe the Constitutional provisions for the development and protection of Scheduled Tribes in India.</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q3 — 15 Marks</div>What are the Lokur Committee criteria for identification of Scheduled Tribes? Discuss their criticisms and suggest a more contemporary framework (Panda Committee).</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q4 — 10 Marks</div>Discuss the problems of exploitation and discrimination faced by Scheduled Castes in India. What are the factors responsible for these problems?</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q5 — 15 Marks</div>Critically examine the effectiveness of Constitutional safeguards for Scheduled Castes and Scheduled Tribes.</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q6 — 10 Marks</div>What is the Creamy Layer concept? Should economic criteria be applied to SCs and STs as well? Critically analyze.</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q7 — 15 Marks</div>Examine the concept of 'Other Backward Classes' in India. Discuss the Kalekar Commission and Mandal Commission and the issue of sub-categorization (Rohini Commission).</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q8 — 15 Marks</div>Discuss the social changes brought about by colonial rule among tribal communities with special reference to economy, polity, and religion.</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q9 — 10 Marks</div>Examine the nature and types of tribal movements in India during the colonial period (with reference to Surajit Sinha's typology).</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q10 — 15 Marks</div>Discuss the social changes among tribal communities in post-Independence India with suitable examples (with reference to Chaudhary's 'Tribal Transformation in India').</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q11 — 15 Marks</div>Evaluate the effectiveness of the Tribal Sub-Plan (TSP) as a tool for tribal development. What are the major challenges in its implementation? (Planning Commission 2013 findings)</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q12 — 5 Marks each</div>Write short notes on: (a) TRIFED and Tribes India; (b) Pradhan Mantri Van Dhan Yojana; (c) Ekalavya Model Residential Schools; (d) WADI project.</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q13 — 10 Marks</div>"The restoration of livelihood is not merely in monetary terms alone — people aspire to restore the process of earning that livelihood." Discuss with reference to tribal displacement and rehabilitation.</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q14 — 10 Marks</div>Discuss the caste consciousness among non-Hindu communities in India with reference to Muslims (Ashraf/Ajlaf/Arzal) and Christians (Kerala, Goa, Tamil Nadu, North India).</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q15 — 10 Marks</div>Examine the debates around religion-neutral Scheduled Caste reservations in India. (Ranganath Misra Commission, K.G. Balakrishnan Commission, Constitutional Order 1950)</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q16 — 10 Marks</div>Critically examine B.K. Roy Burman's classification of tribes based on their orientation towards Hindu society.</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q17 — 10 Marks</div>Discuss the concept of Peasantization and Depeasantization among tribes during the colonial period (K.S. Singh).</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q18 — 10 Marks</div>Explain the two phases of ethnic conflicts among tribals as identified by K.S. Singh (1795–1860 and 1860–1920).</div>
+
+<div class="upsc-q"><div class="q-label">UPSC Probable Q19 — 10 Marks</div>What are the findings of the People of India Project (Anthropological Survey of India) regarding social change among tribals in post-Independence India?</div>
+
+<hr class="section-divider">
+
+<div style="text-align:center; padding: 16px; color: #6b7280; font-size: 9pt; border-top: 2px solid #e5e7eb; margin-top: 20px;">
+  <strong>Sarrthi IAS — Anthropology Optional Paper 2 | L-63 (Team Avengers) | Nataraj Sir</strong><br>
+  Units 6.3, 7.1, 7.2, 9.1 | R&amp;R | Constitutional Provisions | Social Change | Welfare Schemes<br>
+  Prepared for UPSC CSE 2026 | All content from memory file tribal_india_l63_notes.md
+</div>
+
+</body>
+</html>
