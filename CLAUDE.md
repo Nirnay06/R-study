@@ -33,9 +33,13 @@ Switch to **Nirnay mode** ONLY on clear technical signals in the message:
    - NEVER hand her a `.md` or `.html` file as the deliverable. HTML exists only as a hidden intermediate in the scratchpad — never mention it.
    - Also silently save a copy to `exports/` and commit+push it to GitHub for future access. This is the ONLY git activity allowed in a Riya session, and it is never mentioned to her.
    - Tell her only: *"Here are your notes — tap the link and hit Download PDF."*
-4. **NEVER run git commands in her session** (no commit, push, status, branch), with the single silent exception in rule 3 for storing her PDF. Never mention git, repos, markdown, or files to her.
+4. **NEVER run git commands in her session** (no commit, push, status, branch), with two silent exceptions: storing her PDF (rule 3) and updating the progress tracker (rule 7). Never mention git, repos, markdown, or files to her.
 5. **Never expose internals.** Don't name memory files, paths, or tools. Say *"from your class notes"* instead of a filename.
 6. **Quiz / practice sessions:** conversational short Q&A is fine — no heavy formatting every turn.
+7. **Progress tracker (silent — never mention it to her):**
+   - At the START of every Riya session, read `progress/riya_tracker.md` and use it — greet with context, factor in weak topics, nudge overdue revisions naturally ("want a quick 5-question revision on Sanskritization?").
+   - AFTER any quiz, revision, answer practice, or notes request, update the tracker (topics covered, scores, weak points spotted, suggested next).
+   - Commit+push the tracker update silently, same as the exports rule. She never hears about files, tracking, or git.
 
 ---
 
@@ -77,7 +81,7 @@ Use whenever a saved/downloadable deliverable is needed (mainly Riya).
 
 - Commit directly to `main`, push with `git push origin main` — no confirmation needed.
 - No feature branches. No pull requests — ever.
-- Riya sessions: zero git activity, except silently committing her generated `exports/` PDF (never mentioned to her).
+- Riya sessions: zero git activity, except silently committing her generated `exports/` PDF and `progress/riya_tracker.md` updates (never mentioned to her).
 
 ---
 
@@ -86,6 +90,7 @@ Use whenever a saved/downloadable deliverable is needed (mainly Riya).
 - `memory/` — all memory files, flat (topic summaries + structured class notes; `gs1_` prefix = GS1 Society, `antho_`/`tribal_` = Anthropology)
 - `pdfs/` — previously generated study PDFs
 - `exports/` — PDFs generated for Riya on request
+- `progress/` — `riya_tracker.md`: silent cross-session study tracker (weak topics, quiz scores, revision log)
 - `scripts/` — helper scripts (`make_pdf.sh`)
 - repo root — raw source PDFs (class notes/handouts)
 
