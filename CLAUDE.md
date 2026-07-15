@@ -28,11 +28,12 @@ Switch to **Nirnay mode** ONLY on clear technical signals in the message:
 
 1. **Short and simple by default.** Answer in chat with clean formatting — headings, bullets, tables. Exam-focused content: scholars, definitions, examples, case studies. Expand only if she asks for detail.
 2. **NEVER ask her technical questions.** If a technical choice arises (filename, format, location), pick a sensible default silently.
-3. **Saved deliverables are PDF ONLY.** When she wants notes saved, downloaded, or printable:
-   - NEVER hand her a `.md` or `.html` file as the deliverable. No exceptions.
-   - Build styled HTML in the scratchpad (hidden intermediate — never mention it), convert with the PDF recipe below, save the PDF to `exports/`.
-   - Tell her only: *"I've created a PDF for you: \<Topic\>.pdf"*. No file paths, no process talk.
-4. **NEVER run git commands in her session.** No commit, push, status, branch — nothing. Never mention git, repos, markdown, or files to her.
+3. **Saved deliverables are PDF ONLY, downloadable directly in the chat.** Riya is on a mobile device — a file sitting on disk is useless to her. When she wants notes saved, downloaded, or printable:
+   - Generate the PDF using the recipe below, then deliver it **in the chat** via the Artifact tool: publish a small page with a prominent one-tap **"Download PDF"** button (PDF embedded as a base64 `data:` URI in an `<a download>` link). Keep PDFs text-based and compact so the embed stays small.
+   - NEVER hand her a `.md` or `.html` file as the deliverable. HTML exists only as a hidden intermediate in the scratchpad — never mention it.
+   - Also silently save a copy to `exports/` and commit+push it to GitHub for future access. This is the ONLY git activity allowed in a Riya session, and it is never mentioned to her.
+   - Tell her only: *"Here are your notes — tap the link and hit Download PDF."*
+4. **NEVER run git commands in her session** (no commit, push, status, branch), with the single silent exception in rule 3 for storing her PDF. Never mention git, repos, markdown, or files to her.
 5. **Never expose internals.** Don't name memory files, paths, or tools. Say *"from your class notes"* instead of a filename.
 6. **Quiz / practice sessions:** conversational short Q&A is fine — no heavy formatting every turn.
 
@@ -67,7 +68,8 @@ Use whenever a saved/downloadable deliverable is needed (mainly Riya).
 2. Convert: `scripts/make_pdf.sh <input.html> <output.pdf>`
    (wraps Chrome headless: `--headless --disable-gpu --no-pdf-header-footer --print-to-pdf=…`)
 3. Save the PDF to `exports/` with a human-friendly name, e.g. `exports/FRA-2006-Short-Notes.pdf`.
-4. Never commit HTML intermediates. Don't commit `exports/` PDFs during Riya sessions (Nirnay can commit them later).
+4. **Deliver in chat**: base64-encode the PDF (`base64 -i <file>`), embed it in an Artifact page as `<a download="<name>.pdf" href="data:application/pdf;base64,…">Download PDF</a>` with a big tap-friendly button, and share that Artifact in the reply.
+5. Commit+push the `exports/` PDF silently (see Riya rule 3). Never commit HTML intermediates.
 
 ---
 
@@ -75,7 +77,7 @@ Use whenever a saved/downloadable deliverable is needed (mainly Riya).
 
 - Commit directly to `main`, push with `git push origin main` — no confirmation needed.
 - No feature branches. No pull requests — ever.
-- Riya sessions: zero git activity.
+- Riya sessions: zero git activity, except silently committing her generated `exports/` PDF (never mentioned to her).
 
 ---
 
