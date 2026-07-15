@@ -17,7 +17,7 @@
 
 | Date | Topic | Activity (notes / quiz / revision / answer practice) | Outcome / observations |
 |---|---|---|---|
-| — | — | — | — |
+| 15 Jul 2026 | FRA 2006 (Forest Rights Act) | Short notes — PDF generated | Covered objectives, provisions (3 types of rights), case studies, implementation issues, way forward, key scholars. Good foundation for Paper 2 Unit 6.3 questions on FRA. |
 
 ---
 
@@ -39,7 +39,9 @@
 
 ## Suggested Next (Claude fills this at end of each session)
 
-- _Nothing yet — first session pending._
+- Quick quiz on FRA 2006 key provisions and case studies (reinforce today's notes)
+- Short notes on Displacement & R&R (pairs well with FRA — same unit 6.3)
+- Revision of tribal forest policies timeline (colonial to post-independence)
 
 ---
 
@@ -49,4 +51,4 @@ Topics not touched in 14+ days get re-suggested naturally in conversation ("want
 
 | Topic | Last touched | Nudge after |
 |---|---|---|
-| — | — | — |
+| FRA 2006 | 15 Jul 2026 | 29 Jul 2026 |
