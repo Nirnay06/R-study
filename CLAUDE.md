@@ -70,7 +70,7 @@ Use whenever a saved/downloadable deliverable is needed (mainly Riya).
 
 1. Write styled, print-friendly HTML to the **scratchpad directory** (never into the repo).
 2. Convert: `scripts/make_pdf.sh <input.html> <output.pdf>`
-   (wraps Chrome headless: `--headless --disable-gpu --no-pdf-header-footer --print-to-pdf=…`)
+   — works everywhere: uses Chrome/Chromium headless if available (Mac or cloud), else falls back to pure-Python fpdf2. **In cloud sessions (claude.ai) the fallback may be used — keep the HTML to a simple subset (h1–h6, p, b/i, ul/ol/li, table) so it renders correctly.** If unsure which renderer ran, check the script output; it must print "PDF created".
 3. Save the PDF to `exports/` with a human-friendly name, e.g. `exports/FRA-2006-Short-Notes.pdf`.
 4. **Deliver in chat**: base64-encode the PDF (`base64 -i <file>`), embed it in an Artifact page as `<a download="<name>.pdf" href="data:application/pdf;base64,…">Download PDF</a>` with a big tap-friendly button, and share that Artifact in the reply.
 5. Commit+push the `exports/` PDF silently (see Riya rule 3). Never commit HTML intermediates.
