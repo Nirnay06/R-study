@@ -60,6 +60,8 @@ Always tell the user which source was used.
 | `memory/gs1_society/09_poverty.md` | Poverty — MPI, causes, dimensions, schemes, UBI | Sarrthi IAS GS1 Mains Module |
 | `memory/gs1_society/10_globalisation.md` | Globalisation — economic/tech/social impact, cultural homogenisation, way forward | Sarrthi IAS GS1 Mains Module |
 
+| `notes/gs1_indian_society_part1_notes.md` | Ethnic & Linguistic Elements in Indian Population — Risley's classification (7 types), Guha's classification (6 types, most accepted), S.S. Sarkar's classification (1954, 6 ethnic elements); Linguistic families (Austric, Dravidian, Sino-Tibetan, Indo-European); Linguistic conflicts (Anti-Hindi agitation, Gokak agitation); Scholars: Risley, Guha, Sarkar, Paul Brass, Robert Hardgrave, Sanjib Baruah, Yogendra Singh | Sarrthi IAS Anthropology Foundation L-21 (Nataraj Sir) |
+
 *Add new rows here whenever a new memory file is created.*
 
 ---
