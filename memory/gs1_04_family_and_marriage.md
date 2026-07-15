@@ -7,13 +7,13 @@
 
 ## Previous Year Questions (PYQs)
 
-| S.No. | Year | Question | Marks |
-|-------|------|----------|-------|
-| 1 | 2024 | Inter-caste marriages between castes which have socio-economic parity have increased, to some extent, but this is less true of inter-religious marriages. Discuss. | 10 |
-| 2 | 2023 | Do you think marriage as a sacrament is losing its value in Modern India? | 10 |
-| 3 | 2023 | Child cuddling is now being replaced by mobile phones. Discuss its impact on the socialization of children. | 10 |
-| 4 | 2022 | Explore and evaluate the impact of 'Work From Home' on family relationships. | 10 |
-| 5 | 2014 | The life cycle of a joint family depends on economic factors rather than social values. Discuss. | 10 |
+| S.No. | Year | Question | Marks | Topic |
+|-------|------|----------|-------|-------|
+| 1 | 2024 | Inter-caste marriages between castes which have socio-economic parity have increased, to some extent, but this is less true of inter-religious marriages. Discuss. | 10 | Marriage |
+| 2 | 2023 | Do you think marriage as a sacrament is losing its value in Modern India? | 10 | Marriage |
+| 3 | 2023 | Child cuddling is now being replaced by mobile phones. Discuss its impact on the socialization of children. | 10 | Family |
+| 4 | 2022 | Explore and evaluate the impact of 'Work From Home' on family relationships. | 10 | Family |
+| 5 | 2014 | The life cycle of a joint family depends on economic factors rather than social values. Discuss. | 10 | Family |
 
 ---
 
@@ -58,7 +58,7 @@
 | Type | Description | Communities |
 |------|-------------|-------------|
 | **Patrilineal** | Lineage, inheritance, family name follow male line | Widespread across India |
-| **Matrilineal** | Lineage and inheritance follow female line; youngest daughter often inherits | Khasi of Meghalaya, Nairs of Kerala, Minangkabau communities |
+| **Matrilineal** | Lineage and inheritance follow female line; youngest daughter often inherits property, though men may retain ritual authority | Khasi of Meghalaya, Nairs of Kerala, Minangkabau communities |
 
 ---
 
@@ -99,6 +99,7 @@
 ### The Structural Shift
 - Most visible change in Indian family over the last century: shift from joint to nuclear households
 - Nuclear families rose significantly over past few decades, trend strongest in **southern and western states**
+- **Census 2011:** nuclear families make up approximately **53% of households**
 - This can be misleading: what looks like breakdown of joint family is often **structural separation without functional separation**
 
 ### Key Insight: "The address changes, but the obligations don't"
@@ -118,6 +119,7 @@ Even when a young couple moves to a different city and lives in a nuclear househ
 
 ### Sociological Position
 - Sociologists argue that the nuclear household is not the death of the joint family — it is merely a **stage in its lifecycle**
+- **Functional Jointness (A.M. Shah):** nuclear households maintaining the emotional, ritual, and financial bonds of the joint family system — nuclear families that still maintain emotional and financial ties with the wider family network
 
 ---
 
@@ -159,7 +161,7 @@ Modern India is witnessing diversification of family forms that don't fit neatly
 
 ### DINK (Dual Income, No Kids) Families
 - Urban, educated, career-oriented couples deliberately choosing not to have children
-- Represents shift: parenthood as **personal choice** rather than social duty
+- Shows a clear shift away from the traditional **pronatalist norm** — parenthood becoming a **personal choice** rather than social duty
 - Drivers: high cost of raising children, career priorities, work-life balance, shift towards individual fulfilment
 - These families have higher per-capita consumption and contribute to **premium FMCG markets**
 - Growth rate: **~30% per annum** (Gitnux Market Data, 2024)
@@ -191,7 +193,7 @@ Modern India is witnessing diversification of family forms that don't fit neatly
 **Positive Impacts:**
 - Greater physical presence at home strengthened family bonds; increased **paternal involvement** in childcare
 - Flexible schedules improved work-life balance (especially for those with long commutes)
-- Some women able to continue employment alongside household responsibilities
+- Some women able to continue employment alongside household responsibilities, supporting **female labour participation**
 
 **Negative Impacts:**
 - Blurring of work and home boundaries led to longer working hours, **mental fatigue**, reduced quality of family time
@@ -223,6 +225,7 @@ Modern India is witnessing diversification of family forms that don't fit neatly
 
 **The Transformation:**
 - Primary socialization function of family (teaching language, values, social norms, emotional skills) being deeply affected by digital technology
+- The issue is not just screen time, but a bigger change in how children build **identity, relationships, and social skills**
 - In nuclear families with working parents, role of grandparents in storytelling, value transmission, emotional bonding has reduced
 - Gap increasingly filled by **digital devices** — children socialised more by screens than people
 
@@ -352,12 +355,12 @@ Modern India is witnessing diversification of family forms that don't fit neatly
 **Key Data:** Kerala (higher average marriage age) → TFR 1.8; Bihar (lower average age) → TFR 3.4. Correlation between marriage age and fertility is strong and consistent.
 
 ### 6.2 Inter-Caste Marriages — Slow Growth
-- Inter-caste marriages challenge the foundational norm of caste endogamy
+- Inter-caste marriages = unions between individuals from **different jatis within the same religion** — challenge the foundational norm of caste endogamy
 - Approximately **5% to 6%** of marriages are inter-caste (very slow growth from historical baselines)
 
 **Why they have increased:**
-- Education, professional employment, and urban life bring individuals from different castes into sustained equal-status contact
-- Shared class identity reduces hierarchical anxiety
+- Education, professional employment, and urban life bring individuals from different castes into sustained equal-status contact — reducing social distance
+- Shared class identity reduces hierarchical anxiety: when two individuals from comparable socio-economic backgrounds marry, the **status-loss fear** diminishes
 - Nuclear family structures reduce power of caste elders over marriage decisions
 - Government schemes and **Special Marriage Act (1954)** provide some legal legitimacy
 
@@ -372,7 +375,7 @@ Modern India is witnessing diversification of family forms that don't fit neatly
 
 **Why they are rarer:**
 - Religious identity is a comprehensive cultural identity (festivals, food practices, life-cycle rituals, naming conventions, community belonging) — families fear erasure of cultural continuity
-- Inter-caste marriage within the same religion preserves shared ritual identity — inter-religious crossing is a deeper, more emotionally charged boundary
+- Inter-caste marriage within the same religion preserves shared ritual identity — it is **socially negotiable** because the larger cultural framework is shared; inter-religious crossing is a deeper, more emotionally charged boundary
 - Residential and educational segregation along religious lines limits opportunities for sustained interaction
 - **Anti-conversion laws** in several states create obstacles, particularly for Hindu-Muslim unions (the "Love Jihad" narrative)
 - Procedural barriers under **Special Marriage Act (1954)** — including mandatory **30-day public notice** — expose couples to harassment, moral policing, family interference
@@ -397,6 +400,7 @@ Modern India is witnessing diversification of family forms that don't fit neatly
 - Similar to traditional arranged marriages, but on a much larger scale
 - **Algorithmic endogamy**: technology reinforces social boundaries instead of breaking them — algorithms ensure people mostly see matches within their own caste/community
 - Result: technology is **scaling up social conservatism** — millions of users matched but still within fixed social limits
+- The online matrimony market in India is growing fast, making this trend increasingly important
 
 ### 6.6 Rising Divorce Rates in India
 - India traditionally has one of the lowest divorce rates in the world — but gradually changing
@@ -410,7 +414,7 @@ Modern India is witnessing diversification of family forms that don't fit neatly
 - Awareness of legal rights (Hindu Marriage Act, Domestic Violence Act make divorce more accessible)
 - Social media and exposure (changing cultural values reshaping expectations within marriage)
 
-**Sociological Significance:** Rising divorce rates reflect not just broken families but also **greater individual agency**, especially for women.
+**Sociological Significance:** Rising divorce rates reflect not just broken families but also **greater individual agency**, especially for women. The challenge for society is to reduce stigma around divorce while strengthening support systems for separated individuals and children.
 
 ### 6.7 Decline in Sacramental Character of Marriage
 
@@ -510,6 +514,7 @@ India's marriage system is not simply moving toward Western-style individualism.
 | Women remaining unmarried | ~0.5% | Census |
 | Screen time (US teens) | 7.5 hours/day average | Research data |
 | Inter-caste marriages (share) | ~5–6% of all marriages | Recent estimates |
+| Nuclear family share (households) | ~53% | Census 2011 |
 | Countries with legal same-sex marriage | At least 30 | — |
 
 ---
@@ -538,7 +543,7 @@ India's marriage system is not simply moving toward Western-style individualism.
 | **Anthony Giddens** | Concept of the **"pure relationship"** — a relationship based entirely on free will, emotional compatibility, and mutual satisfaction; entered and sustained only as long as it meets partners' needs |
 | **Arlie Hochschild** | Concept of the **"second shift"** — the unpaid domestic labour (cooking, childcare, eldercare) performed by women in addition to their paid employment |
 | **Raja Rammohun Roy** | Social reformer who recognised polygyny as oppression; championed monogamy |
-| **Ishwar Chandra Vidyasagar** | Social reformer; championed monogamy and women's rights |
+| **Ishwar Chandra Vidyasagar** | Social reformer; advocated reform of Hindu marriage practices, including **widow remarriage** and opposition to polygyny; championed monogamy and women's rights |
 | **Dayananda Saraswati** | Social reformer; recognised polygyny as source of social degradation |
 
 ---

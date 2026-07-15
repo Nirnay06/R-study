@@ -6,14 +6,14 @@
 
 ## UPSC PYQs (Topic-Level — Front Page)
 
-| Year | Question |
-|------|----------|
-| 2024 | Critically analyse the proposition that there is a high correlation between India's cultural diversities and socio-economic marginalities. |
-| 2021 | How does Indian society maintain continuity in traditional social values? Enumerate the changes taking place in it. |
-| 2020 | Customs and traditions suppress reason leading to obscurantism. Do you agree? |
-| 2019 | What makes Indian society unique in sustaining its culture? Discuss. |
-| 2019 | Do we have cultural pockets of small India all over the nation? Elaborate with examples. |
-| 2015 | Describe any four cultural elements of diversity in India and rate their relative significance in building a national identity. |
+| Year | Question | Marks |
+|------|----------|-------|
+| 2024 | Critically analyse the proposition that there is a high correlation between India's cultural diversities and socio-economic marginalities. | 15 |
+| 2021 | How does Indian society maintain continuity in traditional social values? Enumerate the changes taking place in it. | 10 |
+| 2020 | Customs and traditions suppress reason leading to obscurantism. Do you agree? | 10 |
+| 2019 | What makes Indian society unique in sustaining its culture? Discuss. | 10 |
+| 2019 | Do we have cultural pockets of small India all over the nation? Elaborate with examples. | 10 |
+| 2015 | Describe any four cultural elements of diversity in India and rate their relative significance in building a national identity. | 10 |
 
 ---
 
@@ -87,7 +87,12 @@ Spaces where people from different states, languages, and traditions live and sh
 
 #### How Does India Manage Its Diversity? — The Mosaic Model
 
-Sociologists describe three models for how societies handle diversity. **India follows the Mosaic model** — the most sophisticated — where diversity is neither suppressed nor kept completely separate, but **woven together into a composite national identity**.
+Sociologists describe three models for how societies handle diversity:
+1. **Melting Pot** — assimilation into a single uniform culture
+2. **Salad Bowl** — cultures kept completely separate
+3. **Mosaic Model** — diversity woven together into a composite national identity
+
+**India follows the Mosaic model** — the most sophisticated of the three — where diversity is neither suppressed nor kept completely separate, but **woven together into a composite national identity**.
 
 #### Diversity and Marginalisation — A Critical View (UPSC 2024)
 
@@ -184,7 +189,7 @@ India is known as a **spiritual centre** but is also a **fast-growing consumer m
 **Key Features:**
 - **Communal landholding** — land owned collectively by the community
 - **Animistic religion** — most tribal groups worship nature, rivers, forests, and spirits
-- **Greater gender equality** — Tribal sex ratio is **990 females per 1,000 males** (significantly better than the national average), reflecting lower patriarchy, absence of dowry, and presence of **bride price customs**
+- **Greater gender equality** — Tribal sex ratio is **990 females per 1,000 males** (significantly better than the national average of **943**), reflecting lower patriarchy, absence of dowry, and presence of **bride price customs**
 
 **Challenges:**
 - Though only 8.6% of the population, tribals constitute **nearly 40% of all people displaced** by development projects (dams, mines, highways)
@@ -489,7 +494,8 @@ Caste has been significantly challenged by colonial modernity, the independence 
 | **Selective Adaptation** | When society changes the outer form of a practice but preserves its underlying structure |
 | **Social Morality** | Norms and customs upheld by community consensus, often rooted in caste and tradition |
 | **Society** | An organised group of people living together, sharing rules, culture, and mutual dependence |
-| **Varna** | The theoretical four-fold division of Hindu society based on scriptures |
+| **Syncretism** | The blending of different cultural elements into something new |
+| **Varna** | The theoretical four-fold division of Hindu society based on scriptures (Brahmin, Kshatriya, Vaishya, Shudra) |
 | **Vasudhaiva Kutumbakam** | Ancient Indian concept meaning "The world is one family" |
 
 ---
@@ -498,14 +504,14 @@ Caste has been significantly challenged by colonial modernity, the independence 
 
 ### Topic-Level (Front Page Questions)
 
-| Year | Question |
-|------|----------|
-| 2024 | Critically analyse the proposition that there is a high correlation between India's cultural diversities and socio-economic marginalities. |
-| 2021 | How does Indian society maintain continuity in traditional social values? Enumerate the changes taking place in it. |
-| 2020 | Customs and traditions suppress reason leading to obscurantism. Do you agree? |
-| 2019 | What makes Indian society unique in sustaining its culture? Discuss. |
-| 2019 | Do we have cultural pockets of small India all over the nation? Elaborate with examples. |
-| 2015 | Describe any four cultural elements of diversity in India and rate their relative significance in building a national identity. |
+| Year | Question | Marks |
+|------|----------|-------|
+| 2024 | Critically analyse the proposition that there is a high correlation between India's cultural diversities and socio-economic marginalities. | 15 |
+| 2021 | How does Indian society maintain continuity in traditional social values? Enumerate the changes taking place in it. | 10 |
+| 2020 | Customs and traditions suppress reason leading to obscurantism. Do you agree? | 10 |
+| 2019 | What makes Indian society unique in sustaining its culture? Discuss. | 10 |
+| 2019 | Do we have cultural pockets of small India all over the nation? Elaborate with examples. | 10 |
+| 2015 | Describe any four cultural elements of diversity in India and rate their relative significance in building a national identity. | 10 |
 
 ### Caste-Specific PYQs
 
@@ -535,7 +541,45 @@ Caste has been significantly challenged by colonial modernity, the independence 
 
 ---
 
-## 10. Quick Revision: Concluding Synthesis
+## 10. Government Schemes / Legal Provisions
+
+| Provision / Scheme | Details |
+|-------------------|---------|
+| **Eighth Schedule** | Lists 22 officially recognised languages of India |
+| **Article 14** | Right to Equality |
+| **Article 15** | Prohibition of discrimination on grounds of religion, race, caste, sex, or place of birth |
+| **Article 17** | Abolition of untouchability |
+| **Article 21** | Protection of life and personal liberty (includes right to dignity) |
+| **Universal Adult Franchise** | Empowered numerically large lower-caste communities with real political power for the first time |
+| **Reservations** | Under Articles 15(4) and 16(4) — affirmative action for SCs, STs, and backward classes in education and employment |
+
+---
+
+## 11. Exam-Ready Frameworks
+
+### For "What Makes Indian Society Unique?" (2019 PYQ)
+1. Unity in diversity (Mosaic model, 19,500+ languages yet one nation)
+2. Tradition and modernity coexist (civilisational capacity)
+3. Syncretic character (Bhakti-Sufi-colonial synthesis)
+4. Palimpsest quality (Nehru) — absorbs without erasing
+5. Balance between individualism and collectivism
+6. Philosophical pluralism (Vasudhaiva Kutumbakam, Anekantavada, Sarvadharma Samabhava)
+
+### For "Customs and Traditions Suppress Reason" (2020 PYQ)
+- **AGREE**: dowry (illegal but practised), honour killings (NCRB 2020: 77 cases), witch-hunting, child marriage, LGBTQ+ exclusion
+- **DISAGREE**: festivals as social glue, family systems as welfare, classical arts as living heritage, Béteille's point on order and predictability
+- **SYNTHESIS**: Ambedkar's distinction — constitutional morality must prevail over social morality; tradition must be reformed, not abandoned
+
+### For "Cultural Pockets of Mini India" (2019 PYQ)
+- Mumbai, Delhi, Bengaluru: metropolitan mini-Indias
+- Kolkata: Marwari and Gujarati business presence
+- Hyderabad and Pune: education and work migration
+- IT hubs: inter-religious festival celebrations
+- Conclusion: people keep own identity while becoming part of a larger Indian identity → unity in diversity
+
+---
+
+## 12. Quick Revision: Concluding Synthesis
 
 Indian society reflects a **dynamic balance between continuity and change**. Ancient traditions, social institutions, and civilisational values continue to shape everyday life, even as democracy, education, markets, technology, and globalisation transform them.
 

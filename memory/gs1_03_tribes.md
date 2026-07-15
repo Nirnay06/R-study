@@ -67,8 +67,14 @@
 | Number of STs | ~705 | Article 342 notification |
 | PVTGs notified | 75 groups | Ministry of Tribal Affairs |
 | ST sex ratio | 990 females per 1,000 males | Census 2011 |
+| National sex ratio (comparison) | 943 females per 1,000 males | Census 2011 |
 | ST literacy | 59% vs. 73% national average | Census 2011 |
 | Tribal population outside traditional habitats | ~55% of country's tribal population | Ministry of Tribal Welfare |
+| ST under-five stunting | ~40.9% | NFHS-5 |
+| FRA claims filed | ~52 lakh | Ministry of Tribal Affairs |
+| FRA claims rejected | ~36% | Ministry of Tribal Affairs |
+| Bhils | India's second-largest tribal community | — |
+| Dongria Kondh Gram Sabhas | All 12 unanimously rejected Vedanta mining | Supreme Court, 2013 |
 
 ### Geographic Distribution
 
@@ -98,7 +104,7 @@
 - Only **Santhali** has been recognised in the **Eighth Schedule** — the sole tribal language with official constitutional status
 
 **Social and kinship diversity:**
-- **Khasi of Meghalaya**: practice **matriliny** — property and clan identity pass through the mother's line; youngest daughter inherits the ancestral home
+- **Khasi of Meghalaya**: practice **matriliny** — property and clan identity pass through the mother's line; youngest daughter inherits the ancestral home (though men may retain ritual authority). Matriliny is also found among the **Nairs of Kerala** and the Minangkabau communities
 - **Gonds and Bhils**: patrilineal
 - **Todas of the Nilgiris**: historically practiced **fraternal polyandry** (a woman marrying multiple brothers), tied to land-resource management
 
@@ -197,7 +203,7 @@
 
 ## 8. Tribal Knowledge Systems — Wisdom at the Margins
 
-Tribal knowledge is transmitted through **folklore, songs, myths, and ritual** — ensuring intergenerational continuity through oral traditions embedded in lived practice.
+Tribal knowledge is **fundamentally different** from mainstream knowledge — not in quality or validity, but in **mode of production, transmission, ownership, and application**. It is transmitted through **folklore, songs, myths, and ritual** — ensuring intergenerational continuity through oral traditions embedded in lived practice.
 
 ### Ecological Wisdom
 - Deep, intergenerational knowledge of local ecosystems — plant species, animal behaviour, seasonal cycles, soil conditions, water sources
@@ -303,7 +309,7 @@ Nehru articulated five principles for tribal development — the constitutional 
   - Regulation of money lending
   - Oversight of local development plans
 - Recognised customary tribal law and traditional governance as legally valid
-- **Challenge**: Suffered from weak implementation — several states delayed or incompletely framed the required rules; land acquisition and mineral projects in Scheduled Areas often proceeded without effective Gram Sabha participation
+- **Challenge**: Suffered from weak implementation — several states delayed or incompletely framed the required rules; land acquisition and mineral projects in Scheduled Areas often proceeded without effective Gram Sabha participation, especially for minor minerals
 
 #### 2. Forest Rights Act (FRA), 2006 — The Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act
 - Landmark tribal law recognising the **historical injustice of colonial forest control** and restoring rights to forest-dwelling communities
@@ -502,6 +508,10 @@ The most comprehensive recent policy framework for tribal development — focuse
 | **Medha Patkar** | Led Narmada Bachao Andolan — landmark tribal resistance and policy reform movement |
 | **Renke Commission (2008)** | Documented the plight of Denotified Tribes |
 | **Idate Commission (2017)** | Further documented conditions of Denotified Tribes |
+| **Dongria Kondh vs. Vedanta (2013)** | Landmark SC case; all 12 Gram Sabhas rejected bauxite mining — FRA working as intended |
+| **Irula Tribe** | Tamil Nadu; snake/venom expertise used by antivenom research |
+| **Bishnoi Community** | Rajasthan; five centuries of conservation; inspired Chipko movement |
+| **Soliga Tribes** | Karnataka's BRT Hills; knowledge of 100+ medicinal plant species |
 
 ---
 
@@ -558,3 +568,34 @@ The most comprehensive recent policy framework for tribal development — focuse
 | 2018 | 2018 SC judgment diluting arrest provisions (later reversed by Parliament) |
 | 2023 | PM JANMAN scheme for PVTGs |
 | 2024 | PM-JUGA scheme with SCD screening for tribal communities |
+
+---
+
+## 21. Key Acts and Protocols — Quick Recall
+
+| Act/Protocol | Year | Key Feature |
+|-------------|------|-------------|
+| Criminal Tribes Act | 1871 | Colonial law branding communities as hereditary criminals |
+| Fifth Schedule | Constitution | Scheduled Areas in 10 states; Governor's special powers |
+| Sixth Schedule | Constitution | Autonomous District Councils in 4 Northeast states |
+| SC/ST Atrocities Act | 1989 (Amended 2015) | Stringent penalties; special courts; reversed burden of proof |
+| PESA | 1996 | Gram Sabha powers over natural resources in tribal areas |
+| FRA | 2006 | Individual + community forest rights; corrects colonial injustice |
+| UNDRIP | 2007 | UN declaration on Indigenous Peoples' rights (India endorsed after initial vote against) |
+| Nagoya Protocol | 2010 | Prior informed consent + benefit-sharing for traditional knowledge |
+| LARR | 2013 | Social Impact Assessment + community consent mandatory |
+| PM-JUGA | 2024 | Includes Sickle Cell Disease screening for tribal communities |
+| 30×30 Target | — | Global biodiversity target (30% of land and ocean protected by 2030); risk of displacing tribal communities |
+
+---
+
+## 22. Expected PYQ Themes for Revision (Tribes Topic)
+
+- Impact of development projects on tribal communities
+- Role of Forest Rights Act in addressing historical injustice
+- Tribal integration vs. isolation debate
+- Constitutional provisions for tribal welfare
+- Impact of globalisation on tribal culture
+- PVTG challenges
+- Left-wing extremism and tribal areas
+- UCC vs. customary tribal law
