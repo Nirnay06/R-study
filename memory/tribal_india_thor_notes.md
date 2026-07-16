@@ -174,7 +174,7 @@ The Nilgiri Hills of Tamil Nadu are home to a cluster of tribes — **Toda, Kota
 **Definition:**
 - Primary source of subsistence for many tribal communities
 - Distinct type of agricultural practice generally practiced on **hill slopes**
-- Dates back to **Neolithic times** (8,000–10,000 years ago)
+- Dates back to **Neolithic times** (8,000–10,000 years ago) — **Nadeem Hasnain**
 - Resulted in transition from **nomadic way of life to settled way of life**
 - Also known as **Jhum cultivation** (Northeast India), **Bewar** (Baiga), **Podu**, **Kumri**, etc.
 - Also prevalent in: Sumatra, North Burma, Borneo, New Guinea, Africa
@@ -780,7 +780,7 @@ Land alienation = the process by which tribals lose ownership or access to their
 - Traditional tribal societies were based on **subsistence economies and reciprocity**
 - Contact with money economy during and after colonial rule introduced **cash dependency, credit, and exploitation**
 - **Christoph von Fürer-Haimendorf** observed: the shift from a barter-based economy to a monetised one exposed tribal to exploitation by moneylenders, contractors, and traders
-- **Ranganathan:** About **36% of Scheduled Tribe farmer households are indebted**, mostly to non-institutional sources like moneylenders and traders
+- **Rangarajan:** About **36% of Scheduled Tribe farmer households are indebted**, mostly to non-institutional sources like moneylenders and traders
 
 **Extent:**
 - Indebtedness is widespread except in a few North-Eastern areas that were historically protected from middlemen during colonial times
@@ -967,7 +967,7 @@ Land alienation = the process by which tribals lose ownership or access to their
 6. **Agricultural Dependence and Seasonality:** Over-reliance on rain-fed agriculture causes seasonal unemployment
 7. **Vacant Reserved Posts in Public Employment:**
    - **112th Parliamentary Standing Committee Report (2023):** 1,199 of 3,097 ST-reserved posts in 45 central universities and over 3,000 posts in ministries remain vacant
-   - **Saiyed Zegham Muntaza:** "These figures betray an extreme disregard of the reservation norms"
+   - **Saiyed Zegham Murtaza:** "These figures betray an extreme disregard of the reservation norms"
 8. **Frustration and Extremism:** Lack of economic opportunity has led some tribal youth to join extremist movements
 
 #### Consequences
@@ -1157,6 +1157,7 @@ Land alienation = the process by which tribals lose ownership or access to their
 | Scholar | Key Contribution/Quote |
 |---|---|
 | Marshall Sahlins | Hunter-gatherers = "original affluent society" |
+| Nadeem Hasnain | Shifting cultivation dates to Neolithic times (8,000–10,000 years ago) |
 | Verrier Elwin | "Education must be of the forest and not against the forest" / "Let us teach the tribe not to despise his culture, but to enrich it through knowledge" |
 | L.P. Vidyarthi | Land alienation = root cause of all tribal unrest; vicious cycle of poverty in Ranchi studies |
 | B.D. Sharma | Five levels of deprivation; "tribal world being impoverished in name of development"; "tribals not poor by culture, but made poor by circumstance" |
@@ -1179,14 +1180,14 @@ Land alienation = the process by which tribals lose ownership or access to their
 | Abbi (2017) | Austro-Asiatic and Tibeto-Burman languages show deep antiquity of tribal heritage |
 | Anderson (2008) | Austro-Asiatic (Munda) = one of earliest language families in South Asia |
 | Christoph von Fürer-Haimendorf | Shift from barter to monetised economy exposed tribals to exploitation |
-| Ranganathan | 36% of ST farmer households are indebted |
+| Rangarajan | 36% of ST farmer households are indebted |
 | Tripathi | Tribes once had harmonious and symbiotic relationship with forests |
 | V.G. Rao | 36.5% prevalence of STDs among tribal villagers (Jabalpur study) |
 | Anumeha Yadav | *Goti* system of bonded labour persists in Odisha despite laws |
 | Richard Mahapatra | Tribals are quitting farming fast; every second household survives on manual labour |
 | N.C. Saxena | Agriculture and forest work limited to 4-5 months per year — seasonal underemployment |
 | Bhatia | Studies in Bastar link unemployment with Naxal recruitment |
-| Saiyed Zegham Muntaza | Vacant ST-reserved posts betray extreme disregard of reservation norms |
+| Saiyed Zegham Murtaza | Vacant ST-reserved posts betray extreme disregard of reservation norms |
 | P.C. Joshi | Integration of ethnomedicine with PHCs could improve health outcomes |
 | Asmita Kabra (2009) | 80% of displaced Saharias lived below poverty line after losing forest produce access |
 | Vidyarthi (1963) | Nature-Man-Spirit Complex — economic activity, ecology, and belief as integrated system |
