@@ -20,6 +20,7 @@
 | 15 Jul 2026 | FRA 2006 (Forest Rights Act) | Short notes — PDF generated | Covered objectives, provisions (3 types of rights), case studies, implementation issues, way forward, key scholars. Good foundation for Paper 2 Unit 6.3 questions on FRA. |
 | 16 Jul 2026 | Tribal Anthro — Occupational & Linguistic Classifications | Comprehensive notes — PDF generated (Part 1) | All 6 economic types with case studies (Chenchu, Yanadi, Onge, Jarawa, Kadar, Nilgiri model, Maler, Baiga, Santhals, Apatanis, Asur, Agaria). All 4 linguistic families with scholars. Endangered languages. |
 | 16 Jul 2026 | Tribal Anthro — Problems of Tribal Communities | Comprehensive notes — PDF generated (Part 2) | All 6 problems covered in depth: Land Alienation, Poverty (B.D. Sharma's 5 levels), Indebtedness, Education, Unemployment, Health & Nutrition. Every scholar, case study, scheme, and impact on women included. Probable UPSC questions listed. |
+| 16 Jul 2026 | L-65: Ethnicity, Ethnic Conflicts, Regionalism, Naxalism/LWE, Pseudo-Tribalism, Youth Dormitories | Comprehensive notes — PDF generated (13 pages) | Full Chapter 7.3 covered. All 22 handwritten annotations captured. 3 ethnicity approaches (Shils/Geertz, Brass/Gurr/Cohen, Wieland). Surajit Sinha's 5 movements. 4 rebellions (Santhal, Munda, Naga, Mizo). Regionalism (positive/negative, 5 reasons). 4 tribal movements (Jharkhand, Naga, Zeliangrong, Mizo). LWE: 6 root problems, 2 case studies (Essar-Dantewada, Salwa Judum SC verdict). Pseudo-tribalism: 4 case studies (Gujjars, Assam, Meitei, Narikkuravar), 8 impacts. Youth dormitories: types, origin, functions, 7 decline factors. Quick-revision cheat sheet + handwritten annotations index included. |
 
 ---
 
@@ -41,11 +42,11 @@
 
 ## Suggested Next (Claude fills this at end of each session)
 
-- Quick quiz on tribal occupational classifications (test knowledge of all 6 types + key case studies)
-- Practice answer writing on Nilgiri model or Apatani rice-fish system (high-probability UPSC questions)
+- Quick quiz on L-65 topics: ethnicity approaches, tribal movements, regionalism, LWE root causes, pseudo-tribalism impacts
+- Practice answer writing: "Discuss Surajit Sinha's 5 types of tribal movements" or "Critically examine Naxalism as tribal unrest"
 - Quiz on B.D. Sharma's 5 levels of deprivation and key scholars for tribal problems
-- Short notes on Displacement & R&R (pairs well with FRA — same unit 6.3)
-- Revision of FRA 2006 (last touched 15 Jul)
+- Short notes on L-67 topics (Religion impacts, PVTGs, NGOs, Tribal Panchsheel)
+- Revision of FRA 2006 (last touched 15 Jul) and L-63 topics (R&R, constitutional provisions)
 
 ---
 
@@ -58,3 +59,4 @@ Topics not touched in 14+ days get re-suggested naturally in conversation ("want
 | FRA 2006 | 15 Jul 2026 | 29 Jul 2026 |
 | Tribal Occupational & Linguistic Classifications | 16 Jul 2026 | 30 Jul 2026 |
 | Tribal Problems (Land, Poverty, Debt, Education, Unemployment, Health) | 16 Jul 2026 | 30 Jul 2026 |
+| L-65: Ethnicity, Conflicts, Regionalism, LWE, Pseudo-Tribalism, Youth Dormitories | 16 Jul 2026 | 30 Jul 2026 |
