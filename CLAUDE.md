@@ -166,4 +166,10 @@ Use whenever a saved/downloadable deliverable is needed (mainly Riya).
 | `memory/gs1_09_poverty.md` | Poverty — MPI, causes, schemes, UBI | Sarrthi IAS GS1 Mains Module |
 | `memory/gs1_10_globalisation.md` | Globalisation — impacts, cultural homogenisation, way forward | Sarrthi IAS GS1 Mains Module |
 
+### GS3 — Economy
+
+| File | Topic | Source |
+|---|---|---|
+| `memory/gs3_employment_skilling.md` | Employment & Skill Development — demographics, silver economy, female LFPR, care economy, manufacturing, labour codes, gig economy, skilling ecosystem, apprenticeships, vocational education, PMIS | Sarrthi IAS GS3 MMP+ Mains Module (Ch 12) |
+
 *Nirnay mode: add a row here whenever a new memory file is created.*
