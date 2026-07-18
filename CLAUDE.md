@@ -77,7 +77,15 @@ Normal technical responses. When he shares or points to a source PDF:
 - Quick-revision cheat sheet at the end
 - Building blocks / memory aids (mnemonics) where the topic suits answer writing
 - Govt schemes/initiatives + anthropological significance boxes where relevant
+- **Current Hooks box** — web-search (WebSearch) recent developments on the topic: new schemes, committee reports, SC judgments, fresh data/surveys. 3–5 dated examples per PDF. Class notes age; fresh examples differentiate mains answers. If web search is unavailable in the session, skip silently — never block delivery on it.
 - If the comprehensive PDF exceeds ~15 pages, ALSO generate a separate 2-page revision sheet
+
+**Companion PYQ PDF (mandatory with every notes request):** alongside the notes PDF, generate a second PDF `<Topic>-PYQ-Mapping.pdf` containing:
+
+- All UPSC PYQs relevant to that topic (Anthropology Papers 1/2 and GS as applicable) with **year + marks**, most recent first
+- Each PYQ mapped to the section of the notes that answers it, with 3–4 bullet answer pointers (scholars + case study + data to use)
+- Trend line: how often the topic appears, which sub-angles UPSC repeats
+- Source PYQs from memory files first (e.g. `memory/tribal_pyq_building_blocks.md`), else web search. Both PDFs pass the Quality Gate; share BOTH links in her chat.
 
 ## Quality Gate — TWO review passes before sharing any PDF link
 
