@@ -26,6 +26,7 @@
 | 16 Jul 2026 | L-67 Tribal India — Religion Impacts, Tribe & Nation State, Approaches, Administration, PVTGs, DNTs, NGOs, Anthropology, Communalism | Comprehensive notes — PDF generated (12 topics, 10+ pages) | Full Handout 6 covered: 8.1 (Hinduism/Christianity/Buddhism/Islam impacts with case studies), 8.2 (Tribe & Nation State, ILO 169), Approaches (Isolationist/Assimilationist/Integrationist + Tribal Panchsheel), 9.1 (Administration history — British & post-independence), PVTGs (75 groups, criteria, FRA provisions), 7.1 (DNTs — CTA 1871, repeal, Renke/Idate), NGOs (case studies: Jawadhu Hills, Arulagam honey co-op, IJM, Natya Chetana, Period Homes), 9.2 (Role of Anthropology — 10 contributions, village studies), 9.3 (Communalism — 8 factors, 4 riots, features). 30+ handwritten annotations captured with ✏️. Color-coded tables, scholar boxes, case study cards, mind maps, approach comparison boxes. 12-topic quick-revision cheat sheet at end. |
 | 16 Jul 2026 | Tribal Anthropology — PYQ Building Blocks (Units 6.1–9.3) | Modular answer-building blocks — PDF generated | 20 building blocks mapped to PYQ themes (2014-2024). PYQ frequency analysis with priority rankings. Covers all units: concept of tribe, bio-genetic variability, linguistic classification, shifting cultivation, land alienation, education, health, FRA & forest policy, displacement & R&R, V/VI Schedules, ethnicity, religions impact, Elwin-Ghurye, PVTGs, PESA, NGOs, role of anthropology, communalism & regionalism, dev programmes, tribe & nation state. Cross-cutting answer templates (10/15/20 marks) + universal scholar toolkit (10 scholars). |
 | 18 Jul 2026 | L-21: Ethnic & Linguistic Elements in Indian Population | Comprehensive notes — PDF generated (9 pages) | Chapter 2 fully covered. 3 racial classifications: Risley (7 types, nasal index), Guha (6 types with ~14 sub-types, most accepted, 1931 Census), Sarkar (6 elements, cephalic index, 1954). Comparison table. 4 language families with %. 5 bridge languages. Linguistic conflicts: Anti-Hindi (TN), Gokak (Karnataka), Bhojpuri/Meitei 8th Schedule, Marathi mandatory. 12 scholars. 2 handwritten annotations identified (Wilhelm von Humboldt, Nehru). 6 building blocks + universal scholar toolkit. Quick-revision cheat sheet. |
+| 18 Jul 2026 | Indian Society Part 2 — Traditional Social System & Caste | Comprehensive notes — PDF generated (multi-page) | Full Handout 2 (Chapters 3.1 & 3.2) covered. 6 major sections: Racial Classification (Risley/Guha/Sarkar comparison), Purushartha (Dharma/Artha/Kama/Moksha with scholars), Varnashrama Dharma (4 Ashramas with duties & goals), Rina & Rebirth (4 debts, 3 Lokas, Pitri Yajna), Karma (fatalism debate, Nishkama Karma, Weber/Srinivas/Beteille), Caste System (Varna vs Jati, Ghurye's 6 features, Dumont purity-pollution, 7 theories of origin, Buddhism & Jainism reforms). Color-coded tables, scholar-quote boxes, case study cards, mind maps. Handwritten annotations marked with ✏️. Quick-revision cheat sheet + 7 building blocks at end. |
 
 ---
 
@@ -47,6 +48,7 @@
 
 ## Suggested Next (Claude fills this at end of each session)
 
+- Quick quiz on Indian Society Part 2: Purushartha, Varnashrama, Karma theories, Caste system features (Ghurye/Dumont), theories of caste origin
 - Quick quiz on L-21 topics: Risley vs Guha vs Sarkar classifications, 4 language families, linguistic movements
 - Quick quiz on L-67 topics: religion impacts on tribes, PVTGs, DNTs, communalism factors, Tribal Panchsheel
 - Quick quiz on L-63 topics: R&R problems, constitutional safeguards, developmental programmes
@@ -71,3 +73,4 @@ Topics not touched in 14+ days get re-suggested naturally in conversation ("want
 | L-67: Religion Impacts, Tribe & Nation State, Approaches, PVTGs, DNTs, NGOs, Anthropology, Communalism | 16 Jul 2026 | 30 Jul 2026 |
 | PYQ Building Blocks — All Tribal Units (6.1–9.3) | 16 Jul 2026 | 30 Jul 2026 |
 | L-21: Ethnic & Linguistic Elements (Racial + Linguistic Classification) | 18 Jul 2026 | 1 Aug 2026 |
+| Indian Society Part 2: Purushartha, Varnashrama, Rina, Karma, Caste System | 18 Jul 2026 | 1 Aug 2026 |
