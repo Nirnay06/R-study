@@ -150,6 +150,7 @@ Use whenever a saved/downloadable deliverable is needed (mainly Riya).
 | `memory/antho_l49_notes.md` | Jajmani system, tribe-caste continuum, great & little tradition, universalisation/parochialisation, sacred complex, nature-man-spirit complex | Paper 1 (Units 3.3, 5.3) | Sarrthi IAS Foundation Handout 5 (L-49) |
 | `memory/antho_l51_notes.md` | Sanskritization, Westernization, Modernization; religious/linguistic minorities; growth of anthropology in India; Panchayati Raj; media & social change | Paper 1 (Units 4.1, 4.2) | Sarrthi IAS Foundation Handout 6 (L-51) |
 | `memory/antho_l54_notes.md` | Indian village — settlement types, little republics vs rural cosmopolitanism, agrarian relations, village as social system, traditional culture | Paper 1 (Unit 5.1) | Sarrthi IAS Foundation Handout 7 (L-54) |
+| `memory/antho_l84_indian_anthropologists.md` | Indian Anthropologists — contributions to tribal & caste studies: S.C. Roy, Furer-Haimendorf, K.S. Singh, N.K. Bose, Iravati Karve, B.S. Guha, P.K. Bhowmick, D.N. Majumdar, B.K. Roy Burman, Ananthakrishna Iyer, G.S. Ghurye, S.C. Dube, Srinivas vs Vidyarthi, H.D. Sankalia, Surajit Sinha, Verrier Elwin, James Hutton | Paper 2 (Ch 4) | Sarrthi IAS Foundation L-84 Class Notes |
 
 ### GS1 — Society
 
